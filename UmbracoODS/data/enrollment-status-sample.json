@@ -1,0 +1,67 @@
+[
+  {
+    "date": 2012,
+    "status": "Full Time",
+    "headcount": 18175
+  },
+  {
+    "date": 2012,
+    "status": "Part Time",
+    "headcount": 9214
+  },
+
+  {
+    "date": 2013,
+    "status": "Full Time",
+    "headcount": 18794
+  },
+  {
+    "date": 2013,
+    "status": "Part Time",
+    "headcount": 9054
+  },
+
+  {
+    "date": 2014,
+    "status": "Full Time",
+    "headcount": 19778
+  },
+  {
+    "date": 2014,
+    "status": "Part Time",
+    "headcount": 8737
+  },
+
+  {
+    "date": 2015,
+    "status": "Full Time",
+    "headcount": 20060
+  },
+  {
+    "date": 2015,
+    "status": "Part Time",
+    "headcount": 8540
+  },
+
+  {
+    "date": 2016,
+    "status": "Full Time",
+    "headcount": 20833
+  },
+  {
+    "date": 2016,
+    "status": "Part Time",
+    "headcount": 8869
+  },
+
+  {
+    "date": 2017,
+    "status": "Full Time",
+    "headcount": 21703
+  },
+  {
+    "date": 2017,
+    "status": "Part Time",
+    "headcount": 8768
+  }
+]

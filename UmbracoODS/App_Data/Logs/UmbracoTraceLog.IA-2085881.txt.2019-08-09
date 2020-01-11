@@ -1,0 +1,50 @@
+﻿ 2019-08-09 08:58:04,237 [P18820/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.15.0 application starting on IA-2085881
+ 2019-08-09 08:58:04,300 [P18820/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2019-08-09 08:58:04,319 [P18820/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 20ms)
+ 2019-08-09 08:58:04,570 [P18820/D2/T1] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2019-08-09 08:58:04,573 [P18820/D2/T1] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2019-08-09 08:58:04,577 [P18820/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-08-09 08:58:05,297 [P18820/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 719ms)
+ 2019-08-09 08:58:05,297 [P18820/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
+ 2019-08-09 08:58:05,299 [P18820/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 1ms)
+ 2019-08-09 08:58:05,427 [P18820/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-08-09 08:58:05,428 [P18820/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-08-09 08:58:05,428 [P18820/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2019-08-09 08:58:05,428 [P18820/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 0ms)
+ 2019-08-09 08:58:05,429 [P18820/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-08-09 08:58:05,429 [P18820/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-08-09 08:58:05,429 [P18820/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2019-08-09 08:58:05,431 [P18820/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 2ms)
+ 2019-08-09 08:58:05,454 [P18820/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-08-09 08:58:05,454 [P18820/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-08-09 08:58:05,454 [P18820/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
+ 2019-08-09 08:58:05,455 [P18820/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 0ms)
+ 2019-08-09 08:58:05,455 [P18820/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-08-09 08:58:05,456 [P18820/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-08-09 08:58:05,456 [P18820/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
+ 2019-08-09 08:58:05,457 [P18820/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 0ms)
+ 2019-08-09 08:58:17,548 [P18820/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2019-08-09 08:58:18,241 [P18820/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2019-08-09 08:58:18,611 [P18820/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2019-08-09 08:58:18,613 [P18820/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 4
+ 2019-08-09 08:58:18,651 [P18820/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 14659ms)
+ 2019-08-09 08:58:19,086 [P18820/D2/T7] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - New ApplicationUrl detected: http://10.18.78.108:80/UmbracoODS/umbraco
+ 2019-08-09 08:58:19,090 [P18820/D2/T7] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://10.18.78.108:80/UmbracoODS/umbraco (UmbracoModule request)
+ 2019-08-09 08:58:26,627 [P18820/D2/T7] INFO  umbraco.content - Load Xml from file...
+ 2019-08-09 08:58:26,659 [P18820/D2/T7] INFO  umbraco.content - Loaded Xml from file.
+ 2019-08-09 08:58:28,008 [P18820/D2/T7] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-08-09 08:58:28,009 [P18820/D2/T7] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-08-09 08:58:28,009 [P18820/D2/T7] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IParameterEditor
+ 2019-08-09 08:58:28,010 [P18820/D2/T7] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IParameterEditor (took 1ms)
+ 2019-08-09 08:58:29,879 [P18820/D2/T7] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-08-09 08:58:29,879 [P18820/D2/T7] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-08-09 08:58:29,879 [P18820/D2/T7] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Deploy.IServiceConnector
+ 2019-08-09 08:58:29,880 [P18820/D2/T7] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Deploy.IServiceConnector (took 0ms)
+ 2019-08-09 08:58:30,322 [P18820/D2/T7] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-08-09 08:58:30,322 [P18820/D2/T7] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-08-09 08:58:30,323 [P18820/D2/T7] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2019-08-09 08:58:30,324 [P18820/D2/T7] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper (took 0ms)
+ 2019-08-09 08:59:26,758 [P18820/D2/T12] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2019-08-08 08:59:26
+ 2019-08-09 12:59:27,297 [P18820/D2/T440] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2019-08-08 12:59:27
+ 2019-08-09 16:59:27,879 [P18820/D2/T30] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2019-08-08 16:59:27
+ 2019-08-09 20:59:28,509 [P18820/D2/T131] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2019-08-08 20:59:28

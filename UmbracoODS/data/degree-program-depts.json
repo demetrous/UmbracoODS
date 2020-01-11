@@ -1,0 +1,434 @@
+[
+ {
+   "date": 2012,
+   "college": "School of Allied Health Sciences",
+   "level": "Undergraduate",
+   "headcount": 2317
+ },
+ {
+   "date": 2013,
+   "college": "School of Allied Health Sciences",
+   "level": "Undergraduate",
+   "headcount": 2565
+ },
+ {
+   "date": 2014,
+   "college": "School of Allied Health Sciences",
+   "level": "Undergraduate",
+   "headcount": 2468
+ },
+ {
+   "date": 2015,
+   "college": "School of Allied Health Sciences",
+   "level": "Undergraduate",
+   "headcount": 2630
+ },
+ {
+   "date": 2016,
+   "college": "School of Allied Health Sciences",
+   "level": "Undergraduate",
+   "headcount": 2566
+ },
+ {
+   "date": 2017,
+   "college": "School of Allied Health Sciences",
+   "level": "Undergraduate",
+   "headcount": 2593
+ },
+ {
+   "date": 2012,
+   "college": "School of Allied Health Sciences",
+   "level": "Graduate",
+   "headcount": 566
+ },
+ {
+   "date": 2013,
+   "college": "School of Allied Health Sciences",
+   "level": "Graduate",
+   "headcount": 453
+ },
+ {
+   "date": 2014,
+   "college": "School of Allied Health Sciences",
+   "level": "Graduate",
+   "headcount": 442
+ },
+ {
+   "date": 2015,
+   "college": "School of Allied Health Sciences",
+   "level": "Graduate",
+   "headcount": 419
+ },
+ {
+   "date": 2016,
+   "college": "School of Allied Health Sciences",
+   "level": "Graduate",
+   "headcount": 440
+ },
+ {
+   "date": 2017,
+   "college": "School of Allied Health Sciences",
+   "level": "Graduate",
+   "headcount": 421
+ },
+ {
+   "date": 2012,
+   "college": "School of Allied Health Sciences",
+   "level": "Professional",
+   "headcount": 169
+ },
+ {
+   "date": 2013,
+   "college": "School of Allied Health Sciences",
+   "level": "Professional",
+   "headcount": 183
+ },
+ {
+   "date": 2014,
+   "college": "School of Allied Health Sciences",
+   "level": "Professional",
+   "headcount": 106
+ },
+ {
+   "date": 2015,
+   "college": "School of Allied Health Sciences",
+   "level": "Professional",
+   "headcount": 164
+ },
+ {
+   "date": 2016,
+   "college": "School of Allied Health Sciences",
+   "level": "Professional",
+   "headcount": 139
+ },
+ {
+   "date": 2017,
+   "college": "School of Allied Health Sciences",
+   "level": "Professional",
+   "headcount": 195
+ },
+ {
+   "date": 2012,
+   "college": "College of Business",
+   "level": "Undergraduate",
+   "headcount": 2537
+ },
+ {
+   "date": 2013,
+   "college": "College of Business",
+   "level": "Undergraduate",
+   "headcount": 2354
+ },
+ {
+   "date": 2014,
+   "college": "College of Business",
+   "level": "Undergraduate",
+   "headcount": 2310
+ },
+ {
+   "date": 2015,
+   "college": "College of Business",
+   "level": "Undergraduate",
+   "headcount": 2340
+ },
+ {
+   "date": 2016,
+   "college": "College of Business",
+   "level": "Undergraduate",
+   "headcount": 2378
+ },
+ {
+   "date": 2017,
+   "college": "College of Business",
+   "level": "Undergraduate",
+   "headcount": 2555
+ },
+ {
+   "date": 2012,
+   "college": "College of Business",
+   "level": "Graduate",
+   "headcount": 334
+ },
+ {
+   "date": 2013,
+   "college": "College of Business",
+   "level": "Graduate",
+   "headcount": 510
+ },
+ {
+   "date": 2014,
+   "college": "College of Business",
+   "level": "Graduate",
+   "headcount": 585
+ },
+ {
+   "date": 2015,
+   "college": "College of Business",
+   "level": "Graduate",
+   "headcount": 506
+ },
+ {
+   "date": 2016,
+   "college": "College of Business",
+   "level": "Graduate",
+   "headcount": 532
+ },
+ {
+   "date": 2017,
+   "college": "College of Business",
+   "level": "Graduate",
+   "headcount": 550
+ },
+ {
+   "date": 2012,
+   "college": "College of Business",
+   "level": "Professional",
+   "headcount": 182
+ },
+ {
+   "date": 2013,
+   "college": "College of Business",
+   "level": "Professional",
+   "headcount": 168
+ },
+ {
+   "date": 2014,
+   "college": "College of Business",
+   "level": "Professional",
+   "headcount": 179
+ },
+ {
+   "date": 2015,
+   "college": "College of Business",
+   "level": "Professional",
+   "headcount": 109
+ },
+ {
+   "date": 2016,
+   "college": "College of Business",
+   "level": "Professional",
+   "headcount": 158
+ },
+ {
+   "date": 2017,
+   "college": "College of Business",
+   "level": "Professional",
+   "headcount": 128
+ },
+ {
+   "date": 2012,
+   "college": "School of Community Health Sciences",
+   "level": "Undergraduate",
+   "headcount": 2596
+ },
+ {
+   "date": 2013,
+   "college": "School of Community Health Sciences",
+   "level": "Undergraduate",
+   "headcount": 2651
+ },
+ {
+   "date": 2014,
+   "college": "School of Community Health Sciences",
+   "level": "Undergraduate",
+   "headcount": 2633
+ },
+ {
+   "date": 2015,
+   "college": "School of Community Health Sciences",
+   "level": "Undergraduate",
+   "headcount": 2452
+ },
+ {
+   "date": 2016,
+   "college": "School of Community Health Sciences",
+   "level": "Undergraduate",
+   "headcount": 2472
+ },
+ {
+   "date": 2017,
+   "college": "School of Community Health Sciences",
+   "level": "Undergraduate",
+   "headcount": 2480
+ },
+ {
+   "date": 2012,
+   "college": "School of Community Health Sciences",
+   "level": "Graduate",
+   "headcount": 479
+ },
+ {
+   "date": 2013,
+   "college": "School of Community Health Sciences",
+   "level": "Graduate",
+   "headcount": 334
+ },
+ {
+   "date": 2014,
+   "college": "School of Community Health Sciences",
+   "level": "Graduate",
+   "headcount": 309
+ },
+ {
+   "date": 2015,
+   "college": "School of Community Health Sciences",
+   "level": "Graduate",
+   "headcount": 402
+ },
+ {
+   "date": 2016,
+   "college": "School of Community Health Sciences",
+   "level": "Graduate",
+   "headcount": 408
+ },
+ {
+   "date": 2017,
+   "college": "School of Community Health Sciences",
+   "level": "Graduate",
+   "headcount": 373
+ },
+ {
+   "date": 2012,
+   "college": "School of Community Health Sciences",
+   "level": "Professional",
+   "headcount": 108
+ },
+ {
+   "date": 2013,
+   "college": "School of Community Health Sciences",
+   "level": "Professional",
+   "headcount": 108
+ },
+ {
+   "date": 2014,
+   "college": "School of Community Health Sciences",
+   "level": "Professional",
+   "headcount": 133
+ },
+ {
+   "date": 2015,
+   "college": "School of Community Health Sciences",
+   "level": "Professional",
+   "headcount": 143
+ },
+ {
+   "date": 2016,
+   "college": "School of Community Health Sciences",
+   "level": "Professional",
+   "headcount": 193
+ },
+ {
+   "date": 2017,
+   "college": "School of Community Health Sciences",
+   "level": "Professional",
+   "headcount": 169
+ },
+ {
+   "date": 2012,
+   "college": "College of Education",
+   "level": "Undergraduate",
+   "headcount": 2655
+ },
+ {
+   "date": 2013,
+   "college": "College of Education",
+   "level": "Undergraduate",
+   "headcount": 2375
+ },
+ {
+   "date": 2014,
+   "college": "College of Education",
+   "level": "Undergraduate",
+   "headcount": 2333
+ },
+ {
+   "date": 2015,
+   "college": "College of Education",
+   "level": "Undergraduate",
+   "headcount": 2449
+ },
+ {
+   "date": 2016,
+   "college": "College of Education",
+   "level": "Undergraduate",
+   "headcount": 2530
+ },
+ {
+   "date": 2017,
+   "college": "College of Education",
+   "level": "Undergraduate",
+   "headcount": 2611
+ },
+ {
+   "date": 2012,
+   "college": "College of Education",
+   "level": "Graduate",
+   "headcount": 469
+ },
+ {
+   "date": 2013,
+   "college": "College of Education",
+   "level": "Graduate",
+   "headcount": 557
+ },
+ {
+   "date": 2014,
+   "college": "College of Education",
+   "level": "Graduate",
+   "headcount": 330
+ },
+ {
+   "date": 2015,
+   "college": "College of Education",
+   "level": "Graduate",
+   "headcount": 536
+ },
+ {
+   "date": 2016,
+   "college": "College of Education",
+   "level": "Graduate",
+   "headcount": 427
+ },
+ {
+   "date": 2017,
+   "college": "College of Education",
+   "level": "Graduate",
+   "headcount": 436
+ },
+ {
+   "date": 2012,
+   "college": "College of Education",
+   "level": "Professional",
+   "headcount": 182
+ },
+ {
+   "date": 2013,
+   "college": "College of Education",
+   "level": "Professional",
+   "headcount": 172
+ },
+ {
+   "date": 2014,
+   "college": "College of Education",
+   "level": "Professional",
+   "headcount": 102
+ },
+ {
+   "date": 2015,
+   "college": "College of Education",
+   "level": "Professional",
+   "headcount": 188
+ },
+ {
+   "date": 2016,
+   "college": "College of Education",
+   "level": "Professional",
+   "headcount": 135
+ },
+ {
+   "date": 2017,
+   "college": "College of Education",
+   "level": "Professional",
+   "headcount": 103
+ }
+]

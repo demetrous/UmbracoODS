@@ -1,0 +1,29 @@
+﻿@inherits UmbracoViewPage
+
+<div class="row mb-5 ">
+    <div class="col">
+        <div class="page-header">
+            <h3 id="student-profile" class="text-center mb-3">
+                @(Umbraco.AssignedContentItem.HasProperty("title")
+                                            && Umbraco.AssignedContentItem.GetPropertyValue("title") != null
+                                            && !string.IsNullOrEmpty(Umbraco.AssignedContentItem.GetPropertyValue("title").ToString())
+                                            ? Umbraco.AssignedContentItem.GetPropertyValue("title")
+                                            : Umbraco.AssignedContentItem.Name)
+            </h3>
+            <p>
+                @(Umbraco.AssignedContentItem.HasProperty("subtitle")
+                                                    && Umbraco.AssignedContentItem.GetPropertyValue("subtitle") != null
+                                                    && !string.IsNullOrEmpty(Umbraco.AssignedContentItem.GetPropertyValue("subtitle").ToString())
+                                                    ? Html.Raw(Umbraco.AssignedContentItem.GetPropertyValue("subtitle"))
+                                                    : null)
+
+                
+            </p>
+
+            <p>
+                @Html.Raw(Umbraco.AssignedContentItem.GetPropertyValue("mainContent"))
+            </p>
+
+        </div>
+    </div>
+</div>

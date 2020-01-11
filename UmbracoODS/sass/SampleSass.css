@@ -1,0 +1,4 @@
+﻿.sample-parent-class {
+  background-color: blue; }
+  .sample-parent-class .sample-child-class {
+    color: red; }

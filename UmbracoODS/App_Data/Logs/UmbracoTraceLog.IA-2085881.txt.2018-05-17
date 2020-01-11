@@ -1,0 +1,18 @@
+﻿ 2018-05-17 02:33:32,592 [P17776/D7/T403] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-05-16 02:33:32
+ 2018-05-17 06:33:33,057 [P17776/D7/T157] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-05-16 06:33:33
+ 2018-05-17 07:13:49,702 [P17776/D7/T72] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username demetrous@gmail.com from IP address ::1
+ 2018-05-17 07:13:49,704 [P17776/D7/T72] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: demetrous@gmail.com logged in from IP address ::1
+ 2018-05-17 07:33:27,694 [P17776/D7/T152] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: demetrous@gmail.com, IP Address: ::1
+ 2018-05-17 07:45:17,166 [P17776/D7/T391] WARN  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: Unprotect ticket failed
+ 2018-05-17 07:45:17,243 [P17776/D7/T391] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username demetrous@gmail.com from IP address ::1
+ 2018-05-17 07:45:17,244 [P17776/D7/T391] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: demetrous@gmail.com logged in from IP address ::1
+ 2018-05-17 07:45:17,266 [P17776/D7/T391] ERROR Umbraco.Web.WebApi.Filters.AngularAntiForgeryHelper - Could not validate XSRF token
+System.Web.Mvc.HttpAntiForgeryException (0x80004005): The anti-forgery token could not be decrypted. If this application is hosted by a Web Farm or cluster, ensure that all machines are running the same version of ASP.NET Web Pages and that the <machineKey> configuration specifies explicit encryption and validation keys. AutoGenerate cannot be used in a cluster.
+   at System.Web.Helpers.AntiXsrf.AntiForgeryTokenSerializer.Deserialize(String serializedToken)
+   at System.Web.Helpers.AntiXsrf.AntiForgeryWorker.Validate(HttpContextBase httpContext, String cookieToken, String formToken)
+   at System.Web.Helpers.AntiForgery.Validate(String cookieToken, String formToken)
+   at Umbraco.Web.WebApi.Filters.AngularAntiForgeryHelper.ValidateTokens(String cookieToken, String headerToken)
+ 2018-05-17 10:33:33,689 [P17776/D7/T418] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-05-16 10:33:33
+ 2018-05-17 14:33:34,160 [P17776/D7/T40] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-05-16 14:33:34
+ 2018-05-17 18:33:34,772 [P17776/D7/T51] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-05-16 18:33:34
+ 2018-05-17 22:33:35,238 [P17776/D7/T100] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-05-16 22:33:35

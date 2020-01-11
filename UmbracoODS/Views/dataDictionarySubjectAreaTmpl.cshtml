@@ -1,0 +1,30 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	Layout = "WebBase.cshtml";
+}
+
+<div class="container main-content">
+
+    <h3 class="mb-4">@Umbraco.Field("title")</h3>
+
+   
+
+    <div class="row mb-4">
+        <div class="col">
+            <h4>Description</h4>
+            @Umbraco.Field("description")
+        </div>
+
+    </div>
+    
+    <div class="row mb-4">
+        <div class="col">
+            here goes the list of ITEM GROUPS
+        </div>
+
+    </div>
+  
+
+</div>
+
+

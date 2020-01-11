@@ -1,0 +1,77 @@
+﻿@using UmbracoODS.ObieeProd;
+@using System.Text.RegularExpressions;
+
+
+@{ var sawService = new SAWSessionServiceSoapClient();
+
+
+
+    var sessionId = sawService.logon("karaulan", "JU5+moveforward");
+
+
+    string pageId = "";
+    string reportId = "Report1";
+
+
+
+
+    var repRef = new ReportRef();
+    //Pass report name along path and Request XML to ReportRef object
+    //repRef.reportPath = @"/users/administrator/#cachehitsbyusers";
+    repRef.reportPath = @"/shared/College of Sciences/Admissions Funnel Reports/Spring 2012";
+
+    //repRef.reportXml = "xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"xmlVersion=\"200705140\"xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"xmlns:sawx=\"com.siebel.analytics.web/expression/v1\">\" \"columnID=\"c1\"/>formula=\"SUM(S_NQ_ACCT.NUM_CACHE_HITS)\"columnID=\"c4\"/>";
+
+
+
+    //repRef.reportXml = "<saw:report xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:saw=\"com.siebel.analytics.web/report/v1.1\" xmlns:sawx=\"com.siebel.analytics.web/expression/v1.1\" xmlVersion=\"201201160\">    <saw:criteria subjectArea=\"&quot;Admissions Census&quot;\" xsi:type=\"saw:simpleCriteria\" withinHierarchy=\"true\">       <saw:columns>          <saw:column columnID=\"c6\" xsi:type=\"saw:regularColumn\" forceGroupBy=\"true\">             <saw:columnFormula>                <sawx:expr xsi:type=\"sawx:sqlExpression\">\"Applicant Academics (CPP)\".Career</sawx:expr></saw:columnFormula></saw:column>          <saw:column columnID=\"c11\" xsi:type=\"saw:regularColumn\" forceGroupBy=\"true\">             <saw:columnFormula>                <sawx:expr xsi:type=\"sawx:sqlExpression\">\"Applicant Academics (CPP)\".\"College Name\"</sawx:expr></saw:columnFormula></saw:column>          <saw:column columnID=\"c12\" xsi:type=\"saw:regularColumn\" forceGroupBy=\"true\">             <saw:columnFormula>                <sawx:expr xsi:type=\"sawx:sqlExpression\">\"Applicant Academics (CPP)\".\"Department Name\"</sawx:expr></saw:columnFormula></saw:column>          <saw:column columnID=\"c7\" xsi:type=\"saw:regularColumn\" forceGroupBy=\"true\">             <saw:columnFormula>                <sawx:expr xsi:type=\"sawx:sqlExpression\">\"Census Term Selection\".\"Census Date\"</sawx:expr></saw:columnFormula></saw:column>          <saw:column columnID=\"c9\" xsi:type=\"saw:regularColumn\" forceGroupBy=\"true\">             <saw:columnFormula>                <sawx:expr xsi:type=\"sawx:sqlExpression\">\"Census Term Selection\".Term</sawx:expr></saw:columnFormula></saw:column>          <saw:column columnID=\"c4\" xsi:type=\"saw:regularColumn\" forceGroupBy=\"true\">             <saw:columnFormula>                <sawx:expr xsi:type=\"sawx:sqlExpression\">Measures.\"Applicant Count\"</sawx:expr></saw:columnFormula></saw:column>          <saw:column columnID=\"c10\" xsi:type=\"saw:regularColumn\" forceGroupBy=\"true\">             <saw:columnFormula>                <sawx:expr xsi:type=\"sawx:sqlExpression\">Measures.\"Admit Count\"</sawx:expr></saw:columnFormula></saw:column>          <saw:column columnID=\"c8\" xsi:type=\"saw:regularColumn\" forceGroupBy=\"true\">             <saw:tableHeading>                <saw:caption>                   <saw:text>Measures</saw:text></saw:caption></saw:tableHeading>             <saw:columnHeading>                <saw:caption>                   <saw:text>Enrolled Count</saw:text></saw:caption></saw:columnHeading>             <saw:columnFormula>                <sawx:expr xsi:type=\"sawx:sqlExpression\">FILTER(Measures.\"Admit Count\" USING (\"Applicant Academics (CPP)\".\"Enrolled in Career\" = 'Y'))</sawx:expr></saw:columnFormula></saw:column></saw:columns>       <saw:filter>          <sawx:expr xsi:type=\"sawx:logical\" op=\"and\">             <sawx:expr xsi:type=\"sawx:comparison\" op=\"equal\">                <sawx:expr xsi:type=\"sawx:sqlExpression\">\"Applicant Academics (CPP)\".Career</sawx:expr>                <sawx:expr xsi:type=\"xsd:string\">UGRD</sawx:expr></sawx:expr>             <sawx:expr xsi:type=\"sawx:comparison\" op=\"equal\">                <sawx:expr xsi:type=\"sawx:sqlExpression\">\"Census Term Selection\".Term</sawx:expr>                <sawx:expr xsi:type=\"xsd:string\">2122</sawx:expr></sawx:expr>             <sawx:expr xsi:type=\"sawx:comparison\" op=\"equal\">                <sawx:expr xsi:type=\"sawx:sqlExpression\">\"Census Term Selection\".\"Census Date\"</sawx:expr>                <sawx:expr xsi:type=\"xsd:dateTime\">2012-02-03T00:00:00</sawx:expr></sawx:expr>             <sawx:expr xsi:type=\"sawx:comparison\" op=\"equal\">                <sawx:expr xsi:type=\"sawx:sqlExpression\">\"Applicant Academics (CPP)\".\"College Name\"</sawx:expr>                <sawx:expr xsi:type=\"xsd:string\">College of Sciences</sawx:expr></sawx:expr></sawx:expr></saw:filter></saw:criteria>    <saw:views currentView=\"2\">       <saw:view xsi:type=\"saw:compoundView\" name=\"compoundView!1\">          <saw:cvTable>             <saw:cvRow>                <saw:cvCell viewName=\"titleView!1\">                   <saw:displayFormat /></saw:cvCell></saw:cvRow>             <saw:cvRow>                <saw:cvCell viewName=\"tableView!1\">                   <saw:displayFormat /></saw:cvCell></saw:cvRow></saw:cvTable></saw:view>       <saw:view xsi:type=\"saw:titleView\" name=\"titleView!1\" />       <saw:view xsi:type=\"saw:tableView\" name=\"tableView!1\">          <saw:edges>             <saw:edge axis=\"page\" showColumnHeader=\"true\" />             <saw:edge axis=\"section\" />             <saw:edge axis=\"row\" showColumnHeader=\"true\">                <saw:displayGrandTotals>                   <saw:displayGrandTotal grandTotalPosition=\"after\" id=\"t0\" /></saw:displayGrandTotals>                <saw:edgeLayers>                   <saw:edgeLayer type=\"column\" columnID=\"c6\" />                   <saw:edgeLayer type=\"column\" columnID=\"c11\" />                   <saw:edgeLayer type=\"column\" columnID=\"c12\" />                   <saw:edgeLayer type=\"column\" columnID=\"c7\" />                   <saw:edgeLayer type=\"column\" columnID=\"c9\" />                   <saw:edgeLayer type=\"column\" columnID=\"c4\" />                   <saw:edgeLayer type=\"column\" columnID=\"c10\" />                   <saw:edgeLayer type=\"column\" columnID=\"c8\" /></saw:edgeLayers></saw:edge>             <saw:edge axis=\"column\" /></saw:edges></saw:view></saw:views></saw:report>";
+
+    var xmlViewService = new XmlViewServiceSoapClient();
+    var xMLQueryExecutionOptions = new XMLQueryExecutionOptions();
+    xMLQueryExecutionOptions.maxRowsPerPage = 100;
+    xMLQueryExecutionOptions.refresh = true;
+    //Pass report parameters if you have
+    var reportParams = new ReportParams();
+    //Execute XML Query
+    var queryResults = xmlViewService.executeXMLQuery(repRef, XMLQueryOutputFormat.SAWRowsetSchemaAndData, xMLQueryExecutionOptions, reportParams, sessionId);
+    //Output as you required
+    Console.WriteLine(queryResults.rowset);
+
+
+    var rows = queryResults.rowset;
+
+    string toBeSearched = "<Row>";
+                    string code = rows.Substring(rows.IndexOf(toBeSearched));
+
+    //var input = "<tag>text</tag>";
+    var result = Regex.Replace(code, @"(Colum)\w+", "td")
+    .Replace("Row", "tr")
+    .Replace("</rowset>", "")
+    .Replace("\n", "")
+    .Replace("\t", "");
+
+    ReportHTMLOptions htmlOptions = new ReportHTMLOptions();
+    //htmlOptions.enableDelayLoading = true;
+    //htmlOptions.linkMode = "InPlace";
+
+
+    var htmlClient = new HtmlViewServiceSoapClient();
+
+    pageId = htmlClient.startPage(null, sessionId);
+
+    //htmlClient.setBridge(request.getContextPath() + "/BridgeServlet", sessionId);
+    htmlClient.addReportToPage(pageId, reportId, repRef, null, null, htmlOptions, sessionId);
+
+    string reportHtml = "";
+    reportHtml = htmlClient.getHeadersHtml(pageId, sessionId);
+    reportHtml = reportHtml + htmlClient.getHtmlForReport(pageId, reportId, sessionId);
+    reportHtml = reportHtml + htmlClient.getCommonBodyHtml(pageId, sessionId);
+
+    sawService.logoff(sessionId);
+
+    <table class="table table-hover">@Html.Raw(result)</table>
+    <a href="https://analytics.unlv.nevada.edu/analytics/saw.dll?PortalGo&Action=prompt&path=%2Fshared%2FCollege%20of%20Sciences%2FAdmissions%20Funnel%20Reports%2FSpring%202012" target="_blank">Data Source</a>
+
+}
+
+

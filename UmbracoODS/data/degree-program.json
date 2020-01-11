@@ -1,0 +1,110 @@
+[
+ {
+   "date": 2012,
+   "college": "",
+   "level": "Undergraduate",
+   "headcount": 22432
+ },
+ {
+   "date": 2013,
+   "college": "",
+   "level": "Undergraduate",
+   "headcount": 23099
+ },
+ {
+   "date": 2014,
+   "college": "",
+   "level": "Undergraduate",
+   "headcount": 23813
+ },
+ {
+   "date": 2015,
+   "college": "",
+   "level": "Undergraduate",
+   "headcount": 23801
+ },
+ {
+   "date": 2016,
+   "college": "",
+   "level": "Undergraduate",
+   "headcount": 24715
+ },
+ {
+   "date": 2017,
+   "college": "",
+   "level": "Undergraduate",
+   "headcount": 25282
+ },
+ {
+   "date": 2012,
+   "college": "",
+   "level": "Graduate",
+   "headcount": 4204
+ },
+ {
+   "date": 2013,
+   "college": "",
+   "level": "Graduate",
+   "headcount": 4023
+ },
+ {
+   "date": 2014,
+   "college": "",
+   "level": "Graduate",
+   "headcount": 4010
+ },
+ {
+   "date": 2015,
+   "college": "",
+   "level": "Graduate",
+   "headcount": 4106
+ },
+ {
+   "date": 2016,
+   "college": "",
+   "level": "Graduate",
+   "headcount": 4288
+ },
+ {
+   "date": 2017,
+   "college": "",
+   "level": "Graduate",
+   "headcount": 4429
+ },
+ {
+   "date": 2012,
+   "college": "",
+   "level": "Professional",
+   "headcount": 766
+ },
+ {
+   "date": 2013,
+   "college": "",
+   "level": "Professional",
+   "headcount": 742
+ },
+ {
+   "date": 2014,
+   "college": "",
+   "level": "Professional",
+   "headcount": 715
+ },
+ {
+   "date": 2015,
+   "college": "",
+   "level": "Professional",
+   "headcount": 713
+ },
+ {
+   "date": 2016,
+   "college": "",
+   "level": "Professional",
+   "headcount": 717
+ },
+ {
+   "date": 2017,
+   "college": "",
+   "level": "Professional",
+   "headcount": 776
+ }
+]

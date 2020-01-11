@@ -1,0 +1,54 @@
+﻿ 2019-01-30 10:24:30,165 [P6832/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.10.4 application starting on IA-2085881
+ 2019-01-30 10:24:30,216 [P6832/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2019-01-30 10:24:30,233 [P6832/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 16ms)
+ 2019-01-30 10:24:30,355 [P6832/D2/T1] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2019-01-30 10:24:30,360 [P6832/D2/T1] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2019-01-30 10:24:30,363 [P6832/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-01-30 10:24:30,434 [P6832/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 71ms)
+ 2019-01-30 10:24:30,434 [P6832/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
+ 2019-01-30 10:24:30,436 [P6832/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 1ms)
+ 2019-01-30 10:24:30,483 [P6832/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-01-30 10:24:30,484 [P6832/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 1ms)
+ 2019-01-30 10:24:30,484 [P6832/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2019-01-30 10:24:30,485 [P6832/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 0ms)
+ 2019-01-30 10:24:30,486 [P6832/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-01-30 10:24:30,486 [P6832/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-01-30 10:24:30,486 [P6832/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2019-01-30 10:24:30,489 [P6832/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 2ms)
+ 2019-01-30 10:24:30,517 [P6832/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-01-30 10:24:30,517 [P6832/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-01-30 10:24:30,518 [P6832/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
+ 2019-01-30 10:24:30,518 [P6832/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 0ms)
+ 2019-01-30 10:24:30,519 [P6832/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-01-30 10:24:30,519 [P6832/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-01-30 10:24:30,519 [P6832/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
+ 2019-01-30 10:24:30,520 [P6832/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 1ms)
+ 2019-01-30 10:24:33,782 [P6832/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2019-01-30 10:24:34,386 [P6832/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2019-01-30 10:24:34,777 [P6832/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2019-01-30 10:24:34,778 [P6832/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 4
+ 2019-01-30 10:24:34,803 [P6832/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 4828ms)
+ 2019-01-30 10:24:35,283 [P6832/D2/T10] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - New ApplicationUrl detected: http://localhost:80/UmbracoODS/umbraco
+ 2019-01-30 10:24:35,287 [P6832/D2/T11] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:80/UmbracoODS/umbraco (UmbracoModule request)
+ 2019-01-30 10:24:35,287 [P6832/D2/T10] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:80/UmbracoODS/umbraco (UmbracoModule request)
+ 2019-01-30 10:24:36,487 [P6832/D2/T11] INFO  umbraco.content - Load Xml from file...
+ 2019-01-30 10:24:36,499 [P6832/D2/T11] INFO  umbraco.content - Loaded Xml from file.
+ 2019-01-30 10:24:37,464 [P6832/D2/T10] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-01-30 10:24:37,465 [P6832/D2/T10] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-01-30 10:24:37,465 [P6832/D2/T10] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IParameterEditor
+ 2019-01-30 10:24:37,466 [P6832/D2/T10] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IParameterEditor (took 0ms)
+ 2019-01-30 10:24:40,845 [P6832/D2/T11] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type UmbracoODS.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2019-01-30 10:24:40,845 [P6832/D2/T10] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type UmbracoODS.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2019-01-30 10:24:47,815 [P6832/D2/T11] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-01-30 10:24:47,815 [P6832/D2/T11] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-01-30 10:24:47,815 [P6832/D2/T11] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2019-01-30 10:24:47,816 [P6832/D2/T11] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper (took 0ms)
+ 2019-01-30 10:24:52,638 [P6832/D2/T15] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-01-30 10:24:52,639 [P6832/D2/T15] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-01-30 10:24:52,639 [P6832/D2/T15] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Deploy.IServiceConnector
+ 2019-01-30 10:24:52,639 [P6832/D2/T15] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Deploy.IServiceConnector (took 0ms)
+ 2019-01-30 10:25:36,587 [P6832/D2/T11] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2019-01-29 10:25:36
+ 2019-01-30 10:51:31,046 [P6832/D2/T133] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type UmbracoODS.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2019-01-30 14:25:37,122 [P6832/D2/T37] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2019-01-29 14:25:37
+ 2019-01-30 18:25:37,584 [P6832/D2/T33] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2019-01-29 18:25:37
+ 2019-01-30 22:25:38,174 [P6832/D2/T67] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2019-01-29 22:25:38

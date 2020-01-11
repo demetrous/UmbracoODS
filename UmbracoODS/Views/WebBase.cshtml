@@ -1,0 +1,92 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+@{
+    Layout = null;  
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="/image/x-icon" href="~/img/favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Office of Decision Support</title>
+    <link rel="stylesheet" href="~/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/css/bootstrap.css">
+    <link rel="stylesheet" href="~/css/style.css">
+    @*<link href="~/css/style(NavShrinkTEMP).css" rel="stylesheet" />*@
+
+    @RenderSection("Head", false)  
+
+</head>
+
+<body id="home">
+
+    
+
+    @{ Html.RenderAction("RenderHeader", "SiteLayout");}
+
+    @*@{ Html.RenderPartial("SiteLayout/_Breadcrumb");}*@
+
+    @RenderSection("BreadCrumb", false)
+
+    @RenderBody()
+       
+    @{ Html.RenderPartial("SiteLayout/_Footer");}
+    @*@{ Html.RenderAction("RenderFooter", "SiteLayout");}*@
+
+
+
+    <script src="~/scripts/jquery.min.js"></script>
+    <script src="~/scripts/popper.min.js"></script>
+    <script src="~/scripts/bootstrap.min.js"></script>
+    <script src="~/scripts/navbar-fixed.js"></script>
+    @*<script src="~/scripts/d3.v4.11.min.js"></script>*@
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    @*<script src="https://ir.unlv.edu/external-scripts/obiee-inject.js"></script>*@
+
+    @RenderSection("ScriptsBottom", false)
+    @RenderSection("ScriptsBottomPartView", false)
+
+    @*REWORK - MOVE TO A SEPARATE SCRIPTS FILE*@
+    <script>
+        $('.dropdown-menu a.dropdown-toggle').on('click', function (e) {
+            if (!$(this).next().hasClass('show')) {
+                $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+            }
+            var $subMenu = $(this).next(".dropdown-menu");
+            $subMenu.toggleClass('show');
+
+
+            $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
+                $('.dropdown-submenu .show').removeClass("show");
+            });
+
+
+            return false;
+        });
+
+
+                        //$.getJSON("http://localhost/UmbracoPaulSealv2/umbraco/api/PostsApi/getjson", function (data) {
+
+                        //    $("<p>" + data + "</p>").appendTo("body");
+                        //});
+
+                        /**/
+
+                        /**/
+
+
+
+    </script>
+
+
+</body>
+
+</html>
+
+
+
+

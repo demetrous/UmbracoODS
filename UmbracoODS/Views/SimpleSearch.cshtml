@@ -1,0 +1,66 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "WebBase.cshtml";
+
+    var searchQuery = Request.QueryString["query"];
+}
+
+<style>
+    #searchBox {
+        border: 5px solid rgba(0, 0, 0, 0.15);
+        border-radius: 2em;
+        font-size: 2em;
+    }
+</style>
+
+<div class="container main-content">
+
+
+    <div class="row mb-5">
+        <div class="col-12">
+
+            <form action="/simple-search/" method="GET">
+                <input id="searchBox" type="text" class="form-control" placeholder="Search..." name="query" value="@searchQuery">
+                <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse"></button>
+            </form>
+
+        </div>
+    </div>
+
+
+    @{
+
+
+        if (!string.IsNullOrEmpty(searchQuery))
+        {
+    <div>
+        @*<p>Your search results for <strong>@searchQuery</strong></p>
+        <ul>
+                 @foreach (var result in Umbraco.Search(searchQuery))
+                 {
+                     <li>
+                         <a href="@result.Url">@result.Name</a>
+                     </li>
+                 }
+             </ul>*@
+
+        @foreach (var result in Umbraco.Search(searchQuery))
+        {
+            <div class="card my-3">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="@result.Url">@result.Name</a>
+                    </h5>
+                    <p class="card-text font-weight-bold">
+                        @result.GetPropertyValue("subtitle")
+                    </p>
+                </div>
+            </div>
+        }
+
+
+    </div>
+        }
+    }
+</div>
+

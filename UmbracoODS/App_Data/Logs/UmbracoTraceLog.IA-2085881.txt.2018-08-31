@@ -1,0 +1,31 @@
+﻿ 2018-08-31 03:25:17,563 [P10440/D5/T569] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-08-30 03:25:17
+ 2018-08-31 06:32:38,053 [P10440/D5/T76] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username demetrous@gmail.com from IP address ::1
+ 2018-08-31 06:32:38,053 [P10440/D5/T76] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: demetrous@gmail.com logged in from IP address ::1
+ 2018-08-31 06:52:12,524 [P10440/D5/T56] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: demetrous@gmail.com, IP Address: ::1
+ 2018-08-31 07:25:05,977 [P10440/D5/T592] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username demetrous@gmail.com from IP address ::1
+ 2018-08-31 07:25:05,978 [P10440/D5/T592] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: demetrous@gmail.com logged in from IP address ::1
+ 2018-08-31 07:25:18,128 [P10440/D5/T588] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-08-30 07:25:18
+ 2018-08-31 07:27:05,301 [P10440/D5/T569] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Administration and Staff Instructions' with Id '1129' has been published.
+ 2018-08-31 07:27:09,364 [P10440/D5/T75] INFO  umbraco.content - Save Xml to file...
+ 2018-08-31 07:27:09,377 [P10440/D5/T75] INFO  umbraco.content - Saved Xml to file.
+ 2018-08-31 07:27:57,546 [P10440/D5/T558] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Administration and Staff Instructions' with Id '1129' has been published.
+ 2018-08-31 07:28:01,602 [P10440/D5/T181] INFO  umbraco.content - Save Xml to file...
+ 2018-08-31 07:28:01,610 [P10440/D5/T181] INFO  umbraco.content - Saved Xml to file.
+ 2018-08-31 07:44:38,647 [P10440/D5/T366] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: demetrous@gmail.com, IP Address: ::1
+ 2018-08-31 08:05:41,673 [P10440/D5/T244] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username demetrous@gmail.com from IP address ::1
+ 2018-08-31 08:05:41,674 [P10440/D5/T244] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: demetrous@gmail.com logged in from IP address ::1
+ 2018-08-31 08:25:16,746 [P10440/D5/T403] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: demetrous@gmail.com, IP Address: ::1
+ 2018-08-31 10:21:11,939 [P10440/D5/T581] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username demetrous@gmail.com from IP address ::1
+ 2018-08-31 10:21:11,940 [P10440/D5/T581] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: demetrous@gmail.com logged in from IP address ::1
+ 2018-08-31 10:40:44,059 [P10440/D5/T198] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: demetrous@gmail.com, IP Address: ::1
+ 2018-08-31 10:53:09,638 [P10440/D5/T233] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username demetrous@gmail.com from IP address ::1
+ 2018-08-31 10:53:09,639 [P10440/D5/T233] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: demetrous@gmail.com logged in from IP address ::1
+ 2018-08-31 11:12:39,131 [P10440/D5/T554] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: demetrous@gmail.com, IP Address: ::1
+ 2018-08-31 11:12:45,128 [P10440/D5/T275] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: demetrous@gmail.com, IP Address: ::1
+ 2018-08-31 11:25:18,692 [P10440/D5/T551] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-08-30 11:25:18
+ 2018-08-31 13:57:01,241 [P10440/D5/T177] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username demetrous@gmail.com from IP address ::1
+ 2018-08-31 13:57:01,242 [P10440/D5/T177] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: demetrous@gmail.com logged in from IP address ::1
+ 2018-08-31 14:16:34,556 [P10440/D5/T274] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: demetrous@gmail.com, IP Address: ::1
+ 2018-08-31 15:25:19,260 [P10440/D5/T490] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-08-30 15:25:19
+ 2018-08-31 19:25:19,832 [P10440/D5/T202] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-08-30 19:25:19
+ 2018-08-31 23:25:20,395 [P10440/D5/T437] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-08-30 23:25:20

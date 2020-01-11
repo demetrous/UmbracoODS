@@ -1,0 +1,64 @@
+{
+  "name": "PS_ACAD_ORG_TBL",
+  "children": [
+    {
+      "name": "J_Stage_PS_ACAD_ORG_TBL",
+      "description": "CS(E) - Staging Server Job, This Server Job loads the incremental data from the Source Table PS_ACAD_ORG_TBL to the staging table PS_ACAD_ORG_TBL",
+      "children": [
+        {
+          "name": "J_Stage_PS_LV_ACDORG_K_Names",
+
+
+          "children": [
+            {
+              "name": "PS_LV_ACDORG_K"
+            },
+            {
+              "name": "PS_LV_SN_ACD_ORG_T"
+            }
+          ]
+        },
+        {
+          "name": "J_Stage_PS_LV_SN_ACD_ORG_T",
+          "children": [
+            {
+              "name": "J_Stage_PS_LV_CNA_APPL_COL",
+              "description": "ETL:  J_Stage_PS_LV_CNA_APPL_COL  Populate the PS_LV_CNA_APPL_COL table with college-level applicant/admit/enrolled aggregations based on the CN enrollment mart records.  This table supports enrollment management applications, and should be replaced when an Admissions version of the EnrollmentStar is ready for action.  [2012-12-06, mje]",
+              "children": [
+                {
+                  "name": "PS_LV_CNR_ENRL",
+                  "children": [
+                    {
+                      "name": "J_Stage_PS_LV_CN_TERMS",
+                      "description": "Snapshot ETL:  J_STAGE_PS_LV_CN_TERMS  Populates PS_LV_CN_TERMS table to support the Enrollment and Admissions Census  The literal source is the CN_ENRL and the PS_LV_SN_TERMS_TBL [mat,  8/30/11"
+                    },
+                    {
+                      "name": "J_Stage_PS_LV_SN_PLN_OW_TR",
+                      "description": "Snapshot ETL:  J_Stage_PS_LV_SN_PLN_OW_TR  Populates the snapshot table PS_LV_SN_PLN_OW_TR.  The literal source is the staging table PS_LV_PLN_OW_TR_K.  [jb 2011-08-31]"
+                    },
+                    {
+                      "name": "J_Stage_PS_LV_CN_COHORTS"
+
+                    },
+                    {
+                      "name": "J_Stage_PS_LV_CNA_APPL_CAT"
+
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "J_Stage_PS_LV_CNA_APPL_COLCAT",
+              "description": "ETL:  J_Stage_PS_LV_CNA_APPL_COLCAT  Populate the PS_LV_CNA_APPL_COLCAT table with college-level applicant/admit/enrolled aggregations based on the CN enrollment mart records.  This table supports enrollment management applications, and should be replaced when an Admissions version of the EnrollmentStar is ready for action.  [2012-12-06, mje]"
+            },
+            {
+              "name": "J_Stage_PS_LV_CNA_ENRL",
+              "description": "ETL:  J_Stage_PS_LV_CNA_ENRL  Populate the PS_LV_CNA_ENRL table with FTE and SCH aggregations based on the CN enrollment mart records.  This table supports enrollment management applications, and should be replaced when the EnrollmentStar is ready for action.  [2012-12-06, mje]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

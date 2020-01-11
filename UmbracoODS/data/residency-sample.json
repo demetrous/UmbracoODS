@@ -1,0 +1,67 @@
+[
+  {
+    "date": 2012,
+    "residency": "Resident",
+    "headcount": 22338
+  },
+  {
+    "date": 2012,
+    "residency": "Non-Resident",
+    "headcount": 5051
+  },
+
+  {
+    "date": 2013,
+    "residency": "Resident",
+    "headcount": 22888
+  },
+  {
+    "date": 2013,
+    "residency": "Non-Resident",
+    "headcount": 4960
+  },
+
+  {
+    "date": 2014,
+    "residency": "Resident",
+    "headcount": 23539
+  },
+  {
+    "date": 2014,
+    "residency": "Non-Resident",
+    "headcount": 4976
+  },
+
+  {
+    "date": 2015,
+    "residency": "Resident",
+    "headcount": 24000
+  },
+  {
+    "date": 2015,
+    "residency": "Non-Resident",
+    "headcount": 4600
+  },
+
+  {
+    "date": 2016,
+    "residency": "Resident",
+    "headcount": 25033
+  },
+  {
+    "date": 2016,
+    "residency": "Non-Resident",
+    "headcount": 4669
+  },
+
+  {
+    "date": 2017,
+    "residency": "Resident",
+    "headcount": 25744
+  },
+  {
+    "date": 2017,
+    "residency": "Non-Resident",
+    "headcount": 4727
+  }
+]

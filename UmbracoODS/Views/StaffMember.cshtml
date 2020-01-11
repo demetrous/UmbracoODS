@@ -1,0 +1,59 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "WebBase.cshtml";
+
+    var photoUrl = Umbraco.AssignedContentItem.GetPropertyValue<IPublishedContent>("photo").Url;
+
+}
+
+<div class="staff-member-wrapper">
+
+    <div class="row img-stretch">
+        <div class="col-12">
+            <img src="@photoUrl" />
+        </div>
+    </div>
+
+    <div class="container staff-container">
+
+        <div class="row">
+            <div class="col-md-10 mx-auto employee-info">
+
+
+                <div class="employee-info-inner-top"></div>
+                <div class="employee-info-inner-bottom">
+
+
+                    <div class="employee-image text-center mb-5">
+                        <img alt="Headshot of Diane Z. Chase, Ph.D." class="img-fluid" src="@photoUrl">
+                    </div>
+
+                    <div class="text-center pb-5">
+                        <h2>@Umbraco.Field("fullName")</h2>
+                        <div class="subtitle">@Umbraco.Field("jobTitle")</div>
+                    </div>
+
+                    <div class="employee-contact">
+                        <strong>Department:</strong> @Umbraco.Field("department")<br>
+                        <strong>Office:</strong> @Umbraco.Field("office")<br>
+                        <strong>Mail Code:</strong> 1002<br>
+                        <strong>Phone:</strong> @Umbraco.Field("phone")<br>
+                        <strong>Fax:</strong> @Umbraco.Field("fax")<br>
+                        <strong>Email:</strong> <a href="mailto:@Umbraco.Field("email")">@Umbraco.Field("email")</a>
+                    </div>
+
+                    <div class="employee-bio">
+                        @Umbraco.Field("biography")                     
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+
+    </div>
+</div>

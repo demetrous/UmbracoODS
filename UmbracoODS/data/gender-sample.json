@@ -1,0 +1,68 @@
+[
+  {
+    "date": 2012,
+    "gender": "Male",
+    "headcount": 12229
+  },
+  {
+    "date": 2012,
+    "gender": "Female",
+    "headcount": 15160
+  },
+
+  {
+    "date": 2013,
+    "gender": "Male",
+    "headcount": 12360
+  },
+  {
+    "date": 2013,
+    "gender": "Female",
+    "headcount": 15488
+  },
+
+  {
+    "date": 2014,
+    "gender": "Male",
+    "headcount": 12711
+  },
+  {
+    "date": 2014,
+    "gender": "Female",
+    "headcount": 15804
+  },
+
+  {
+    "date": 2015,
+    "gender": "Male",
+    "headcount": 12552
+  },
+  {
+    "date": 2015,
+    "gender": "Female",
+    "headcount": 16048
+  },
+
+  {
+    "date": 2016,
+    "gender": "Male",
+    "headcount": 12771
+  },
+  {
+    "date": 2016,
+    "gender": "Female",
+    "headcount": 16931
+  },
+
+  {
+    "date": 2017,
+    "gender": "Male",
+    "headcount": 13065
+  },
+  {
+    "date": 2017,
+    "gender": "Female",
+    "headcount": 17406
+  }
+
+]

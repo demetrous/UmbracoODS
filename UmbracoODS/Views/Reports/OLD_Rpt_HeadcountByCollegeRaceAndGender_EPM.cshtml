@@ -1,0 +1,693 @@
+﻿<style>
+    .axis text {
+        font: 10px sans-serif;
+    }
+
+    .axis line,
+    .axis path {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+    }
+
+    .path-line {
+        fill: none;
+        stroke: yellow;
+        stroke-width: 1.5px;
+    }
+
+    svg {
+        background: #f0f0f0;
+    }
+
+    .axis .domain {
+        display: none;
+    }
+
+    .input-group-prepend {
+        margin-right: -1px;
+    }
+
+    .input-group-append, .input-group-prepend {
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .input-group {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-align: stretch;
+        align-items: stretch;
+        width: 100%;
+    }
+
+        .input-group > .input-group-prepend > .input-group-text {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+    .input-group-text {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: .375rem .75rem;
+        margin-bottom: 0;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        text-align: center;
+        white-space: nowrap;
+        background-color: #e9ecef;
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+    }
+
+    .input-group:not(:first-child) {
+        margin-left: 2em;
+    }
+</style>
+
+
+
+
+<script>
+
+
+    function generateHtmlTable(tableData, c) { // c - containerId
+        // get the reference for the placeholder
+        var placeholder = document.getElementById(c.slice(1) + "-table-placeholder"); //slice # from containerId
+
+        placeholder.innerHTML = "";
+
+        //console.log(placeholder);
+
+        // creates a <table> element and a <tplaceholder> element
+        var tbl = document.createElement("table");
+        var expLink = document.createElement("button");
+
+
+
+        tbl.id = c.slice(1) + "-table"; //Slicing beginning '#' from containerId
+        tbl.className = "table table-hover text-right table-report";
+
+        tbl.setAttribute("style", "display: none;");
+
+        expLink.setAttribute("onclick", "exportToExcel('" + tbl.id + "')");
+        expLink.setAttribute("class", "btn btn-link");
+        expLink.innerHTML = "Export to Excel";
+
+        // creating all cells
+
+        var isSingleCategory = tableData.length < 4 ? 1 : 0;
+
+        for (var i = 0; i < tableData.length - isSingleCategory; i++) {
+            // creates a table row
+            var row = document.createElement("tr");
+
+            row.className = tableData[i][0] ? "level-" + GS[c].drillLevel + " " + cleanName(tableData[i][0]) : "";
+
+            for (var j = 0; j < tableData[0].length; j++) {
+                //console.log(tableData[i][j]);
+                // Create a <td> element and a text node, make the text
+                // node the contents of the <td>, and put the <td> at
+                // the end of the table row
+                var cell = (i === 0 ? document.createElement("th") : document.createElement("td"));
+
+
+                var cellText = document.createTextNode(tableData[i][j]);
+                cell.appendChild(cellText);
+                row.appendChild(cell);
+            }
+
+            // add the row to the end of the table placeholder
+            tbl.appendChild(row);
+        }
+
+        // appends <table> into <placeholder>
+        placeholder.appendChild(tbl);
+
+        placeholder.appendChild(expLink);
+
+        drillDownPath(c);
+
+        $(c + "-table").fadeIn(200);
+
+    }//generateHtmlTable
+
+
+
+
+    //===================
+
+    /* The function */
+
+    function json2table(json, classes) {
+        var cols = Object.keys(json[0]);
+
+        var headerRow = '';
+        var bodyRows = '';
+
+        classes = classes || '';
+
+        function capitalizeFirstLetter(string) {
+            return string.charAt(0).toUpperCase() + string.slice(1);
+        }
+
+        cols.map(function (col) {
+            headerRow += '<th>' + capitalizeFirstLetter(col) + '</th>';
+        });
+
+        json.map(function (row) {
+            bodyRows += '<tr>';
+
+            cols.map(function (colName) {
+                bodyRows += '<td>' + row[colName] + '</td>';
+            })
+
+            bodyRows += '</tr>';
+        });
+
+        return '<table class="' +
+            classes +
+            '"><thead><tr>' +
+            headerRow +
+            '</tr></thead><tbody>' +
+            bodyRows +
+            '</tbody></table>';
+    }
+
+
+
+
+
+    function json2tablePercTotals(json, classes) { //for
+
+        var cols = Object.keys(json[0]);
+        var headerRow = '';
+        var headerRow2 = '';
+        var bodyRows = '';        
+        var totalRows = '';
+
+        classes = classes || '';
+
+        var jsonFirstRow = json[0];
+
+        var colTotals = {};
+
+        // let's copy all user properties into it
+        for (let key in jsonFirstRow) {
+            colTotals[key] = jsonFirstRow[key];
+            colTotals[key] = 0;
+        }
+
+        colTotals[cols[0]] = "Total";
+
+
+
+        function capitalizeFirstLetter(string) {
+            return string.charAt(0).toUpperCase() + string.slice(1);
+        }
+
+
+        json.map(function (row) {
+            cols.map(function (colName, i) {
+                if (i > 0) {
+                    colTotals[colName] += row[colName];
+                }
+            })
+        });
+
+
+
+        cols.map(function (col, i) {
+            headerRow += '<th ' + (i == 0 ? 'rowspan="2"' : 'colspan="2"') + '>' + capitalizeFirstLetter(col) + '</th>';
+
+            headerRow2 += (i == 0 ? '' : '<th>#</th><th>% of Total</th>');
+        });
+
+
+        json.map(function (row) {
+            bodyRows += '<tr>';
+
+            cols.map(function (colName, i) {
+                bodyRows += '<td>' + row[colName] + '</td>' +
+                    (i == 0 ? '' : '<td>' + Math.round(row[colName] / colTotals[colName] * 100) + ' %</td>');
+            })
+
+            bodyRows += '</tr>';
+        });
+
+        //totalRows += '<tr>';
+        //for (let key in colTotals) {
+        //    totalRows += '<td style="font-weight:bold;">' + colTotals[key] + '</td>';
+        //}
+        //totalRows += '</tr>';
+
+
+        cols.map(function (col, i) {
+
+            totalRows += '<td style="font-weight:bold;">' + colTotals[col] + '</td>' +
+                (i == 0 ? '' : '<td style="font-weight:bold;">' + Math.round(colTotals[col] / colTotals[cols[cols.length-1]] * 100) + ' %</td>');
+
+
+
+
+        });
+
+
+        return '<table class="' +
+            classes +
+            '"><thead><tr>' +
+            headerRow +
+            '</tr><tr>' +
+            headerRow2 +
+            '</tr></thead><tbody>' +
+            bodyRows +
+            '<tr>' +
+            totalRows +
+            '</tr>'
+            '</tbody></table>';
+    }
+        
+    //===================
+
+
+    var reportParams = {
+        censusKey: { id: 'censusKey', name: 'Census Key', data: null },
+        acadCareer: { id: 'acadCareer', name: 'Academic Career', data: null },
+        planCollege: { id: 'planCollege', name: 'College', data: null }
+    };
+
+
+
+
+    reportParams.censusKey.data = {
+        'EP2118': 'Fall 2011',
+        'EP2128': 'Fall 2012',
+        'EP2138': 'Fall 2013',
+        'EP2148': 'Fall 2014',
+        'EP2158': 'Fall 2015',
+        'EP2168': 'Fall 2016',
+        'EP2178': 'Fall 2017',
+        'EP2188': 'Fall 2018'
+    };  
+
+
+    reportParams.acadCareer.data = {  // As for prev ver this is immutable list, maybe should be stored somewhere in db or CMS -DK-
+        'All': 'All Careers',
+        'UGRD': 'Undergraduate',
+        'GRAD': 'Graduate',
+        'LAWS': 'Law',
+        'DENT': 'Dental Medicine'
+    };
+
+    var someData = {  // As for prev ver this is immutable list, maybe should be stored somewhere in db or CMS -DK-
+        'All': 'All Careers',
+        'UGRD': 'Undergraduate',
+        'GRAD': 'Graduate',
+        'LAWS': 'Law',
+        'DENT': 'Dental Medicine'
+    };
+
+    console.log(JSON.stringify(reportParams.acadCareer.data) === JSON.stringify(someData));
+    
+   
+
+    reportParams.planCollege.data = {
+        'All': 'All Colleges',
+        'LV1040': 'Allied Health Sciences',
+        'LV1140': 'Business',
+        'LV1300': 'Community Health Sciences',
+        'LV2560': 'Dental Medicine',
+        'LV1160': 'Education',
+        'LV1180': 'Engineering',
+        'LV1200': 'Fine Arts',
+        'GRAD': 'Graduate College',
+        'LV1220': 'Hotel Administration',
+        'LV1240': 'Liberal Arts',
+        'LV1760': 'Nursing',
+        'LV1260': 'Sciences',
+        'LV1280': 'Urban Affairs',
+    };
+
+
+
+
+    //var censusKeyControl = $('<select id="censusKey" class="form-control" onchange="makeTable();" />');
+    //var acadCareerControl = $('<select id="acadCareer" class="form-control" onchange="makeTable();" />');
+    //var planCollegeControl = $('<select id="planCollege" class="form-control" onchange="makeTable();" />');
+
+    var controlsPlaceholder = $('<div id="controlsPlaceholder" class="d-flex flex-row mb-3"/>');
+
+    $('#reportContent').prepend(controlsPlaceholder);
+
+
+    function createInputGroup(param) {
+
+        //var param
+
+        var inputId = param.id;
+        var inputName = param.name;
+        var inputData = param.data;
+
+        //var inputNameCleaned = inputName;
+        //inputNameCleaned = inputNameCleaned.replace(/\s+/g, '');
+        //inputNameCleaned = inputNameCleaned.charAt(0).toLowerCase() + inputNameCleaned.slice(1);
+
+        var inputGroupHtml = $(`<div id="InputGroup_${inputId}" class="input-group">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect_${inputId}">
+                                    ${inputName}
+                                </label>
+                            </div>
+                          </div >`);
+
+        var selectControlHtml = $(`<select id="inputGroupSelect_${inputId}" class="form-control" onchange="makeTable();" />`);
+
+        $(inputGroupHtml).append(selectControlHtml);
+
+        for (var val in inputData) {
+            $('<option />', { value: val, text: inputData[val] }).appendTo(selectControlHtml);
+        }
+
+        return $(inputGroupHtml);
+
+    }
+
+
+    //for (var val in censusKeyData) {
+    //    $('<option />', { value: val, text: censusKeyData[val] }).appendTo(censusKeyControl);
+    //}
+
+    //$('#controlsPlaceholder').append(censusKeyControl);
+
+
+
+
+    var censusKeyInputGroup = createInputGroup(reportParams["censusKey"]);
+    var acadCareerInputGroup = createInputGroup(reportParams["acadCareer"]);
+    var planCollegeInputGroup = createInputGroup(reportParams["planCollege"]);
+
+
+    $('#controlsPlaceholder').append(censusKeyInputGroup);
+    $('#controlsPlaceholder').append(acadCareerInputGroup);
+    $('#controlsPlaceholder').append(planCollegeInputGroup);
+
+
+
+
+    /*
+    for (var val in acadCareerData) {
+        $('<option />', { value: val, text: acadCareerData[val] }).appendTo(acadCareerControl);
+    }
+    $('#controlsPlaceholder').append(acadCareerControl);
+
+
+
+    for (var val in planCollegeData) {
+        $('<option />', { value: val, text: planCollegeData[val] }).appendTo(planCollegeControl);
+    }
+    $('#controlsPlaceholder').append(planCollegeControl);
+    */
+
+    $('#reportContent').append('<div id="reportContentTable"></div><div id="stacked-bar" class="d-flex justify-content-center pb-5"></div>');
+       
+
+
+
+
+
+
+
+    function makeTable(){
+
+
+        if ($('#inputGroupSelect_acadCareer').val() == "LAWS" || $('#inputGroupSelect_acadCareer').val() == "DENT") {
+            $('#inputGroupSelect_planCollege').val("All");
+            $('#inputGroupSelect_planCollege').prop('disabled', 'disabled');
+            $('#InputGroup_planCollege').css('visibility', 'hidden');
+
+
+        } else {
+            $('#inputGroupSelect_planCollege').prop('disabled', false);
+            $('#InputGroup_planCollege').css('visibility', 'visible');
+        }
+
+
+        var uri = "?urlParams=" + "{'censusKey':'" + $('#inputGroupSelect_censusKey').val() +
+            "','acadCareer':'" + $('#inputGroupSelect_acadCareer').val() +
+            "','planCollege':'" + $('#inputGroupSelect_planCollege').val() + "'}";
+        var prams = encodeURI(uri);
+
+        var getUri = '@Url.Action("GetData", "Reports")';//Getting URI to the Controller
+
+        //console.log(uri);
+
+        //'@@Url.Action("GetData", "Reports", new { urlParams = "{'censusKey':'EP2178','acadCareer':'Grad','planCollege':'All'}" })'
+
+        d3.json(getUri + prams).then(function (data) {
+
+            console.log(JSON.parse(data));
+            //console.log(JSON.parse(data).length);
+
+            //for (var item in data) {
+            //    console.log(item);
+            //}
+
+        //var placeholder = document.getElementById("reportContent"); //slice # from containerId
+
+
+
+
+            $('#reportContentTable').html(json2tablePercTotals(JSON.parse(data), 'table table-hover text-right table-report-dynamic'));
+
+        //placeholder.appendChild(buildHtmlTable(data));
+
+            var key = ["Female", "Male"];
+
+            //initStackedBarChart.draw({
+            //    data: JSON.parse(data),
+            //    key: key,
+            //    element: 'stacked-bar'
+            //});
+
+            groupedBarChart.draw({
+                data: JSON.parse(data),
+
+                element: 'stacked-bar'
+            });
+
+
+
+        });
+
+        function wrap(text, width) {
+            text.each(function () {
+                var text = d3.select(this),
+                    words = text.text().split(/\s+/).reverse(),
+                    word,
+                    line = [],
+                    lineNumber = 0,
+                    lineHeight = 1.1, // ems
+                    y = text.attr("y"),
+                    dy = parseFloat(text.attr("dy")),
+                    tspan = text.text(null).append("tspan").attr("x", 0).attr("y", y).attr("dy", dy + "em");
+                while (word = words.pop()) {
+                    line.push(word);
+                    tspan.text(line.join(" "));
+                    if (tspan.node().getComputedTextLength() > width) {
+                        line.pop();
+                        tspan.text(line.join(" "));
+                        line = [word];
+                        tspan = text.append("tspan").attr("x", 0).attr("y", y).attr("dy", ++lineNumber * lineHeight + dy + "em").text(word);
+                    }
+                }
+            });
+        }
+
+
+
+        var groupedBarChart = {
+            draw: function (config) {
+
+                var domEle = config.element;
+
+                var data = config.data;
+
+
+                $("#" + domEle).empty();
+
+                var margin = { top: 20, right: 20, bottom: 30+40, left: 40 },
+                    width = 960 - margin.left - margin.right,
+                    height = 400 - margin.top - margin.bottom;
+
+                var g = d3.select("#" + domEle).append("svg")
+                    .attr("width", width + margin.left + margin.right)
+                    .attr("height", height + margin.top + margin.bottom)
+                    .append("g")
+                    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+                var x0 = d3.scaleBand()
+                    .rangeRound([0, width])
+                    .paddingInner(0.1);
+
+                var x1 = d3.scaleBand()
+                    .padding(0.03);
+
+                var y = d3.scaleLinear()
+                    .rangeRound([height, 0]);
+
+                var z = d3.scaleOrdinal()
+                    .range(d3.schemeSet1);
+
+                //var keys = data.columns.slice(1);
+                var cols = Object.keys(data[0]);
+                var keys = Object.keys(data[0]).slice(1,-1);
+
+                x0.domain(data.map(function (d) { return d[cols[0]]; }));
+                x1.domain(keys).rangeRound([0, x0.bandwidth()]);
+                y.domain([0, d3.max(data, function (d) { return d3.max(keys, function (key) { return d[key]; }); })]).nice();
+
+                //console.log(x1.bandwidth());
+
+                g.append("g")
+                    .selectAll("g")
+                    .data(data)
+                    .enter().append("g")
+                    .attr("transform", function (d) { return "translate(" + x0(d[cols[0]]) + ",0)"; })
+                    .selectAll("rect")
+                    .data(function (d) { return keys.map(function (key) { return { key: key, value: d[key] }; }); })
+                    .enter().append("rect")
+                    .attr("x", function (d) { return x1(d.key); })
+                    .attr("y", function (d) { return y(d.value); })
+                    .attr("width", x1.bandwidth())
+                    .attr("height", function (d) { return height - y(d.value); })
+                    .attr("fill", function (d) { return z(d.key); });
+
+                g.append("g")
+                    .attr("class", "axis")
+                    .attr("transform", "translate(0," + height + ")")
+                    .call(d3.axisBottom(x0))
+                   .selectAll(".tick text")
+                    .call(wrap, x1.bandwidth());
+
+                g.append("g")
+                    .attr("class", "axis")
+                    //.call(d3.axisLeft(y).ticks(null, "s"))
+                    .call(d3.axisLeft(y));
+
+                    //.append("text")
+                    //.attr("x", 2)
+                    //.attr("y", y(y.ticks().pop()) + 0.5)
+                    //.attr("dy", "0.32em")
+                    //.attr("fill", "#000")
+                    //.attr("font-weight", "bold")
+                    //.attr("text-anchor", "start")
+                    //.text("Headcount");
+
+                var legend = g.append("g")
+                    .attr("font-family", "sans-serif")
+                    .attr("font-size", 10)
+                    .attr("text-anchor", "end")
+                    .selectAll("g")
+                    .data(keys)
+                    .enter().append("g")
+                    .attr("transform", function (d, i) { return "translate(0," + i * 20 + ")"; });
+
+                legend.append("rect")
+                    .attr("x", 80)
+                    .attr("width", 19)
+                    .attr("height", 19)
+                    .attr("fill", z);
+
+                legend.append("text")
+                    .attr("x", 75)
+                    .attr("y", 9.5)
+                    .attr("dy", "0.32em")
+                    .text(function (d) { return d; });
+
+            }
+        }
+
+
+
+        var initStackedBarChart = {
+            draw: function (config) {
+                me = this,
+                    domEle = config.element,
+                    stackKey = config.key,
+                    data = config.data,
+                    margin = { top: 20, right: 20, bottom: 30, left: 250 },
+                    parseDate = d3.timeParse("%m/%Y"),
+                    width = 960 - margin.left - margin.right,
+                    height = 200 - margin.top - margin.bottom,
+                    xScale = d3.scaleLinear().rangeRound([0, width]),
+                    yScale = d3.scaleBand().rangeRound([height, 0]).padding(0.1),
+                    color = d3.scaleOrdinal(d3.schemeCategory10),
+                    xAxis = d3.axisBottom(xScale),
+                    yAxis = d3.axisLeft(yScale);//.tickFormat(d3.timeFormat("%b")),
+
+                $("#" + domEle).empty();
+
+                svg = d3.select("#" + domEle).append("svg")
+                        .attr("width", width + margin.left + margin.right)
+                        .attr("height", height + margin.top + margin.bottom)
+                        .append("g")
+                        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+                var stack = d3.stack()
+                    .keys(stackKey)
+                    /*.order(d3.stackOrder)*/
+                    .offset(d3.stackOffsetNone);
+
+                var layers = stack(data);
+
+                var cols = Object.keys(data[0]);
+
+                data.sort(function (a, b) { return b.Total - a.Total; });
+
+                yScale.domain(data.map(function (d) { return d[cols[0]]; }));
+                //yScale.domain(d3.range(data.length));//(data.map(function (d) { return parseDate(d.date); }));
+
+
+                xScale.domain([0, d3.max(layers[layers.length - 1], function (d) { return d[0] + d[1]; })]).nice();
+
+                var layer = svg.selectAll(".layer")
+                    .data(layers)
+                    .enter().append("g")
+                    .attr("class", "layer")
+                    .style("fill", function (d, i) { return color(i); });
+
+                layer.selectAll("rect")
+                    .data(function (d) { return d; })
+                    .enter().append("rect")
+                    .attr("y", function (d, i) { return yScale(d.data[cols[0]]); })//{ return yScale(parseDate(d.data.date)); })
+                    .attr("x", function (d) { return xScale(d[0]); })
+                    .attr("height", yScale.bandwidth())
+                    .attr("width", function (d) { return xScale(d[1]) - xScale(d[0]) });
+
+                svg.append("g")
+                    .attr("class", "axis axis--x")
+                    .attr("transform", "translate(0," + (height + 5) + ")")
+                    .call(xAxis);
+
+                svg.append("g")
+                    .attr("class", "axis axis--y")
+                    .attr("transform", "translate(0,0)")
+                    .call(yAxis);
+            }
+        }
+    }
+
+
+    makeTable();
+
+</script>
+
+
+

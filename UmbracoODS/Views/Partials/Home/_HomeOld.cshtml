@@ -1,0 +1,150 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+<div id="content" class="home-jumbotron">
+
+    <section class="IadsWelcome hero image-bottom text-white">
+        <div class="overlay"></div>
+        <div class="hero-text bottom center">
+            <div class="hero-text-inner">
+                <h2>
+                    @(Umbraco.AssignedContentItem.HasProperty("title")
+                                                    && Umbraco.AssignedContentItem.GetPropertyValue("title") != null
+                                                    && !string.IsNullOrEmpty(Umbraco.AssignedContentItem.GetPropertyValue("title").ToString())
+                                                    ? Umbraco.AssignedContentItem.GetPropertyValue("title")
+                                                    : Umbraco.AssignedContentItem.Name)
+                </h2>
+                <p>
+                    @Umbraco.AssignedContentItem.GetPropertyValue("subtitle")
+                </p>
+            </div> <!--/.hero-text-inner-->
+
+
+
+            <div class="quick-links">
+                <div class="row hero-text-inner">
+                    <div class="col-sm-12">
+                        <p>Quick Links</p>
+                        <ul>
+                            <li><a href="/IAP/decisionsupport/Content/UNLV_Analytics.aspx">UNLV Analytics</a></li>
+                            <li><a href="/IAP/decisionsupport/Content/On+Point.aspx">On Point</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="/IAP/decisionsupport/Content/About_Data_Dictionary.aspx">Data Dictionary</a></li>
+                            <li><a href="/IAP/decisionsupport/Content/Legacy_Apps_Overview.aspx">Legacy Applications</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="/IAP/decisionsupport/Content/At+UNLV+-+Student+Profiles.aspx">Student Profiles</a></li>
+                            <li><a href="/IAP/decisionsupport/Content/At+UNLV+-+Course+Profiles.aspx">Course Profiles</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="/IAP/decisionsupport/Content/At+UNLV+-+Degree+Profiles.aspx">Degree Profiles</a></li>
+                            <li><a href="/IAP/decisionsupport/Content/Common+Data+Set+2016-17.aspx">Common Data Set</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section class="chapters">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6"><img src="~/img/InstitutionalAnalysisPlanningImage.jpg" alt="Students walking on a campus path with purple flowers in the foreground." class="img-responsive"></div>
+                <!--/.col-sm-6-->
+                <div class="col-sm-6">
+                    <h3 class="clear-margin-top">Institutional Analysis &amp; Planning</h3>
+                    <p>Collecting, analyzing, and interpreting information to enhance the quality of decisions guiding the institution. </p>
+                    <div><a class="btn btn-primary" href="/IAP/decisionsupport/Content/IAP.aspx">Read more</a></div>
+                </div>
+                <!--/.col-sm-6-->
+            </div>
+            <!--/.row-->
+        </div>
+        <!--/.container-->
+    </section>
+    <section class="chapters graybg">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3 class="clear-margin-top">Enterprise Data Warehousing</h3>
+                    <p>Developing a comprehensive institutional information system that facilitates access to integrated data for reporting and analysis. </p>
+                    <div><a class="btn btn-primary" href="/IAP/decisionsupport/Content/At+UNLV+-+UNLV+Data+Warehouse.aspx">Read more</a></div>
+                </div>
+                <!--/.col-sm-6-->
+                <div class="col-sm-6"><img src="~/img/EnterpriseDataWarehousingImage.jpg" alt="Students walking on a campus path with purple flowers in the foreground." class="img-responsive"></div>
+                <!--/.col-sm-6-->
+            </div>
+            <!--/.row-->
+        </div>
+        <!--/.container-->
+    </section>
+
+    <section class="chapters">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6"><img src="~/img/BusinessIntelligenceImage.jpg" alt="Students walking on a campus path with purple flowers in the foreground." class="img-responsive"></div>
+                <!--/.col-sm-6-->
+                <div class="col-sm-6">
+                    <h3 class="clear-margin-top">Business Intelligence</h3>
+                    <p>A set of technologies, tools, and practices for transforming raw data into meaningful and useful information.</p>
+                    <div><a class="btn btn-primary" href="/IAP/decisionsupport/Content/About+Business+Intelligence.aspx">Read more</a></div>
+                </div>
+                <!--/.col-sm-6-->
+            </div>
+            <!--/.row-->
+        </div>
+        <!--/.container-->
+    </section>
+
+    <section class="chapters graybg">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3 class="clear-margin-top">Data Governance</h3>
+                    <p>A structure for strategic campus collaboration around the institution's information assets.</p>
+                    <div><a class="btn btn-primary" href="/IAP/decisionsupport/Content/At+UNLV+-+Campus+Collaboration.aspx">Read more</a></div>
+                </div>
+                <!--/.col-sm-6-->
+                <div class="col-sm-6"><img src="~/img/DataGovernanceImage.jpg" alt="Students walking on a campus path with purple flowers in the foreground." class="img-responsive"></div>
+                <!--/.col-sm-6-->
+            </div>
+            <!--/.row-->
+        </div>
+        <!--/.container-->
+    </section>
+
+
+
+
+
+
+
+    <div>
+
+
+
+    </div>
+
+    <h1 style="color: #870101; display:none;">Office of Institutional Analysis and Decision Support</h1>
+    <p style="padding-bottom: 24px; display:none;">
+        Welcome!  The Office of Institutional Analysis and Planning is officially renamed the Institutional Analysis and Decision Support,
+        to more accurately reflect the functions of the office.
+        <a class="readMoreLink" href="/IAP/decisionsupport/Content/At+UNLV+-+Decision+Support.aspx">Read more...</a>
+    </p>
+
+
+
+    <div style="display:none;">
+        <ul id="homePageImageMap">
+            <li id="hpimIAP"><a href="/IAP/decisionsupport/Content/IAP.aspx">Institutional Analysis &amp; Planning</a></li>
+            <li id="hpimEDW"><a href="/IAP/decisionsupport/Content/At+UNLV+-+UNLV+Data+Warehouse.aspx">Enterprise Data Warehousing</a></li>
+            <li id="hpimBI"><a href="/IAP/decisionsupport/Content/About+Business+Intelligence.aspx">Business Intelligence</a></li>
+            <li id="hpimDG"><a href="/IAP/decisionsupport/Content/At+UNLV+-+Campus+Collaboration.aspx">Data Governance</a></li>
+        </ul>
+    </div>
+
+</div>

@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="IAPWebReportsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Globals">
+          <Key>
+            <PropertyRef Name="GlobalKey" />
+          </Key>
+          <Property Name="GlobalKey" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="GlobalValue" Type="varchar" MaxLength="1024" />
+        </EntityType>
+        <Function Name="GetCPCollegeListingByCensusKeyAndCareer_EPM" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="censusKey" Type="varchar" Mode="In" />
+          <Parameter Name="acadCareer" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="GetDCollegeListingByAcadYear_EPM" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="acadYear" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="GetRecentAnnualFTEYears_EPM" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GetRecentFallAndSpringTerms_EPM" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GetRecentPrelimFallTerms_EPM" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="Rpt_AppliedAdmittedEnrolled_EPM_TermChoices" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="Rpt_ClassSizeSummary_TermChoices" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="Rpt_HeadcountByCollegeRaceAndGender_EPM_EF" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="censusKey" Type="varchar" Mode="In" />
+          <Parameter Name="acadCareer" Type="varchar" Mode="In" />
+          <Parameter Name="planCollege" Type="varchar" Mode="In" />
+        </Function>
+        <EntityContainer Name="IAPWebReportsModelStoreContainer">
+          <EntitySet Name="Globals" EntityType="Self.Globals" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="IAPWebReportsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="IAPWebReportsEntities" annotation:LazyLoadingEnabled="true" >
+          <FunctionImport Name="Rpt_HeadcountByCollegeRaceAndGender_EPM_EF">
+            <Parameter Name="censusKey" Mode="In" Type="String" />
+            <Parameter Name="acadCareer" Mode="In" Type="String" />
+            <Parameter Name="planCollege" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="GetRecentPrelimFallTerms_EPM" ReturnType="Collection(IAPWebReportsModel.GetRecentPrelimFallTerms_EPM_Result)" />
+          <FunctionImport Name="GetCPCollegeListingByCensusKeyAndCareer_EPM">
+            <Parameter Name="censusKey" Mode="In" Type="String" />
+            <Parameter Name="acadCareer" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="GetDCollegeListingByAcadYear_EPM">
+          <Parameter Name="acadYear" Mode="In" Type="String" />
+          </FunctionImport>
+          <EntitySet Name="Globals" EntityType="IAPWebReportsModel.Global" />
+          <FunctionImport Name="Rpt_ClassSizeSummary_TermChoices" ReturnType="Collection(IAPWebReportsModel.Rpt_ClassSizeSummary_TermChoices_Result)" />
+          <FunctionImport Name="GetRecentFallAndSpringTerms_EPM" ReturnType="Collection(IAPWebReportsModel.GetRecentFallAndSpringTerms_EPM_Result)" />
+          <FunctionImport Name="GetRecentAnnualFTEYears_EPM" ReturnType="Collection(String)" />
+          <FunctionImport Name="Rpt_AppliedAdmittedEnrolled_EPM_TermChoices" ReturnType="Collection(IAPWebReportsModel.Rpt_AppliedAdmittedEnrolled_EPM_TermChoices_Result1)" />
+        </EntityContainer>
+        <ComplexType Name="GetRecentPrelimFallTerms_EPM_Result">
+          <Property Type="String" Name="CensusKey" Nullable="false" MaxLength="6" />
+          <Property Type="String" Name="TermName" Nullable="true" MaxLength="64" />
+        </ComplexType>
+        <EntityType Name="Global">
+          <Key>
+            <PropertyRef Name="GlobalKey" />
+          </Key>
+          <Property Name="GlobalKey" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="GlobalValue" Type="String" MaxLength="1024" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <ComplexType Name="Rpt_AppliedAdmittedEnrolled_EPM_TermChoices_Result">
+          <Property Type="String" Name="Term" Nullable="true" MaxLength="255" />
+          <Property Type="String" Name="TermName" Nullable="true" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="Rpt_ClassSizeSummary_TermChoices_Result">
+          <Property Type="String" Name="TermChoiceKey" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="TermChoiceName" Nullable="true" MaxLength="128" />
+        </ComplexType>
+        <ComplexType Name="GetRecentFallAndSpringTerms_EPM_Result">
+          <Property Type="String" Name="CensusKey" Nullable="false" MaxLength="6" />
+          <Property Type="String" Name="TermName" Nullable="true" MaxLength="64" />
+        </ComplexType>
+        <ComplexType Name="Rpt_AppliedAdmittedEnrolled_EPM_TermChoices_Result1">
+          <Property Type="String" Name="Term" Nullable="true" MaxLength="255" />
+          <Property Type="String" Name="TermName" Nullable="true" MaxLength="50" />
+          <Property Type="Decimal" Name="AvgHsgpaNewFreshmen" Nullable="true" Precision="7" Scale="4" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="IAPWebReportsModelStoreContainer" CdmEntityContainer="IAPWebReportsEntities" >
+          <FunctionImportMapping FunctionImportName="Rpt_HeadcountByCollegeRaceAndGender_EPM_EF" FunctionName="IAPWebReportsModel.Store.Rpt_HeadcountByCollegeRaceAndGender_EPM_EF" />
+          <FunctionImportMapping FunctionImportName="GetRecentPrelimFallTerms_EPM" FunctionName="IAPWebReportsModel.Store.GetRecentPrelimFallTerms_EPM">
+          <ResultMapping>
+              <ComplexTypeMapping TypeName="IAPWebReportsModel.GetRecentPrelimFallTerms_EPM_Result">
+                <ScalarProperty Name="CensusKey" ColumnName="CensusKey" />
+                <ScalarProperty Name="TermName" ColumnName="TermName" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetCPCollegeListingByCensusKeyAndCareer_EPM" FunctionName="IAPWebReportsModel.Store.GetCPCollegeListingByCensusKeyAndCareer_EPM" />
+          <FunctionImportMapping FunctionImportName="GetDCollegeListingByAcadYear_EPM" FunctionName="IAPWebReportsModel.Store.GetDCollegeListingByAcadYear_EPM" />
+          <EntitySetMapping Name="Globals">
+            <EntityTypeMapping TypeName="IAPWebReportsModel.Global">
+              <MappingFragment StoreEntitySet="Globals">
+                <ScalarProperty Name="GlobalValue" ColumnName="GlobalValue" />
+                <ScalarProperty Name="GlobalKey" ColumnName="GlobalKey" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="Rpt_ClassSizeSummary_TermChoices" FunctionName="IAPWebReportsModel.Store.Rpt_ClassSizeSummary_TermChoices">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="IAPWebReportsModel.Rpt_ClassSizeSummary_TermChoices_Result">
+                <ScalarProperty Name="TermChoiceKey" ColumnName="TermChoiceKey" />
+                <ScalarProperty Name="TermChoiceName" ColumnName="TermChoiceName" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetRecentFallAndSpringTerms_EPM" FunctionName="IAPWebReportsModel.Store.GetRecentFallAndSpringTerms_EPM">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="IAPWebReportsModel.GetRecentFallAndSpringTerms_EPM_Result">
+                <ScalarProperty Name="CensusKey" ColumnName="CensusKey" />
+                <ScalarProperty Name="TermName" ColumnName="TermName" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetRecentAnnualFTEYears_EPM" FunctionName="IAPWebReportsModel.Store.GetRecentAnnualFTEYears_EPM" />
+          <FunctionImportMapping FunctionImportName="Rpt_AppliedAdmittedEnrolled_EPM_TermChoices" FunctionName="IAPWebReportsModel.Store.Rpt_AppliedAdmittedEnrolled_EPM_TermChoices">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="IAPWebReportsModel.Rpt_AppliedAdmittedEnrolled_EPM_TermChoices_Result1">
+                <ScalarProperty Name="Term" ColumnName="Term" />
+                <ScalarProperty Name="TermName" ColumnName="TermName" />
+                <ScalarProperty Name="AvgHsgpaNewFreshmen" ColumnName="AvgHsgpaNewFreshmen" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

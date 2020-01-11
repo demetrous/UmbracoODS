@@ -1,0 +1,546 @@
+﻿<style>
+
+    /* d3.js chart styling */
+    .axis text {
+        font: 10px sans-serif;
+    }
+
+    .axis line,
+    .axis path {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+    }
+
+    .path-line {
+        fill: none;
+        stroke: yellow;
+        stroke-width: 1.5px;
+    }
+
+    svg {
+        background: #ffffff;/*#f0f0f0;*/
+    }
+
+    .axis .domain {
+        display: none;
+    }
+    
+
+
+
+    /* Dropdown container styling */
+    .input-group-prepend {
+        margin-right: -1px;
+    }
+
+    .input-group-append, .input-group-prepend {
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    
+    .input-group {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-align: stretch;
+        align-items: stretch;
+        width: 100%;
+    }
+
+        .input-group > .input-group-prepend > .input-group-text {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+    /* Dropdown styling */
+    .input-group-text {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: .375rem .75rem;
+        margin-bottom: 0;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        text-align: center;
+        white-space: nowrap;
+        background-color: #e9ecef;
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+    }
+
+    /* Margin for non-first dropdown, making spacing */
+    .input-group:not(:first-child) {
+        margin-left: 2em;
+    }
+</style>
+
+<script>
+
+    // Begin scoping function
+    (function () { 
+                
+        var ferpaPlaceholder = '<div id="ferpaPlaceholder" class="alert alert-warning small" style="display: none !important;" >The below content may contain information that is protected under <a href="http://www.ed.gov/policy/gen/guid/fpco/ferpa/index.html" target="_blank">FERPA (the Family Educational Rights Privacy Act)</a>. You are granted access to this information in your capacity as a UNLV employee. As a reminder, in reporting information, if cell size (typically 10 or fewer) or other information would make a student’s identity "easily traceable," that information would be considered "personally identifiable." <a href="http://www.ed.gov/policy/gen/reg/ferpa/index.html" target="_blank"> See 34 CFR § 99.3.</a> The educational agency or institution should use generally accepted statistical principles and methods to ensure that the data are reported in a manner that fully prevents the identification of students. If that cannot be done, the data must not be reported.</div>';     
+
+       
+
+        $('#reportContent').prepend(ferpaPlaceholder);
+
+        var controlsPlaceholder = $('<div id="controlsPlaceholder" class="d-flex flex-row mb-3"/>');
+        $('#reportContent').prepend(controlsPlaceholder);
+
+
+        $('#reportContent').append('<div id="reportContentTable"></div><div id="stacked-bar" class="d-flex justify-content-center pb-5"></div>');
+
+        
+
+        updateAll();
+
+    })();         
+    // End scoping function
+
+
+    //=====================================
+
+
+
+
+
+    //GENERAL
+    function showHideFerpaWarning(minCount, containerId) {
+
+        var currentLimit = 10;        
+
+        if (minCount <= currentLimit) {            
+            $(containerId).fadeIn("slow");
+        } else {
+            $(containerId).hide().fadeOut("slow");
+        }
+    }
+    
+
+    //GENERAL, returns html with input group containing <select> dropdown  
+    function createDropdownHtml(param) {
+
+        var inputId = param.id;
+        var inputName = param.name;
+        var inputData = param.data;
+
+        $(`#InputGroup_${inputId}`).remove();
+
+        var inputGroupHtml = $(`<div id="InputGroup_${inputId}" class="input-group">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect_${inputId}">
+                                    ${inputName}
+                                </label>
+                            </div>
+                          </div >`);
+
+        var selectControlHtml = $(`<select id="inputGroupSelect_${inputId}" class="form-control" onchange="updateAll(this);" />`);
+
+        $(inputGroupHtml).append(selectControlHtml);
+
+        inputData.map(function (row) {
+            $('<option />', { value: Object.values(row)[0], text: Object.values(row)[1] }).appendTo(selectControlHtml);
+        });
+
+        return $(inputGroupHtml);
+
+    }
+
+
+    //GENERAL, appends dropdown to container, param = {id: '...', name: '...', data: someJsonData}
+    function createDropDown(param) {
+
+        $('#controlsPlaceholder').append(createDropdownHtml(param));
+    }
+
+
+    //GENERAL, wraps text for d3.js chart labels
+    function wrap(text, width) {
+        text.each(function () {
+            var text = d3.select(this),
+                words = text.text().split(/\s+/).reverse(),
+                word,
+                line = [],
+                lineNumber = 0,
+                lineHeight = 1.1, // ems
+                y = text.attr("y"),
+                dy = parseFloat(text.attr("dy")),
+                tspan = text.text(null).append("tspan").attr("x", 0).attr("y", y).attr("dy", dy + "em");
+            while (word = words.pop()) {
+                line.push(word);
+                tspan.text(line.join(" "));
+                if (tspan.node().getComputedTextLength() > width) {
+                    line.pop();
+                    tspan.text(line.join(" "));
+                    line = [word];
+                    tspan = text.append("tspan").attr("x", 0).attr("y", y).attr("dy", ++lineNumber * lineHeight + dy + "em").text(word);
+                }
+            }
+        });
+    }
+
+
+    //GENERAL, draws vertical grouped bar chart from Json data
+    function groupedBarChart(config) {
+
+            var domEle = config.element;
+
+            var data = config.data;
+
+
+            $("#" + domEle).empty();
+
+            var margin = { top: 70, right: 20, bottom: 30 + 40, left: 40 },
+                width = 960 - margin.left - margin.right,
+                height = 400 - margin.top - margin.bottom;
+
+            var g = d3.select("#" + domEle).append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+                .append("g")
+                .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+            var x0 = d3.scaleBand()
+                .rangeRound([0, width])
+                .paddingInner(0.1);
+
+            var x1 = d3.scaleBand()
+                .padding(0.03);
+
+            var y = d3.scaleLinear()
+                .rangeRound([height, 0]);
+
+            var z = d3.scaleOrdinal()
+                .range(d3.schemeSet1);
+
+            //var keys = data.columns.slice(1);
+            var cols = Object.keys(data[0]);
+            var keys = Object.keys(data[0]).slice(1, -1);
+
+            x0.domain(data.map(function (d) { return d[cols[0]]; }));
+            x1.domain(keys).rangeRound([0, x0.bandwidth()]);
+            y.domain([0, d3.max(data, function (d) { return d3.max(keys, function (key) { return d[key]; }); })]).nice();
+
+            //console.log(x1.bandwidth());
+
+            g.append("g")
+                .selectAll("g")
+                .data(data)
+                .enter().append("g")
+                .attr("transform", function (d) { return "translate(" + x0(d[cols[0]]) + ",0)"; })
+                .selectAll("rect")
+                .data(function (d) { return keys.map(function (key) { return { key: key, value: d[key] }; }); })
+                .enter().append("rect")
+                .attr("x", function (d) { return x1(d.key); })
+                .attr("y", function (d) { return y(d.value); })
+                .attr("width", x1.bandwidth())
+                .attr("height", function (d) { return height - y(d.value); })
+                .attr("fill", function (d) { return z(d.key); });
+
+            g.append("g")
+                .attr("class", "axis")
+                .attr("transform", "translate(0," + height + ")")
+                .call(d3.axisBottom(x0))
+                .selectAll(".tick text")
+                .call(wrap, x1.bandwidth() + 19); // 19 - adjusting width to avoid blank lines in tick-names 
+
+            g.append("g")
+                .attr("class", "axis")
+                //.call(d3.axisLeft(y).ticks(null, "s"))
+                .call(d3.axisLeft(y));
+
+            //.append("text")
+            //.attr("x", 2)
+            //.attr("y", y(y.ticks().pop()) + 0.5)
+            //.attr("dy", "0.32em")
+            //.attr("fill", "#000")
+            //.attr("font-weight", "bold")
+            //.attr("text-anchor", "start")
+            //.text("Headcount");
+
+            var legend = g.append("g")
+                .attr("font-family", "sans-serif")
+                .attr("font-size", 10)
+                .attr("text-anchor", "end")
+                .selectAll("g")
+                .data(keys)
+                .enter().append("g")
+                .attr("transform", function (d, i) { return "translate(" + i * 55 + ",-50)"; });
+
+            legend.append("rect")
+                .attr("x", 3)
+                .attr("width", 19)
+                .attr("height", 19)
+                .attr("fill", z);
+
+            legend.append("text")
+                .attr("x", 0)
+                .attr("y", 9.5)
+                .attr("dy", "0.32em")
+                .text(function (d) { return d; });
+
+        
+    }
+
+
+    //=====================================
+
+
+
+
+
+    //CUSTOM, generates notes bottom section
+    function createNotes() {
+
+        if (!$('#ReportNotes').length) {
+
+            var notes = '<div id="ReportNotes" class="small">Notes:<ol><li>For this report, academic years run July through June (e.g., 2011-12 includes degrees conferred in August 2011, December 2011 and May 2012).</li><li>Multiple degrees awarded to a single student are counted in each department and counted as separate degrees in college and university summary tables.</li><li>Single degrees associated with multiple academic plans in different departments are counted under each department.  College and university summary tables reflect unduplicated degree counts.</li><li>Small counts may limit the extent to which results are generalizable.</li><li>Undergraduate certificates in Gerontology are reported under the College of Fine Arts.</li></ol></div>';
+
+            $('#reportContent').append(notes);
+        }
+
+    }
+
+
+    //CUSTOM, derived from general, returns html table with calculated percentage and totals
+    function json2tablePercTotals(json, classes) { //for
+
+
+        var cols = Object.keys(json[0]);
+        var headerRow = '';
+        var headerRow2 = '';
+        var bodyRows = '';
+        var totalRows = '';
+        var minForFerpa = [];
+
+        classes = classes || '';
+
+        var jsonFirstRow = json[0];
+
+        var colTotals = {};
+
+        // let's copy all user properties into it
+        for (let key in jsonFirstRow) {
+            colTotals[key] = jsonFirstRow[key];
+            colTotals[key] = 0;
+        }
+
+        colTotals[cols[0]] = "Total";
+
+
+
+        function capitalizeFirstLetter(string) {
+            return string.charAt(0).toUpperCase() + string.slice(1);
+        }
+
+
+        json.map(function (row) {
+            cols.map(function (colName, i) {
+                if (i > 0) {
+                    colTotals[colName] += row[colName];
+                }
+            })
+        });
+
+
+
+        cols.map(function (col, i) {
+            headerRow += '<th ' + (i == 0 ? 'rowspan="2"' : 'colspan="2"') + '>' + capitalizeFirstLetter(col) + '</th>';
+
+            headerRow2 += (i == 0 ? '' : '<th>#</th><th>% of Total</th>');
+        });
+
+
+        json.map(function (row) {
+            bodyRows += '<tr>';
+
+            cols.map(function (colName, i) {
+
+                //create array to calculate mins for FERPA alert
+                if (i != 0 && i < cols.length - 1) {
+                    minForFerpa.push(row[colName]);
+                }
+
+                var cellValue = colTotals[colName] !== 0 ? Math.round(row[colName] / colTotals[colName] * 100) : 0;
+
+                bodyRows += '<td>' + row[colName] + '</td>' + (i == 0 ? '' : '<td>' + cellValue + ' %</td>');
+            })
+
+            bodyRows += '</tr>';
+        });
+
+        showHideFerpaWarning(Math.min(...minForFerpa), "#ferpaPlaceholder");
+
+        //totalRows += '<tr>';
+        //for (let key in colTotals) {
+        //    totalRows += '<td style="font-weight:bold;">' + colTotals[key] + '</td>';
+        //}
+        //totalRows += '</tr>';
+
+
+        cols.map(function (col, i) {
+
+            totalRows += '<td style="font-weight:bold;">' + colTotals[col] + '</td>' +
+                (i == 0 ? '' : '<td style="font-weight:bold;">' + Math.round(colTotals[col] / colTotals[cols[cols.length - 1]] * 100) + ' %</td>');
+
+
+
+
+        });
+
+
+        return '<table class="' +
+            classes +
+            '"><thead><tr>' +
+            headerRow +
+            '</tr><tr>' +
+            headerRow2 +
+            '</tr></thead><tbody>' +
+            bodyRows +
+            '<tr>' +
+            totalRows +
+            '</tr>'
+        '</tbody></table>';
+    }
+
+
+     //=====================================
+
+
+
+
+    //CUSTOM, hides College dropdown if selected Academic Career value in "LAWS", "DENT", "D"
+    function showOrHideCollegeDD() {
+
+        var acadCVal = $('#inputGroupSelect_acadCareer').val();
+
+        if (acadCVal == "LAWS"
+            || acadCVal == "DENT"
+            || acadCVal == "D") {
+
+            $('#inputGroupSelect_planCollege').val("All");
+            $('#inputGroupSelect_planCollege').prop('disabled', 'disabled');
+            $('#InputGroup_planCollege').css('visibility', 'hidden');
+
+
+        } else {
+            $('#inputGroupSelect_planCollege').prop('disabled', false);
+            $('#InputGroup_planCollege').css('visibility', 'visible');
+        }
+    }
+
+
+    //CUSTOM, returns true if selected term is different from previous term type, like "20053" and "EP2118", searches for "EP" that is in string
+    /*function switchedTerms(prev, curr) {
+        if (prev === undefined || curr === undefined) {
+            return false;
+        }
+
+        if ((prev.includes("EP") && !curr.includes("EP")) || (!prev.includes("EP") && curr.includes("EP"))) {
+            return true;
+        } else {
+            return false;
+        }
+    }*/
+
+
+
+
+
+
+
+
+    //CUSTOM, MAIN FUNCTION, ajax, comprises all functions, called on pageload and for onchange event in dropdowns
+    function updateAll(callElem){
+
+
+        //Id of the dropdown caused a call of updateAll()
+        var currDDId = $(callElem).attr("id") !== undefined ? $(callElem).attr("id") : "";
+
+       
+        var postData = {};
+
+        if (currDDId.includes("censusKey")){
+            postData = {
+                censusKey: $('#inputGroupSelect_censusKey').val()
+            };
+        } else if (currDDId.includes("acadCareer")) {
+            postData = {
+                censusKey: $('#inputGroupSelect_censusKey').val(),
+                acadCareer: $('#inputGroupSelect_acadCareer').val()
+            };
+        } else {
+            postData = {
+                censusKey: $('#inputGroupSelect_censusKey').val(),
+                acadCareer: $('#inputGroupSelect_acadCareer').val(),
+                planCollege: $('#inputGroupSelect_planCollege').val()
+            };
+        }
+
+        $.ajax({
+            type: 'POST',
+            url: '@Url.Action("HeadcountByCollegeRaceAndGender_data", "Reports")',
+
+            dataType: 'json',
+            data: postData,
+
+
+            success: function (data) {
+
+                var dataParsed = JSON.parse(data);
+                
+
+                if (postData.censusKey == null) {
+                    createDropDown({ id: 'censusKey', name: 'Term', data: dataParsed.censusKeyData }); // <------------- AUTOMATE???
+                }
+
+                if (postData.acadCareer == null) {
+                    createDropDown({ id: 'acadCareer', name: 'Academic Career', data: dataParsed.acadCareerData }); // <------------- AUTOMATE???
+                }
+
+                if (postData.planCollege == null) {
+                    createDropDown({ id: 'planCollege', name: 'College', data: dataParsed.planCollegeData }); // <------------- AUTOMATE???
+                }
+
+                showOrHideCollegeDD();
+
+                $('#reportContentTable').hide();
+
+                $('#reportContentTable').html(json2tablePercTotals(dataParsed.tableData, 'table table-hover text-right table-report-dynamic')).fadeIn("slow");
+
+                groupedBarChart({
+                    data: dataParsed.tableData,
+                    element: 'stacked-bar'
+                });
+
+                window.previousCensusKey = $('#inputGroupSelect_censusKey').val();
+                window.previousAcadCareer = $('#inputGroupSelect_acadCareer').val();
+
+                               
+
+                
+                createNotes();
+                
+
+
+
+            },
+            error: function (ex) {
+                var r = jQuery.parseJSON(response.responseText);
+                alert("Message: " + r.Message);
+                alert("StackTrace: " + r.StackTrace);
+                alert("ExceptionType: " + r.ExceptionType);
+            }
+        });
+    }
+    
+
+</script>

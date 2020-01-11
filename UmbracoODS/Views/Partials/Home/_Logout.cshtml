@@ -1,0 +1,33 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@using Umbraco.Web
+@using Umbraco.Core.Services
+
+@{
+    IMember member = ApplicationContext.Current.Services.MemberService.GetByUsername(System.Web.Security.Membership.GetUser().UserName);
+}
+
+@if (Umbraco.MemberIsLoggedOn())
+{
+    using (Html.BeginUmbracoForm("SubmitLogout", "Member", System.Web.Mvc.FormMethod.Post, new { id = "logout" }))
+    {
+        @Html.AntiForgeryToken()
+        var myUser = System.Web.Security.Membership.GetUser();
+        if (myUser != null)
+        {
+
+            <div class="form-group">
+
+                Logged in as <strong>@myUser.UserName</strong>
+
+            </div>
+
+            <div class="form-group">
+                @member.Properties["title"].Value
+            </div>
+
+            <div class="form-group">
+                <button name="logout" type="submit" class="btn btn-primary">Logout</button>
+            </div>
+        }
+    }
+}

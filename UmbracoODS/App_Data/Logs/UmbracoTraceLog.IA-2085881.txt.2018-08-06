@@ -1,0 +1,50 @@
+﻿ 2018-08-06 03:11:27,328 [P12668/D5/T263] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-08-05 03:11:27
+ 2018-08-06 07:11:27,912 [P12668/D5/T128] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-08-05 07:11:27
+ 2018-08-06 11:11:28,490 [P12668/D5/T465] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-08-05 11:11:28
+ 2018-08-06 14:53:29,517 [P12668/D5/T189] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2018-08-06 14:53:29,519 [P12668/D5/T189] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2018-08-06 14:53:29,524 [P12668/D5/T189] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2018-08-06 14:53:29,525 [P12668/D5/T189] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2018-08-06 14:53:29,535 [P12668/D5/T207] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2018-08-06 14:53:29,535 [P12668/D5/T317] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2018-08-06 14:53:29,635 [P12668/D5/T189] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2018-08-06 14:53:29,636 [P12668/D5/T189] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2018-08-06 14:53:29,636 [P12668/D5/T229] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2018-08-06 14:53:29,646 [P12668/D5/T189] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Terminating
+ 2018-08-06 14:53:29,647 [P12668/D5/T189] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Waiting for tasks to complete
+ 2018-08-06 14:53:29,647 [P12668/D5/T189] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Tasks completed, terminated
+ 2018-08-06 14:53:29,651 [P12668/D5/T189] INFO  Umbraco.Core.MainDom - Stopping...
+ 2018-08-06 14:53:29,659 [P12668/D5/T189] INFO  Umbraco.Web.ExamineStartup - Examine shutting down
+ 2018-08-06 14:53:29,663 [P12668/D5/T189] INFO  Umbraco.Web.ExamineStartup - Complete (took 4ms)
+ 2018-08-06 14:53:29,664 [P12668/D5/T189] INFO  Umbraco.Core.MainDom - Released MainDom.
+ 2018-08-06 14:53:29,664 [P12668/D5/T189] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [InstructionProcessing] Terminating
+ 2018-08-06 14:53:29,665 [P12668/D5/T189] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [InstructionProcessing] Waiting for tasks to complete
+ 2018-08-06 14:53:29,665 [P12668/D5/T261] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [InstructionProcessing] Tasks completed, terminated
+ 2018-08-06 14:53:29,676 [P12668/D5/T189] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2018-08-06 14:53:29,676 [P12668/D5/T189] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2018-08-06 14:53:29,677 [P12668/D5/T189] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2018-08-06 14:53:29,677 [P12668/D5/T189] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2018-08-06 14:53:29,678 [P12668/D5/T207] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2018-08-06 14:53:29,677 [P12668/D5/T215] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2018-08-06 14:53:59,756 [P12668/D5/T234] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: BuildManagerChange
+
+_shutDownMessage=Change in C:\Users\karaulan\AppData\Local\Temp\Temporary ASP.NET Files\vs\e4c839df\3e83004\hash\hash.web
+HostingEnvironment initiated shutdown
+File Change Notification Error in C:\Users\karaulan\AppData\Local\Temp\Temporary ASP.NET Files\vs\e4c839df\3e83004\hash
+HostingEnvironment caused shutdown
+
+_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   at System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   at System.Web.Compilation.BuildManager.OnWebHashFileChange(Object sender, FileChangeEvent e)
+   at System.Web.DirectoryMonitor.FireNotifications()
+   at System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   at System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   at System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()

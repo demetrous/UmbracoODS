@@ -1,0 +1,497 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "WebBase.cshtml";
+}
+
+@section BreadCrumb
+{
+    @{ Html.RenderAction("RenderBreadcrumb", "SiteLayout");}
+}
+
+<div class="container main-content">
+
+    @{ Html.RenderAction("RenderTitleControls", "SiteLayout"); }
+
+    <h4 id="degree-program" class="text-center mb-3">Degree Program</h4>
+    <h5 id="degree-program-chart-drill-level" class="text-center mb-3">University</h5>
+
+    <div class="row">
+        <div class="col-md-7">
+            <div id="degree-program-chart-table-placeholder">
+
+            </div>
+            <!-- <button type="button" class="btn btn-link" onclick="exportToExcel('degree-program-chart-table')">To Excel</button> -->
+
+        </div>
+        <div class="col-md-5">
+            <div id="degree-program-chart" style="height: 500px;">
+
+            </div>
+        </div>
+    </div>
+
+
+    <h4 id="degree-program2" class="text-center mb-3">Degree Program2</h4>
+    <div class="row">
+        <div class="col-md-6" id="degree-program-chart2-table-placeholder">
+
+        </div>
+        <div class="col-md-6">
+            <div id="degree-program-chart2" style="height: 400px;">
+
+            </div>
+        </div>
+    </div>
+
+    <h4 class="text-center mb-3">Degree Program</h4>
+    <div class="row">
+        <div class="col-md-6">
+            <table class="table table-hover text-right table-report">
+                <tbody>
+                    <tr>
+                        <th>Level</th>
+                        <th>2012</th>
+                        <th>2013</th>
+                        <th>2014</th>
+                        <th>2015</th>
+                        <th>2016</th>
+                        <th>2017</th>
+                    </tr>
+                    <tr>
+                        <td><a href="student-profile-undergrad.html">Undergraduate</a></td>
+                        <td><a href="student-profile-undergrad.html" data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="Click for Details<br/>on Undergraduate<br/>in 2012">22,432</a></td>
+                        <td><a href="student-profile-undergrad.html" data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="Click for Details<br/>on Undergraduate<br/>in 2013">23,099</a></td>
+                        <td><a href="student-profile-undergrad.html" data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="Click for Details<br/>on Undergraduate<br/>in 2014">23,813</a></td>
+                        <td><a href="student-profile-undergrad.html" data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="Click for Details<br/>on Undergraduate<br/>in 2015">23,801</a></td>
+                        <td><a href="student-profile-undergrad.html" data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="Click for Details<br/>on Undergraduate<br/>in 2016">24,715</a></td>
+                        <td><a href="student-profile-undergrad.html" data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="Click for Details<br/>on Undergraduate<br/>in 2017">25,282</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="student-profile-grad.html">Graduate</a></td>
+                        <td><a href="student-profile-grad.html">4,204</a></td>
+                        <td><a href="student-profile-grad.html">4,023</a></td>
+                        <td><a href="student-profile-grad.html">4,010</a></td>
+                        <td><a href="student-profile-grad.html">4,106</a></td>
+                        <td><a href="student-profile-grad.html">4,288</a></td>
+                        <td><a href="student-profile-grad.html">4,429</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="student-profile-prof.html">Professional</a></td>
+                        <td><a href="student-profile-prof.html">766</a></td>
+                        <td><a href="student-profile-prof.html">742</a></td>
+                        <td><a href="student-profile-prof.html">715</a></td>
+                        <td><a href="student-profile-prof.html">713</a></td>
+                        <td><a href="student-profile-prof.html">717</a></td>
+                        <td><a href="student-profile-prof.html">776</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="student-profile-prof.html">Total</a></td>
+                        <td><a href="student-profile-prof.html">27,389</a></td>
+                        <td><a href="student-profile-prof.html">27,848</a></td>
+                        <td><a href="student-profile-prof.html">28,515</a></td>
+                        <td><a href="student-profile-prof.html">28,600</a></td>
+                        <td><a href="student-profile-prof.html">29,702</a></td>
+                        <td><a href="student-profile-prof.html">30,471</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-6">
+
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-12 mx-auto">
+
+            <h4 id="student-fte" class="text-center mb-3">Student FTE</h4>
+            <table id="student-fte-table" class="table table-hover text-right table-report">
+                <tbody>
+                    <tr>
+                        <th></th>
+                        <th>2012</th>
+                        <th>2013</th>
+                        <th>2014</th>
+                        <th>2015</th>
+                        <th>2016</th>
+                        <th>2017</th>
+                    </tr>
+                    <tr>
+                        <td>Undergraduate</td>
+                        <td>16,662.1</td>
+                        <td>17,368.7</td>
+                        <td>18,497.3</td>
+                        <td>19,022.4</td>
+                        <td>19,908.8</td>
+                        <td>20,552.8</td>
+                    </tr>
+                    <tr>
+                        <td class="pl-4">Lower</td>
+                        <td>10,365.3</td>
+                        <td>10,997.8</td>
+                        <td>11,922.2</td>
+                        <td>12,282.1</td>
+                        <td>12,754.3</td>
+                        <td>12,951.5</td>
+                    </tr>
+                    <tr>
+                        <td class="pl-4">Upper</td>
+                        <td>6,296.9</td>
+                        <td>6,370.9</td>
+                        <td>6,575.1</td>
+                        <td>6,740.3</td>
+                        <td>7,154.5</td>
+                        <td>7,601.3</td>
+                    </tr>
+                    <tr>
+                        <td>Graduate</td>
+                        <td>2,479.5</td>
+                        <td>2,479.7</td>
+                        <td>2,514.9</td>
+                        <td>2,701.2</td>
+                        <td>2,778.5</td>
+                        <td>2,913.4</td>
+                    </tr>
+                    <tr>
+                        <td class="pl-4">Master</td>
+                        <td>1,734.4</td>
+                        <td>1,733.5</td>
+                        <td>1748.2</td>
+                        <td>1891.5</td>
+                        <td>1923.1</td>
+                        <td>2007.2</td>
+                    </tr>
+                    <tr>
+                        <td class="pl-4">Doctoral</td>
+                        <td>745.1</td>
+                        <td>746.2</td>
+                        <td>766.7</td>
+                        <td>809.7</td>
+                        <td>855.4</td>
+                        <td>906.3</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>19,141.6</td>
+                        <td>19,848.4</td>
+                        <td>21,012.3</td>
+                        <td>21,723.7</td>
+                        <td>22,687.3</td>
+                        <td>23,466.2</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4 id="enrollment-status" class="text-center mb-3">Enrollment Status</h4>
+            <table class="table table-hover text-right table-report">
+                <tbody>
+                    <tr>
+                        <th></th>
+                        <th>2012</th>
+                        <th>2013</th>
+                        <th>2014</th>
+                        <th>2015</th>
+                        <th>2016</th>
+                        <th>2017</th>
+                    </tr>
+                    <tr>
+                        <td>Full Time</td>
+                        <td>18,175</td>
+                        <td>18,794</td>
+                        <td>19,778</td>
+                        <td>20,060</td>
+                        <td>20,833</td>
+                        <td>21,703</td>
+                    </tr>
+                    <tr>
+                        <td>Part Time</td>
+                        <td>9,214</td>
+                        <td>9,054</td>
+                        <td>8,737</td>
+                        <td>8,540</td>
+                        <td>8,869</td>
+                        <td>8,768</td>
+                    </tr>
+                    <tr>
+                        <td><a href="student-profile-prof.html">Total</a></td>
+                        <td><a href="student-profile-prof.html">27,389</a></td>
+                        <td><a href="student-profile-prof.html">27,848</a></td>
+                        <td><a href="student-profile-prof.html">28,515</a></td>
+                        <td><a href="student-profile-prof.html">28,600</a></td>
+                        <td><a href="student-profile-prof.html">29,702</a></td>
+                        <td><a href="student-profile-prof.html">30,471</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4 id="residency" class="text-center mb-3">Residency</h4>
+            <table class="table table-hover text-right table-report">
+                <tbody>
+                    <tr>
+                        <th></th>
+                        <th>2012</th>
+                        <th>2013</th>
+                        <th>2014</th>
+                        <th>2015</th>
+                        <th>2016</th>
+                        <th>2017</th>
+                    </tr>
+                    <tr>
+                        <td>Resident</td>
+                        <td>22,338</td>
+                        <td>22,888</td>
+                        <td>23,539</td>
+                        <td>24,000</td>
+                        <td>25,033</td>
+                        <td>25,744</td>
+                    </tr>
+                    <tr>
+                        <td>Non-Resident</td>
+                        <td>5,051</td>
+                        <td>4,960</td>
+                        <td>4,976</td>
+                        <td>4,600</td>
+                        <td>4,669</td>
+                        <td>4,727</td>
+                    </tr>
+                    <tr>
+                        <td><a href="student-profile-prof.html">Total</a></td>
+                        <td><a href="student-profile-prof.html">27,389</a></td>
+                        <td><a href="student-profile-prof.html">27,848</a></td>
+                        <td><a href="student-profile-prof.html">28,515</a></td>
+                        <td><a href="student-profile-prof.html">28,600</a></td>
+                        <td><a href="student-profile-prof.html">29,702</a></td>
+                        <td><a href="student-profile-prof.html">30,471</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4 id="gender" class="text-center mb-3">Gender</h4>
+            <table class="table table-hover text-right table-report">
+                <tbody>
+                    <tr>
+                        <th></th>
+                        <th>2012</th>
+                        <th>2013</th>
+                        <th>2014</th>
+                        <th>2015</th>
+                        <th>2016</th>
+                        <th>2017</th>
+                    </tr>
+                    <tr>
+                        <td>Male</td>
+                        <td>12,229</td>
+                        <td>12,360</td>
+                        <td>12,711</td>
+                        <td>12,552</td>
+                        <td>12,771</td>
+                        <td>13,065</td>
+                    </tr>
+                    <tr>
+                        <td>Female</td>
+                        <td>15,160</td>
+                        <td>15,488</td>
+                        <td>15,804</td>
+                        <td>16,048</td>
+                        <td>16,931</td>
+                        <td>17,406</td>
+                    </tr>
+                    <tr>
+                        <td><a href="student-profile-prof.html">Total</a></td>
+                        <td><a href="student-profile-prof.html">27,389</a></td>
+                        <td><a href="student-profile-prof.html">27,848</a></td>
+                        <td><a href="student-profile-prof.html">28,515</a></td>
+                        <td><a href="student-profile-prof.html">28,600</a></td>
+                        <td><a href="student-profile-prof.html">29,702</a></td>
+                        <td><a href="student-profile-prof.html">30,471</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4 id="age" class="text-center mb-1">Age</h4>
+            <h6 class="text-center mb-2">Under and Over 25</h6>
+            <table class="table table-hover text-right table-report">
+                <tbody>
+                    <tr>
+                        <th></th>
+                        <th>2012</th>
+                        <th>2013</th>
+                        <th>2014</th>
+                        <th>2015</th>
+                        <th>2016</th>
+                        <th>2017</th>
+                    </tr>
+                    <tr>
+                        <td>Under 25</td>
+                        <td>17,842</td>
+                        <td>18,669</td>
+                        <td>19,384</td>
+                        <td>19,385</td>
+                        <td>20,199</td>
+                        <td>20,766</td>
+                    </tr>
+                    <tr>
+                        <td>25 and Over</td>
+                        <td>9,547</td>
+                        <td>9,179</td>
+                        <td>9,131</td>
+                        <td>9,215</td>
+                        <td>9,503</td>
+                        <td>9,705</td>
+                    </tr>
+                    <tr>
+                        <td><a href="student-profile-prof.html">Total</a></td>
+                        <td><a href="student-profile-prof.html">27,389</a></td>
+                        <td><a href="student-profile-prof.html">27,848</a></td>
+                        <td><a href="student-profile-prof.html">28,515</a></td>
+                        <td><a href="student-profile-prof.html">28,600</a></td>
+                        <td><a href="student-profile-prof.html">29,702</a></td>
+                        <td><a href="student-profile-prof.html">30,471</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4 class="text-center mb-1">Age</h4>
+            <h6 class="text-center mb-2">Under 18 &mdash; 60 and Over</h6>
+
+            <table class="table table-hover text-right table-report">
+                <tbody>
+                    <tr>
+                        <th></th>
+                        <th>2012</th>
+                        <th>2013</th>
+                        <th>2014</th>
+                        <th>2015</th>
+                        <th>2016</th>
+                        <th>2017</th>
+                    </tr>
+                    <tr>
+                        <td>Under 18</td>
+                        <td>362</td>
+                        <td>432</td>
+                        <td>436</td>
+                        <td>445</td>
+                        <td>439</td>
+                        <td>432</td>
+                    </tr>
+                    <tr>
+                        <td>18 to 20</td>
+                        <td>8,277</td>
+                        <td>8,923</td>
+                        <td>9,617</td>
+                        <td>9,750</td>
+                        <td>10,215</td>
+                        <td>10,406</td>
+                    </tr>
+                    <tr>
+                        <td>21 to 22</td>
+                        <td>5,731</td>
+                        <td>5,667</td>
+                        <td>5,532</td>
+                        <td>5,581</td>
+                        <td>6,051</td>
+                        <td>6,275</td>
+                    </tr>
+                    <tr>
+                        <td>23 to 24</td>
+                        <td>3,473</td>
+                        <td>3,647</td>
+                        <td>3,799</td>
+                        <td>3,609</td>
+                        <td>3,494</td>
+                        <td>3,653</td>
+                    </tr>
+                    <tr>
+                        <td>25 to 32</td>
+                        <td>6,070</td>
+                        <td>5,780</td>
+                        <td>5,613</td>
+                        <td>5,773</td>
+                        <td>5,824</td>
+                        <td>5,940</td>
+                    </tr>
+                    <tr>
+                        <td>33 to 39</td>
+                        <td>1,722</td>
+                        <td>1,727</td>
+                        <td>1,807</td>
+                        <td>1,732</td>
+                        <td>1,841</td>
+                        <td>1,836</td>
+                    </tr>
+                    <tr>
+                        <td>40 to 59</td>
+                        <td>1,610</td>
+                        <td>1,554</td>
+                        <td>1,580</td>
+                        <td>1,569</td>
+                        <td>1,681</td>
+                        <td>1,779</td>
+                    </tr>
+                    <tr>
+                        <td>60 and Over</td>
+                        <td>144</td>
+                        <td>118</td>
+                        <td>131</td>
+                        <td>141</td>
+                        <td>157</td>
+                        <td>150</td>
+                    </tr>
+                    <tr>
+                        <td><a href="student-profile-prof.html">Total</a></td>
+                        <td><a href="student-profile-prof.html">27,389</a></td>
+                        <td><a href="student-profile-prof.html">27,848</a></td>
+                        <td><a href="student-profile-prof.html">28,515</a></td>
+                        <td><a href="student-profile-prof.html">28,600</a></td>
+                        <td><a href="student-profile-prof.html">29,702</a></td>
+                        <td><a href="student-profile-prof.html">30,471</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>
+
+@section ScriptsBottom {
+    <script src="~/scripts/drill-down-barchart.js"></script>
+
+    <script type="text/javascript">
+
+
+        //TEMP: link to json file for drill-down charts, issue is application root on localhost and server is different
+        //localhost is "/", server is "/UmbracoODS"
+        @*var appRoot = "@Request.ApplicationPath";*@
+        var appRoot = "@string.Format("{0}://{1}{2}", Request.Url.Scheme, Request.Url.Authority, Url.Content("~"))";
+
+        //for localhost we're cleaning appRoot as far as we don't need an extra backslash in the filepath
+        //appRoot = appRoot.length > 1 ? appRoot : "";
+
+        //In case of localhost appRoot is empty, for server - contains "/UmbracoODS"
+        var dataLink = appRoot + "data/degree-program-depts-sample.json";
+        
+        drillDownZeroLevel(
+            dataLink,
+            "date",
+            "headcount",
+            ["level", "college", "department"],
+            "#degree-program-chart",
+            false
+        );
+
+        drillDownZeroLevel(
+            dataLink,
+            "date",
+            "headcount",
+            ["level", "college", "department"],
+            "#degree-program-chart2",
+            true
+        );
+
+
+        // Init tooltips
+        $('[data-toggle="tooltip"]').tooltip();
+    </script>
+}
+

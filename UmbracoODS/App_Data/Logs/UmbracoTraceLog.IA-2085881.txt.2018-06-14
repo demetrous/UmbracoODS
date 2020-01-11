@@ -1,0 +1,65 @@
+﻿ 2018-06-14 02:52:34,292 [P18448/D2/T157] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-06-13 02:52:34
+ 2018-06-14 06:52:34,837 [P18448/D2/T150] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-06-13 06:52:34
+ 2018-06-14 08:31:14,471 [P18448/D2/T215] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type UmbracoODS.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2018-06-14 08:34:54,928 [P18448/D2/T152] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-06-14 08:34:54,929 [P18448/D2/T152] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-06-14 08:34:54,929 [P18448/D2/T152] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController
+ 2018-06-14 08:34:54,938 [P18448/D2/T152] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController (took 8ms)
+ 2018-06-14 08:34:55,170 [P18448/D2/T207] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-06-14 08:34:55,170 [P18448/D2/T207] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-06-14 08:34:55,170 [P18448/D2/T207] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IAction
+ 2018-06-14 08:34:55,175 [P18448/D2/T207] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IAction (took 4ms)
+ 2018-06-14 08:35:34,073 [P18448/D2/T413] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username demetrous@gmail.com from IP address 127.0.0.1
+ 2018-06-14 08:35:34,077 [P18448/D2/T413] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: demetrous@gmail.com logged in from IP address 127.0.0.1
+ 2018-06-14 08:35:34,614 [P18448/D2/T152] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-06-14 08:35:34,615 [P18448/D2/T152] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-06-14 08:35:34,615 [P18448/D2/T152] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.ITree
+ 2018-06-14 08:35:34,619 [P18448/D2/T152] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.ITree (took 3ms)
+ 2018-06-14 08:35:34,656 [P18448/D2/T152] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-06-14 08:35:34,656 [P18448/D2/T152] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-06-14 08:35:34,657 [P18448/D2/T152] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController
+ 2018-06-14 08:35:34,657 [P18448/D2/T152] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController (took 0ms)
+ 2018-06-14 08:35:34,664 [P18448/D2/T152] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-06-14 08:35:34,664 [P18448/D2/T152] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-06-14 08:35:34,665 [P18448/D2/T152] INFO  Umbraco.Core.PluginManager - Resolving [umbraco.businesslogic.TreeAttribute]umbraco.interfaces.ITree
+ 2018-06-14 08:35:34,670 [P18448/D2/T152] INFO  Umbraco.Core.PluginManager - Resolved [umbraco.businesslogic.TreeAttribute]umbraco.interfaces.ITree (took 5ms)
+ 2018-06-14 08:55:04,885 [P18448/D2/T421] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: demetrous@gmail.com, IP Address: 127.0.0.1
+ 2018-06-14 09:36:48,829 [P18448/D2/T361] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username demetrous@gmail.com from IP address 127.0.0.1
+ 2018-06-14 09:36:48,830 [P18448/D2/T361] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: demetrous@gmail.com logged in from IP address 127.0.0.1
+ 2018-06-14 10:52:35,394 [P18448/D2/T84] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-06-13 10:52:35
+ 2018-06-14 14:52:35,948 [P18448/D2/T110] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-06-13 14:52:35
+ 2018-06-14 15:51:31,147 [P18448/D2/T413] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2018-06-14 15:51:31,148 [P18448/D2/T413] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2018-06-14 15:51:31,156 [P18448/D2/T413] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Terminating
+ 2018-06-14 15:51:31,157 [P18448/D2/T413] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Waiting for tasks to complete
+ 2018-06-14 15:51:31,159 [P18448/D2/T413] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Tasks completed, terminated
+ 2018-06-14 15:51:31,164 [P18448/D2/T162] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2018-06-14 15:51:31,165 [P18448/D2/T413] INFO  Umbraco.Core.MainDom - Stopping...
+ 2018-06-14 15:51:31,171 [P18448/D2/T413] INFO  Umbraco.Web.ExamineStartup - Examine shutting down
+ 2018-06-14 15:51:31,181 [P18448/D2/T413] INFO  Umbraco.Web.ExamineStartup - Complete (took 10ms)
+ 2018-06-14 15:51:31,182 [P18448/D2/T413] INFO  Umbraco.Core.MainDom - Released MainDom.
+ 2018-06-14 15:51:31,192 [P18448/D2/T413] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2018-06-14 15:51:31,192 [P18448/D2/T413] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2018-06-14 15:51:31,193 [P18448/D2/T413] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2018-06-14 15:51:31,193 [P18448/D2/T206] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2018-06-14 15:51:31,193 [P18448/D2/T413] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2018-06-14 15:51:31,194 [P18448/D2/T413] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [InstructionProcessing] Terminating
+ 2018-06-14 15:51:31,194 [P18448/D2/T206] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2018-06-14 15:51:31,194 [P18448/D2/T413] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [InstructionProcessing] Waiting for tasks to complete
+ 2018-06-14 15:51:31,195 [P18448/D2/T413] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2018-06-14 15:51:31,195 [P18448/D2/T413] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2018-06-14 15:51:31,195 [P18448/D2/T211] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [InstructionProcessing] Tasks completed, terminated
+ 2018-06-14 15:51:31,195 [P18448/D2/T413] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2018-06-14 15:51:31,196 [P18448/D2/T413] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2018-06-14 15:51:31,196 [P18448/D2/T343] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2018-06-14 15:51:31,195 [P18448/D2/T151] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2018-06-14 15:52:01,247 [P18448/D2/T413] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: HostingEnvironment
+
+_shutDownMessage=HostingEnvironment initiated shutdown
+HostingEnvironment caused shutdown
+
+_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   at System.Web.Hosting.PipelineRuntime.StopProcessing()

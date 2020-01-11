@@ -1,0 +1,25 @@
+﻿ 2018-05-10 00:38:27,837 [P17776/D4/T263] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-05-09 00:38:27
+ 2018-05-10 04:38:28,297 [P17776/D4/T351] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-05-09 04:38:28
+ 2018-05-10 08:38:28,915 [P17776/D4/T351] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-05-09 08:38:28
+ 2018-05-10 09:28:38,964 [P17776/D4/T338] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type UmbracoODS.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2018-05-10 09:57:34,637 [P17776/D4/T22] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type UmbracoODS.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2018-05-10 10:00:48,599 [P17776/D4/T43] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username demetrous@gmail.com from IP address ::1
+ 2018-05-10 10:00:48,601 [P17776/D4/T43] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: demetrous@gmail.com logged in from IP address ::1
+ 2018-05-10 10:00:48,620 [P17776/D4/T43] ERROR Umbraco.Web.WebApi.Filters.AngularAntiForgeryHelper - Could not validate XSRF token
+System.Web.Mvc.HttpAntiForgeryException (0x80004005): The anti-forgery token could not be decrypted. If this application is hosted by a Web Farm or cluster, ensure that all machines are running the same version of ASP.NET Web Pages and that the <machineKey> configuration specifies explicit encryption and validation keys. AutoGenerate cannot be used in a cluster.
+   at System.Web.Helpers.AntiXsrf.AntiForgeryTokenSerializer.Deserialize(String serializedToken)
+   at System.Web.Helpers.AntiXsrf.AntiForgeryWorker.Validate(HttpContextBase httpContext, String cookieToken, String formToken)
+   at System.Web.Helpers.AntiForgery.Validate(String cookieToken, String formToken)
+   at Umbraco.Web.WebApi.Filters.AngularAntiForgeryHelper.ValidateTokens(String cookieToken, String headerToken)
+ 2018-05-10 11:56:00,511 [P17776/D4/T46] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username demetrous@gmail.com from IP address ::1
+ 2018-05-10 11:56:00,512 [P17776/D4/T46] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: demetrous@gmail.com logged in from IP address ::1
+ 2018-05-10 11:56:00,531 [P17776/D4/T46] ERROR Umbraco.Web.WebApi.Filters.AngularAntiForgeryHelper - Could not validate XSRF token
+System.Web.Mvc.HttpAntiForgeryException (0x80004005): The anti-forgery token could not be decrypted. If this application is hosted by a Web Farm or cluster, ensure that all machines are running the same version of ASP.NET Web Pages and that the <machineKey> configuration specifies explicit encryption and validation keys. AutoGenerate cannot be used in a cluster.
+   at System.Web.Helpers.AntiXsrf.AntiForgeryTokenSerializer.Deserialize(String serializedToken)
+   at System.Web.Helpers.AntiXsrf.AntiForgeryWorker.Validate(HttpContextBase httpContext, String cookieToken, String formToken)
+   at System.Web.Helpers.AntiForgery.Validate(String cookieToken, String formToken)
+   at Umbraco.Web.WebApi.Filters.AngularAntiForgeryHelper.ValidateTokens(String cookieToken, String headerToken)
+ 2018-05-10 12:15:34,091 [P17776/D4/T348] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: demetrous@gmail.com, IP Address: ::1
+ 2018-05-10 12:38:29,320 [P17776/D4/T333] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-05-09 12:38:29
+ 2018-05-10 16:38:29,952 [P17776/D4/T404] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-05-09 16:38:29
+ 2018-05-10 20:38:30,568 [P17776/D4/T427] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-05-09 20:38:30

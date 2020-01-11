@@ -1,0 +1,28 @@
+
+
+.right-menu-header::after{
+    content: "Right Menu Header";
+    background-color: #2196f5;
+    color: white;
+    font-size: .8em;
+    position: relative;
+    top: -.5em;
+    left: .15em;
+    padding: 0 .2em;
+}
+.on-page-pdf::after{
+    content: "On Page PDF";
+    background-color: #2196f5;
+    color: white;
+    font-size: .8em;
+    position: relative;
+    top: -.5em;
+    left: .15em;
+	padding: 0 .2em;
+}
+
+/**umb_name:Right Menu Header*/
+.right-menu-header{}
+
+/**umb_name:On Page PDF*/
+.on-page-pdf{}

@@ -1,0 +1,50 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@using Examine.LuceneEngine.SearchCriteria
+@using Umbraco.Core.Models
+
+@{
+    Layout = "WebBase.cshtml";
+}
+
+@Umbraco.Field("path")
+
+<div class="container main-content">
+
+    @{
+        IPublishedContent linkedToPage;
+
+        if (!string.IsNullOrEmpty(Request.QueryString["search"]))
+        {
+
+            //Fetching what eva searchterm some bloke is throwin' our way
+            var q = Request.QueryString["search"];
+
+            //Fetching our SearchProvider by giving it the name of our searchprovider
+            var Searcher = Examine.ExamineManager.Instance.SearchProviderCollection["MySearchSearcher"];
+
+            //Searching and ordering the result by score, and we only want to get the results that has a minimum of 0.05(scale is up to 1.)
+            var searchResults = Searcher.Search(q, true).OrderByDescending(x => x.Score).TakeWhile(x => x.Score > 0.05f);
+
+            //Printing the results
+            <ul>
+            @foreach (var item in searchResults)
+            {
+                //var node = Model.NodeById(item.Fields["id"]);
+
+                linkedToPage = Umbraco.TypedContent(Int32.Parse(item.Fields["id"]));
+
+                <li>
+                    <a href="@linkedToPage.Url">
+                        @item.Fields["title"];
+                    </a>
+
+                    @item.Fields["subtitle"]
+
+
+                </li>
+            }
+            </ul>
+        }
+    }
+
+</div>

@@ -1,0 +1,65 @@
+﻿@inherits UmbracoViewPage
+
+@{    
+
+    bool isHomePage = Umbraco.AssignedContentItem.Name.ToLower() == "home" || Umbraco.AssignedContentItem.Name.ToLower() == "course evaluations";
+
+    
+
+}
+
+
+
+@if (!isHomePage)
+{
+    <nav class="navbar navbar-expand-xl fixed-top smooth-scroll">
+        <div class="container container-navbar">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNavBottom">
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavBottom">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <ol class="breadcrumb d-flex flex-row align-items-end">
+
+                            @foreach (var content in Umbraco.AssignedContentItem.Ancestors().Reverse())
+                            {
+                                <li class="breadcrumb-item active">
+                                    <a href="@content.Url">@content.Name</a>
+                                </li>
+                            }
+                            <li class="breadcrumb-item active">
+                                <a href="#">@Umbraco.AssignedContentItem.Name</a>
+                            </li>
+
+                        </ol>
+                    </li>
+
+                    <li class="nav-item">
+                            <a class="nav-link" href="#degree-program">Degree Program</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#student-fte">Student FTE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#enrollment-status">Enrollment Status</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#residency">Residency</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gender">Gender</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#age">Age</a>
+                        </li>
+
+                </ul>
+            </div>
+        </div>
+
+
+    </nav>
+
+}

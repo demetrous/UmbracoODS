@@ -1,0 +1,18 @@
+﻿ 2018-08-30 03:25:14,131 [P10440/D5/T296] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-08-29 03:25:14
+ 2018-08-30 07:25:14,694 [P10440/D5/T300] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-08-29 07:25:14
+ 2018-08-30 07:58:13,060 [P10440/D5/T61] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username demetrous@gmail.com from IP address ::1
+ 2018-08-30 07:58:13,060 [P10440/D5/T61] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: demetrous@gmail.com logged in from IP address ::1
+ 2018-08-30 08:00:41,274 [P10440/D5/T61] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type UmbracoODS.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2018-08-30 08:01:49,316 [P10440/D5/T483] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Administration and Staff Instructions' with Id '1129' has been published.
+ 2018-08-30 08:01:53,374 [P10440/D5/T389] INFO  umbraco.content - Save Xml to file...
+ 2018-08-30 08:01:53,382 [P10440/D5/T389] INFO  umbraco.content - Saved Xml to file.
+ 2018-08-30 08:02:16,778 [P10440/D5/T213] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type UmbracoODS.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2018-08-30 08:17:45,377 [P10440/D5/T483] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: demetrous@gmail.com, IP Address: ::1
+ 2018-08-30 11:25:15,272 [P10440/D5/T576] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-08-29 11:25:15
+ 2018-08-30 13:07:59,297 [P10440/D5/T176] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username demetrous@gmail.com from IP address ::1
+ 2018-08-30 13:07:59,298 [P10440/D5/T176] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: demetrous@gmail.com logged in from IP address ::1
+ 2018-08-30 13:08:15,443 [P10440/D5/T177] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type UmbracoODS.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2018-08-30 13:27:30,103 [P10440/D5/T122] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: demetrous@gmail.com, IP Address: ::1
+ 2018-08-30 15:25:15,856 [P10440/D5/T145] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-08-29 15:25:15
+ 2018-08-30 19:25:16,417 [P10440/D5/T178] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-08-29 19:25:16
+ 2018-08-30 23:25:16,993 [P10440/D5/T202] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-08-29 23:25:16

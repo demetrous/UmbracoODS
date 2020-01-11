@@ -1,0 +1,40 @@
+﻿ 2018-10-18 02:57:52,932 [P17780/D6/T48] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-10-17 02:57:52
+ 2018-10-18 06:57:53,561 [P17780/D6/T397] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-10-17 06:57:53
+ 2018-10-18 10:03:06,189 [P17780/D6/T241] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username demetrous@gmail.com from IP address 10.240.83.129
+ 2018-10-18 10:03:06,189 [P17780/D6/T241] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: demetrous@gmail.com logged in from IP address 10.240.83.129
+ 2018-10-18 10:04:36,953 [P17780/D6/T390] INFO  Umbraco.Core.MainDom - Stopping...
+ 2018-10-18 10:04:36,968 [P17780/D6/T390] INFO  Umbraco.Web.ExamineStartup - Examine shutting down
+ 2018-10-18 10:04:36,999 [P17780/D6/T390] INFO  Umbraco.Web.ExamineStartup - Complete (took 21ms)
+ 2018-10-18 10:04:36,999 [P17780/D6/T390] INFO  Umbraco.Core.MainDom - Released MainDom.
+ 2018-10-18 10:04:36,999 [P17780/D6/T390] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2018-10-18 10:04:36,999 [P17780/D6/T390] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2018-10-18 10:04:36,999 [P17780/D6/T390] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2018-10-18 10:04:36,999 [P17780/D6/T390] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2018-10-18 10:04:36,999 [P17780/D6/T303] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2018-10-18 10:04:36,999 [P17780/D6/T206] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2018-10-18 10:04:36,999 [P17780/D6/T390] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [InstructionProcessing] Terminating
+ 2018-10-18 10:04:37,015 [P17780/D6/T390] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [InstructionProcessing] Waiting for tasks to complete
+ 2018-10-18 10:04:37,015 [P17780/D6/T390] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2018-10-18 10:04:37,015 [P17780/D6/T475] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [InstructionProcessing] Tasks completed, terminated
+ 2018-10-18 10:04:37,015 [P17780/D6/T390] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2018-10-18 10:04:37,015 [P17780/D6/T390] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2018-10-18 10:04:37,015 [P17780/D6/T390] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2018-10-18 10:04:37,015 [P17780/D6/T117] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2018-10-18 10:04:37,015 [P17780/D6/T108] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2018-10-18 10:04:37,015 [P17780/D6/T390] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Terminating
+ 2018-10-18 10:04:37,015 [P17780/D6/T390] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Waiting for tasks to complete
+ 2018-10-18 10:04:37,015 [P17780/D6/T390] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Tasks completed, terminated
+ 2018-10-18 10:04:37,015 [P17780/D6/T390] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2018-10-18 10:04:37,015 [P17780/D6/T390] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2018-10-18 10:04:37,015 [P17780/D6/T176] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2018-10-18 10:05:07,095 [P17780/D6/T390] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: ConfigurationChange
+
+_shutDownMessage=IIS configuration change
+HostingEnvironment initiated shutdown
+HostingEnvironment caused shutdown
+
+_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   at System.Web.Hosting.PipelineRuntime.StopProcessing()

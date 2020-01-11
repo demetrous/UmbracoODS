@@ -1,0 +1,67 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<List<NavigationListItem>>
+
+@using UmbracoODS.Models
+
+
+@{
+
+    List<NavigationListItem> noChapterNameList = Model.Skip(1).ToList();
+
+    NavigationListItem chapterName = new NavigationListItem();
+
+
+    chapterName = Model.First();
+
+
+}
+
+<div class="root-name-container"><a class="root-name child-list-item chapter-name" href="@chapterName.Link.Url">@chapterName.Link.Text</a></div>
+<ul class="child-list pl-0">
+    @RenderMenuItems(noChapterNameList)
+</ul>
+
+
+
+
+
+@helper RenderMenuItems(List<NavigationListItem> listItems, bool FirstLevel = true)
+{
+    if (listItems != null)
+    {
+        foreach (var item in listItems)
+        {
+
+            if (item.HasChildren)
+            {
+
+                <li>
+                    <a class="child-list-item font-weight-bold @(Umbraco.AssignedContentItem.Id == item.Link.Id ? "current-page" : null)" href="@item.Link.Url" target="@(item.Link.NewWindow ? "_blank": null)">@item.Link.Text</a>
+                    <ul class="child-list pl-0">
+                        @RenderMenuItems(item.Items, false)
+                    </ul>
+                </li>
+
+            }
+            else
+            {
+                <li>
+                    <a class="child-list-item @(Umbraco.AssignedContentItem.Id == item.Link.Id ? "current-page" : null)" href="@item.Link.Url" target="@(item.Link.NewWindow ? "_blank": null)">@item.Link.Text</a>
+                </li>
+            }
+
+        }
+    }
+}
+
+<script>
+    var chapterChild = document.querySelector('.current-page');
+
+    if (chapterChild !==null) {
+        chapterChild.scrollIntoView({ block: "center" });
+    }
+
+    //document.querySelector('.current-page').scrollIntoView({ block: "center" })
+    //console.log(document.querySelector('.current-page').scrollIntoView());
+</script>
+
+

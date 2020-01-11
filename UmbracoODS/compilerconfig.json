@@ -1,0 +1,7 @@
+﻿[
+  {
+    "outputFile": "css/SampleSass.css",
+    "inputFile": "sass/SampleSass.scss",
+    "minify": { "enabled": false }
+  }
+]

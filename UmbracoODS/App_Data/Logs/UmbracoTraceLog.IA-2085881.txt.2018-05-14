@@ -1,0 +1,7 @@
+﻿ 2018-05-14 00:38:40,997 [P17776/D4/T57] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-05-13 00:38:40
+ 2018-05-14 04:38:41,479 [P17776/D4/T68] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-05-13 04:38:41
+ 2018-05-14 08:38:42,096 [P17776/D4/T212] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-05-13 08:38:42
+ 2018-05-14 11:14:29,674 [P17776/D4/T56] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type UmbracoODS.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2018-05-14 12:38:42,561 [P17776/D4/T399] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-05-13 12:38:42
+ 2018-05-14 16:38:43,178 [P17776/D4/T284] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-05-13 16:38:43
+ 2018-05-14 20:38:43,696 [P17776/D4/T349] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-05-13 20:38:43

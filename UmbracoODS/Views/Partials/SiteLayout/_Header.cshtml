@@ -1,0 +1,203 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<List<NavigationListItem>>
+
+@using UmbracoODS.Models;
+@using Umbraco.Core.Security;
+
+@{
+
+    var userTicket = new System.Web.HttpContextWrapper(System.Web.HttpContext.Current).GetUmbracoAuthTicket();
+
+    string currentUser = "";
+
+    if (userTicket != null)
+    {
+        currentUser = ApplicationContext.Services.UserService.GetByUsername(userTicket.Name).Username;
+        //currentUser = ApplicationContext.Services.UserService.GetByUsername(userTicket.Name).;
+    }
+
+}
+
+
+<header>
+    <!-- NAVBAR TOP -->
+    <nav class="navbar navbar-expand-xl navbar-dark fixed-top py-0" id="navbar-top">
+        <div class="container container-navbar">
+            <a href="https://www.unlv.edu" class="navbar-brand d-flex align-items-center">
+                <img src="~/img/unlv-logo-small.svg" width="41" height="20" alt="">
+                <span class="small-logo-text">University of Nevada, Las Vegas</span>
+            </a>
+            <!-- <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+              <span class="navbar-toggler-icon">
+              </span>
+            </button> -->
+            <!-- <div class="collapse navbar-collapse" id="navbarNav"> -->
+            <ul class="navbar-nav ml-auto list-inline">
+
+
+                @{
+
+
+                    var myUser = System.Web.Security.Membership.GetUser();
+                    if (myUser != null)
+                    {
+
+                        IMember member = ApplicationContext.Current.Services.MemberService.GetByUsername(System.Web.Security.Membership.GetUser().UserName);
+
+                        <li class="nav-item list-inline-item">
+                            <a href="~/login" class="nav-link">Member (ACE): @myUser.UserName</a>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="nav-item list-inline-item">
+                            <a href="~/login" class="nav-link">Member Login (ACE)</a>
+                        </li>
+                    }
+                }
+
+
+                @if (userTicket != null)
+                {
+                    <li class="nav-item list-inline-item">
+                        <a href="~/umbraco#/content/content/edit/@Umbraco.AssignedContentItem.Id" class="nav-link" target="_blank">
+                            Edit
+                        </a>
+                    </li>
+
+                    <li class="nav-item list-inline-item">
+                        <a href="~/umbraco#/" class="nav-link">Backoffice User (ACE): @currentUser</a>
+                    </li>
+
+                }
+                else
+                {
+                    <li class="nav-item list-inline-item">
+                        <a href="~/umbraco#/login" class="nav-link">Backoffice Login (ACE)</a>
+                    </li>
+
+                }
+
+
+
+
+
+
+                <li class="nav-item list-inline-item">
+                    <a href="#" class="nav-link">Register</a>
+                </li>
+            </ul>
+            <!-- </div> -->
+        </div>
+    </nav>
+
+
+    <!-- NAVBAR MAIN -->
+    <nav class="navbar navbar-expand-xl navbar-dark fixed-top py-0" id="navbar-main">
+        <div class="navbar-shadow">
+
+        </div>
+        <div class="container container-navbar d-flex flex-row align-items-stretch">
+            <a href="@Request.ApplicationPath" class="navbar-brand d-flex align-items-center">
+                <span class="small-logo-text">@Umbraco.AssignedContentItem.AncestorOrSelf("home").GetPropertyValue("websiteName")</span>
+
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNavMain">
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavMain">
+                <ul class="navbar-nav">
+                    @RenderMenuItems(Model)
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+
+    </nav>
+</header>
+
+@helper RenderMenuItems(List<NavigationListItem> listItems, bool FirstLevel = true)
+{
+    if (listItems != null)
+    {
+        foreach (var item in listItems)
+        {
+
+            @*if (item.HasChildren)
+                {
+
+                    <li class="@(FirstLevel ? "nav-item dropdown" : "dropdown-submenu")">
+                        <a class="@(FirstLevel ? "nav-link" : "dropdown-item") dropdown-toggle" href="@item.Link.Url"
+                           @(FirstLevel ? @Html.Raw("id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\"") : null)>
+                            @item.Link.Text
+                        </a>
+
+                        <ul class="dropdown-menu @(FirstLevel ? "first-level" : null)" @(FirstLevel ? "aria-labelledby=\"navbarDropdownMenuLink\"" : null)>
+
+                            @RenderMenuItems(item.Items, false)
+
+                        </ul>
+                    </li>
+                }
+                else
+                {
+                    <li class="@(FirstLevel ? "nav-item" : null) @(Umbraco.AssignedContentItem.Url == item.Link.Url ? "active" : null)">
+
+                        <a class="@(FirstLevel ? "nav-link" : "dropdown-item")" href="@item.Link.Url" target="@item.Link.Target">
+                            @item.Link.Text
+                        </a>
+                    </li>
+                }*@
+
+            <li class="@(FirstLevel ? "nav-item" : null) @(Umbraco.AssignedContentItem.Url == item.Link.Url ? "active" : null)">
+
+                <a class="@(FirstLevel ? "nav-link" : "dropdown-item")" href="@item.Link.Url" target="@item.Link.Target">
+                    @item.Link.Text
+                </a>
+            </li>
+        }
+    }
+}
+
+
+@helper RenderChildItems(List<NavigationListItem> listItems, bool FirstLevel = true)
+{
+    if (listItems != null)
+    {
+
+        foreach (var item in listItems)
+        {
+            <li class="nav-item @(item.HasChildren ? "dropdown": null)">
+
+                @if (!String.IsNullOrEmpty(item.Text))
+                {
+                    @item.Text
+                }
+                else if (item.Link != null)
+                {
+
+
+                    <a href="@item.Link.Url" class="@(FirstLevel ? "nav-link d-flex justify-content-end": "dropdown-item")  @(item.HasChildren ? "dropdown-toggle" : null)"
+                       @(item.HasChildren ? @Html.Raw("data-toggle = \"dropdown\" aria-expanded = \"true\"") : null)
+                       target="@item.Link.Target">
+                        @item.Link.Text
+                    </a>
+                }
+
+                @if (item.HasChildren)
+                {
+                    <ul class="dropdown-menu">
+                        @RenderChildItems(item.Items, false)
+                    </ul>
+                }
+
+            </li>
+        }
+
+    }
+}
+

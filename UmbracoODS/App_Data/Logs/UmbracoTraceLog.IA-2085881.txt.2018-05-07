@@ -1,0 +1,511 @@
+﻿ 2018-05-07 07:12:16,046 [P17776/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.10.4 application starting on IA-2085881
+ 2018-05-07 07:12:16,079 [P17776/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2018-05-07 07:12:16,105 [P17776/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 26ms)
+ 2018-05-07 07:12:16,191 [P17776/D2/T1] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2018-05-07 07:12:16,193 [P17776/D2/T1] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2018-05-07 07:12:16,196 [P17776/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-05-07 07:12:16,604 [P17776/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 408ms)
+ 2018-05-07 07:12:16,605 [P17776/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
+ 2018-05-07 07:12:16,613 [P17776/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 7ms)
+ 2018-05-07 07:12:16,636 [P17776/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-05-07 07:12:16,638 [P17776/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 1ms)
+ 2018-05-07 07:12:16,639 [P17776/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2018-05-07 07:12:16,644 [P17776/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 5ms)
+ 2018-05-07 07:12:16,645 [P17776/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-05-07 07:12:16,646 [P17776/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 1ms)
+ 2018-05-07 07:12:16,647 [P17776/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2018-05-07 07:12:16,655 [P17776/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 8ms)
+ 2018-05-07 07:12:16,675 [P17776/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-05-07 07:12:16,676 [P17776/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-05-07 07:12:16,677 [P17776/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
+ 2018-05-07 07:12:16,682 [P17776/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 4ms)
+ 2018-05-07 07:12:16,683 [P17776/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-05-07 07:12:16,684 [P17776/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-05-07 07:12:16,685 [P17776/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
+ 2018-05-07 07:12:16,689 [P17776/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 4ms)
+ 2018-05-07 07:12:18,606 [P17776/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2018-05-07 07:12:18,934 [P17776/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2018-05-07 07:12:19,012 [P17776/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2018-05-07 07:12:19,550 [P17776/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2018-05-07 07:12:19,581 [P17776/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 3669ms)
+ 2018-05-07 07:12:19,879 [P17776/D2/T10] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - New ApplicationUrl detected: http://localhost:49744/umbraco
+ 2018-05-07 07:12:19,882 [P17776/D2/T10] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:49744/umbraco (UmbracoModule request)
+ 2018-05-07 07:12:20,198 [P17776/D2/T10] INFO  umbraco.content - Load Xml from file...
+ 2018-05-07 07:12:20,232 [P17776/D2/T10] INFO  umbraco.content - Loaded Xml from file.
+ 2018-05-07 07:12:20,945 [P17776/D2/T10] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-05-07 07:12:20,946 [P17776/D2/T10] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-05-07 07:12:20,947 [P17776/D2/T10] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IParameterEditor
+ 2018-05-07 07:12:20,956 [P17776/D2/T10] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IParameterEditor (took 8ms)
+ 2018-05-07 07:12:24,216 [P17776/D2/T10] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type UmbracoODS.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2018-05-07 07:13:14,404 [P17776/D2/T10] WARN  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: Unprotect ticket failed
+ 2018-05-07 07:13:16,208 [P17776/D2/T10] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-05-07 07:13:16,209 [P17776/D2/T10] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-05-07 07:13:16,210 [P17776/D2/T10] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController
+ 2018-05-07 07:13:16,221 [P17776/D2/T10] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController (took 11ms)
+ 2018-05-07 07:13:16,374 [P17776/D2/T19] WARN  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: Unprotect ticket failed
+ 2018-05-07 07:13:16,385 [P17776/D2/T19] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-05-07 07:13:16,386 [P17776/D2/T19] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-05-07 07:13:16,386 [P17776/D2/T19] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IAction
+ 2018-05-07 07:13:16,399 [P17776/D2/T19] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IAction (took 13ms)
+ 2018-05-07 07:13:18,310 [P17776/D2/T16] WARN  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: Unprotect ticket failed
+ 2018-05-07 07:13:18,771 [P17776/D2/T17] WARN  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: Unprotect ticket failed
+ 2018-05-07 07:13:20,271 [P17776/D2/T12] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-05-07 07:13:20,272 [P17776/D2/T12] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-05-07 07:13:20,274 [P17776/D2/T12] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2018-05-07 07:13:20,282 [P17776/D2/T19] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-05-06 07:13:20
+ 2018-05-07 07:13:20,285 [P17776/D2/T12] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper (took 11ms)
+ 2018-05-07 07:13:21,065 [P17776/D2/T20] WARN  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: Unprotect ticket failed
+ 2018-05-07 07:13:21,579 [P17776/D2/T20] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username demetrous@gmail.com from IP address ::1
+ 2018-05-07 07:13:21,582 [P17776/D2/T20] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: demetrous@gmail.com logged in from IP address ::1
+ 2018-05-07 07:13:21,869 [P17776/D2/T20] ERROR Umbraco.Web.WebApi.Filters.AngularAntiForgeryHelper - Could not validate XSRF token
+System.Web.Mvc.HttpAntiForgeryException (0x80004005): The anti-forgery token could not be decrypted. If this application is hosted by a Web Farm or cluster, ensure that all machines are running the same version of ASP.NET Web Pages and that the <machineKey> configuration specifies explicit encryption and validation keys. AutoGenerate cannot be used in a cluster.
+   at System.Web.Helpers.AntiXsrf.AntiForgeryTokenSerializer.Deserialize(String serializedToken)
+   at System.Web.Helpers.AntiXsrf.AntiForgeryWorker.Validate(HttpContextBase httpContext, String cookieToken, String formToken)
+   at System.Web.Helpers.AntiForgery.Validate(String cookieToken, String formToken)
+   at Umbraco.Web.WebApi.Filters.AngularAntiForgeryHelper.ValidateTokens(String cookieToken, String headerToken)
+ 2018-05-07 07:13:22,043 [P17776/D2/T19] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-05-07 07:13:22,043 [P17776/D2/T19] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-05-07 07:13:22,043 [P17776/D2/T19] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.ITree
+ 2018-05-07 07:13:22,048 [P17776/D2/T19] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.ITree (took 5ms)
+ 2018-05-07 07:13:22,067 [P17776/D2/T19] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-05-07 07:13:22,067 [P17776/D2/T19] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-05-07 07:13:22,068 [P17776/D2/T19] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController
+ 2018-05-07 07:13:22,068 [P17776/D2/T19] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController (took 0ms)
+ 2018-05-07 07:13:22,073 [P17776/D2/T19] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-05-07 07:13:22,073 [P17776/D2/T19] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-05-07 07:13:22,073 [P17776/D2/T19] INFO  Umbraco.Core.PluginManager - Resolving [umbraco.businesslogic.TreeAttribute]umbraco.interfaces.ITree
+ 2018-05-07 07:13:22,079 [P17776/D2/T19] INFO  Umbraco.Core.PluginManager - Resolved [umbraco.businesslogic.TreeAttribute]umbraco.interfaces.ITree (took 5ms)
+ 2018-05-07 07:13:22,130 [P17776/D2/T19] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-05-07 07:13:22,130 [P17776/D2/T19] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-05-07 07:13:22,131 [P17776/D2/T19] INFO  Umbraco.Core.PluginManager - Resolving [umbraco.businesslogic.ApplicationAttribute]umbraco.interfaces.IApplication
+ 2018-05-07 07:13:22,138 [P17776/D2/T19] INFO  Umbraco.Core.PluginManager - Resolved [umbraco.businesslogic.ApplicationAttribute]umbraco.interfaces.IApplication (took 7ms)
+ 2018-05-07 07:13:29,878 [P17776/D2/T18] WARN  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: Unprotect ticket failed
+ 2018-05-07 07:13:29,957 [P17776/D2/T20] WARN  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: Unprotect ticket failed
+ 2018-05-07 07:13:30,042 [P17776/D2/T13] WARN  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: Unprotect ticket failed
+ 2018-05-07 07:13:31,487 [P17776/D2/T11] WARN  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: Unprotect ticket failed
+ 2018-05-07 07:13:31,509 [P17776/D2/T11] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username demetrous@gmail.com from IP address ::1
+ 2018-05-07 07:13:31,509 [P17776/D2/T11] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: demetrous@gmail.com logged in from IP address ::1
+ 2018-05-07 07:13:31,525 [P17776/D2/T11] ERROR Umbraco.Web.WebApi.Filters.AngularAntiForgeryHelper - Could not validate XSRF token
+System.Web.Mvc.HttpAntiForgeryException (0x80004005): The anti-forgery token could not be decrypted. If this application is hosted by a Web Farm or cluster, ensure that all machines are running the same version of ASP.NET Web Pages and that the <machineKey> configuration specifies explicit encryption and validation keys. AutoGenerate cannot be used in a cluster.
+   at System.Web.Helpers.AntiXsrf.AntiForgeryTokenSerializer.Deserialize(String serializedToken)
+   at System.Web.Helpers.AntiXsrf.AntiForgeryWorker.Validate(HttpContextBase httpContext, String cookieToken, String formToken)
+   at System.Web.Helpers.AntiForgery.Validate(String cookieToken, String formToken)
+   at Umbraco.Web.WebApi.Filters.AngularAntiForgeryHelper.ValidateTokens(String cookieToken, String headerToken)
+ 2018-05-07 07:16:51,981 [P17776/D2/T20] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-05-07 07:17:24,779 [P17776/D2/T34] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-05-07 07:17:24,780 [P17776/D2/T34] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 1ms)
+ 2018-05-07 07:17:24,781 [P17776/D2/T34] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Editors.IEditorValidator
+ 2018-05-07 07:17:24,790 [P17776/D2/T34] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Editors.IEditorValidator (took 9ms)
+ 2018-05-07 07:17:24,900 [P17776/D2/T34] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-05-07 07:17:24,901 [P17776/D2/T34] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 1ms)
+ 2018-05-07 07:17:24,902 [P17776/D2/T34] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.ICacheRefresher
+ 2018-05-07 07:17:24,908 [P17776/D2/T34] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.ICacheRefresher (took 5ms)
+ 2018-05-07 07:17:25,244 [P17776/D2/T12] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-05-07 07:17:46,886 [P17776/D2/T65] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-05-07 07:18:37,330 [P17776/D2/T74] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type UmbracoODS.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2018-05-07 07:19:10,960 [P17776/D2/T79] WARN  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: Unprotect ticket failed
+ 2018-05-07 07:19:10,985 [P17776/D2/T79] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username demetrous@gmail.com from IP address ::1
+ 2018-05-07 07:19:10,986 [P17776/D2/T79] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: demetrous@gmail.com logged in from IP address ::1
+ 2018-05-07 07:19:11,004 [P17776/D2/T79] ERROR Umbraco.Web.WebApi.Filters.AngularAntiForgeryHelper - Could not validate XSRF token
+System.Web.Mvc.HttpAntiForgeryException (0x80004005): The anti-forgery token could not be decrypted. If this application is hosted by a Web Farm or cluster, ensure that all machines are running the same version of ASP.NET Web Pages and that the <machineKey> configuration specifies explicit encryption and validation keys. AutoGenerate cannot be used in a cluster.
+   at System.Web.Helpers.AntiXsrf.AntiForgeryTokenSerializer.Deserialize(String serializedToken)
+   at System.Web.Helpers.AntiXsrf.AntiForgeryWorker.Validate(HttpContextBase httpContext, String cookieToken, String formToken)
+   at System.Web.Helpers.AntiForgery.Validate(String cookieToken, String formToken)
+   at Umbraco.Web.WebApi.Filters.AngularAntiForgeryHelper.ValidateTokens(String cookieToken, String headerToken)
+ 2018-05-07 07:19:46,663 [P17776/D2/T61] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-05-07 07:30:02,329 [P17776/D2/T166] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-05-07 07:30:30,845 [P17776/D2/T161] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-05-07 07:31:15,737 [P17776/D2/T166] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-05-07 07:31:19,070 [P17776/D2/T169] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-05-07 07:31:25,266 [P17776/D2/T209] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-05-07 07:32:15,800 [P17776/D2/T209] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Home' with Id '1054' has been published.
+ 2018-05-07 07:32:20,000 [P17776/D2/T223] INFO  umbraco.content - Save Xml to file...
+ 2018-05-07 07:32:20,016 [P17776/D2/T223] INFO  umbraco.content - Saved Xml to file.
+ 2018-05-07 07:32:28,044 [P17776/D2/T224] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type UmbracoODS.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2018-05-07 07:37:02,388 [P17776/D2/T149] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Home' with Id '1054' has been published.
+ 2018-05-07 07:37:04,311 [P17776/D2/T130] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type UmbracoODS.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2018-05-07 07:37:06,432 [P17776/D2/T147] INFO  umbraco.content - Save Xml to file...
+ 2018-05-07 07:37:06,441 [P17776/D2/T147] INFO  umbraco.content - Saved Xml to file.
+ 2018-05-07 07:37:32,799 [P17776/D2/T139] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Home' with Id '1054' has been published.
+ 2018-05-07 07:37:34,905 [P17776/D2/T147] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type UmbracoODS.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2018-05-07 07:37:36,851 [P17776/D2/T147] INFO  umbraco.content - Save Xml to file...
+ 2018-05-07 07:37:36,858 [P17776/D2/T147] INFO  umbraco.content - Saved Xml to file.
+ 2018-05-07 07:39:30,059 [P17776/D2/T20] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type UmbracoODS.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2018-05-07 07:39:36,151 [P17776/D2/T140] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Home' with Id '1054' has been published.
+ 2018-05-07 07:39:38,393 [P17776/D2/T203] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type UmbracoODS.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2018-05-07 07:39:40,189 [P17776/D2/T117] INFO  umbraco.content - Save Xml to file...
+ 2018-05-07 07:39:40,196 [P17776/D2/T117] INFO  umbraco.content - Saved Xml to file.
+ 2018-05-07 07:40:01,899 [P17776/D2/T167] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Home' with Id '1054' has been published.
+ 2018-05-07 07:40:04,273 [P17776/D2/T165] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type UmbracoODS.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2018-05-07 07:40:05,944 [P17776/D2/T176] INFO  umbraco.content - Save Xml to file...
+ 2018-05-07 07:40:05,951 [P17776/D2/T176] INFO  umbraco.content - Saved Xml to file.
+ 2018-05-07 08:07:35,398 [P17776/D2/T485] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username demetrous@gmail.com from IP address ::1
+ 2018-05-07 08:07:35,399 [P17776/D2/T485] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: demetrous@gmail.com logged in from IP address ::1
+ 2018-05-07 08:07:38,696 [P17776/D2/T496] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-05-07 08:07:40,237 [P17776/D2/T499] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-05-07 08:09:27,709 [P17776/D2/T490] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field editor
+ 2018-05-07 08:09:27,711 [P17776/D2/T490] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field hideLabel
+ 2018-05-07 08:10:28,199 [P17776/D2/T458] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Home' with Id '1054' has been published.
+ 2018-05-07 08:10:32,251 [P17776/D2/T446] INFO  umbraco.content - Save Xml to file...
+ 2018-05-07 08:10:32,260 [P17776/D2/T446] INFO  umbraco.content - Saved Xml to file.
+ 2018-05-07 08:10:43,507 [P17776/D2/T430] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Home' with Id '1054' has been published.
+ 2018-05-07 08:10:47,558 [P17776/D2/T432] INFO  umbraco.content - Save Xml to file...
+ 2018-05-07 08:10:47,569 [P17776/D2/T432] INFO  umbraco.content - Saved Xml to file.
+ 2018-05-07 08:11:03,797 [P17776/D2/T439] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type UmbracoODS.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2018-05-07 08:11:21,729 [P17776/D2/T442] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type UmbracoODS.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2018-05-07 08:15:00,225 [P17776/D2/T402] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-05-07 08:15:00,225 [P17776/D2/T404] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field editor
+ 2018-05-07 08:15:00,228 [P17776/D2/T404] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field hideLabel
+ 2018-05-07 08:15:06,935 [P17776/D2/T396] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-05-07 08:15:06,939 [P17776/D2/T404] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field editor
+ 2018-05-07 08:15:06,941 [P17776/D2/T404] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field hideLabel
+ 2018-05-07 08:20:27,729 [P17776/D2/T117] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type UmbracoODS.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2018-05-07 08:20:45,882 [P17776/D2/T496] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type UmbracoODS.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2018-05-07 08:21:57,082 [P17776/D2/T381] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Student Profile' with Id '1057' has been published.
+ 2018-05-07 08:22:01,118 [P17776/D2/T484] INFO  umbraco.content - Save Xml to file...
+ 2018-05-07 08:22:01,125 [P17776/D2/T484] INFO  umbraco.content - Saved Xml to file.
+ 2018-05-07 08:23:58,028 [P17776/D2/T367] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Student Profile' with Id '1057' has been published.
+ 2018-05-07 08:24:02,071 [P17776/D2/T368] INFO  umbraco.content - Save Xml to file...
+ 2018-05-07 08:24:02,077 [P17776/D2/T368] INFO  umbraco.content - Saved Xml to file.
+ 2018-05-07 08:24:10,142 [P17776/D2/T377] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Student Profile' with Id '1057' has been published.
+ 2018-05-07 08:24:14,193 [P17776/D2/T364] INFO  umbraco.content - Save Xml to file...
+ 2018-05-07 08:24:14,200 [P17776/D2/T364] INFO  umbraco.content - Saved Xml to file.
+ 2018-05-07 08:24:16,701 [P17776/D2/T368] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Student Profile' with Id '1057' has been published.
+ 2018-05-07 08:24:20,745 [P17776/D2/T389] INFO  umbraco.content - Save Xml to file...
+ 2018-05-07 08:24:20,752 [P17776/D2/T389] INFO  umbraco.content - Saved Xml to file.
+ 2018-05-07 08:24:21,419 [P17776/D2/T485] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Student Profile' with Id '1057' has been published.
+ 2018-05-07 08:24:25,458 [P17776/D2/T399] INFO  umbraco.content - Save Xml to file...
+ 2018-05-07 08:24:25,465 [P17776/D2/T399] INFO  umbraco.content - Saved Xml to file.
+ 2018-05-07 08:24:40,414 [P17776/D2/T476] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-05-07 08:24:40,416 [P17776/D2/T20] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field editor
+ 2018-05-07 08:24:40,420 [P17776/D2/T20] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field hideLabel
+ 2018-05-07 08:25:26,707 [P17776/D2/T373] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-05-07 08:25:48,154 [P17776/D2/T480] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-05-07 08:25:48,154 [P17776/D2/T479] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field editor
+ 2018-05-07 08:25:48,156 [P17776/D2/T479] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field hideLabel
+ 2018-05-07 08:28:19,688 [P17776/D2/T479] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-05-07 08:29:05,861 [P17776/D2/T374] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-05-07 08:29:05,861 [P17776/D2/T372] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field editor
+ 2018-05-07 08:29:05,863 [P17776/D2/T372] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field hideLabel
+ 2018-05-07 08:29:53,920 [P17776/D2/T472] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Home' with Id '1054' has been published.
+ 2018-05-07 08:29:57,318 [P17776/D2/T472] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type UmbracoODS.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2018-05-07 08:29:57,973 [P17776/D2/T489] INFO  umbraco.content - Save Xml to file...
+ 2018-05-07 08:29:57,979 [P17776/D2/T489] INFO  umbraco.content - Saved Xml to file.
+ 2018-05-07 08:30:14,018 [P17776/D2/T369] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type UmbracoODS.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2018-05-07 08:36:09,250 [P17776/D2/T410] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [InstructionProcessing] Terminating
+ 2018-05-07 08:36:09,251 [P17776/D2/T410] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [InstructionProcessing] Waiting for tasks to complete
+ 2018-05-07 08:36:09,255 [P17776/D2/T410] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2018-05-07 08:36:09,256 [P17776/D2/T410] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2018-05-07 08:36:09,256 [P17776/D2/T410] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2018-05-07 08:36:09,258 [P17776/D2/T410] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2018-05-07 08:36:09,260 [P17776/D2/T410] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2018-05-07 08:36:09,261 [P17776/D2/T410] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2018-05-07 08:36:09,261 [P17776/D2/T410] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2018-05-07 08:36:09,263 [P17776/D2/T410] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2018-05-07 08:36:09,262 [P17776/D2/T376] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2018-05-07 08:36:09,266 [P17776/D2/T410] INFO  Umbraco.Core.MainDom - Stopping...
+ 2018-05-07 08:36:09,260 [P17776/D2/T392] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [InstructionProcessing] Tasks completed, terminated
+ 2018-05-07 08:36:09,263 [P17776/D2/T393] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2018-05-07 08:36:09,264 [P17776/D2/T20] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2018-05-07 08:36:09,260 [P17776/D2/T426] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2018-05-07 08:36:09,272 [P17776/D2/T410] INFO  Umbraco.Web.ExamineStartup - Examine shutting down
+ 2018-05-07 08:36:09,367 [P17776/D2/T410] INFO  Umbraco.Web.ExamineStartup - Complete (took 95ms)
+ 2018-05-07 08:36:09,368 [P17776/D2/T410] INFO  Umbraco.Core.MainDom - Released MainDom.
+ 2018-05-07 08:36:09,378 [P17776/D2/T410] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Terminating
+ 2018-05-07 08:36:09,379 [P17776/D2/T410] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Waiting for tasks to complete
+ 2018-05-07 08:36:09,380 [P17776/D2/T410] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Tasks completed, terminated
+ 2018-05-07 08:36:09,381 [P17776/D2/T410] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2018-05-07 08:36:09,382 [P17776/D2/T410] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2018-05-07 08:36:09,383 [P17776/D2/T418] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2018-05-07 08:36:19,978 [P17776/D3/T423] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.10.4 application starting on IA-2085881
+ 2018-05-07 08:36:20,012 [P17776/D3/T423] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2018-05-07 08:36:20,026 [P17776/D3/T423] INFO  Umbraco.Core.PluginManager - Hash determined (took 13ms)
+ 2018-05-07 08:36:20,103 [P17776/D3/T423] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2018-05-07 08:36:20,106 [P17776/D3/T423] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2018-05-07 08:36:20,109 [P17776/D3/T423] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-05-07 08:36:20,523 [P17776/D3/T423] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 414ms)
+ 2018-05-07 08:36:20,525 [P17776/D3/T423] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
+ 2018-05-07 08:36:20,547 [P17776/D3/T423] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 22ms)
+ 2018-05-07 08:36:20,570 [P17776/D3/T423] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-05-07 08:36:20,571 [P17776/D3/T423] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 1ms)
+ 2018-05-07 08:36:20,572 [P17776/D3/T423] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2018-05-07 08:36:20,578 [P17776/D3/T423] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 5ms)
+ 2018-05-07 08:36:20,579 [P17776/D3/T423] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-05-07 08:36:20,580 [P17776/D3/T423] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-05-07 08:36:20,581 [P17776/D3/T423] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2018-05-07 08:36:20,608 [P17776/D3/T423] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 26ms)
+ 2018-05-07 08:36:20,628 [P17776/D3/T423] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-05-07 08:36:20,629 [P17776/D3/T423] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-05-07 08:36:20,629 [P17776/D3/T423] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
+ 2018-05-07 08:36:20,663 [P17776/D3/T423] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 33ms)
+ 2018-05-07 08:36:20,665 [P17776/D3/T423] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-05-07 08:36:20,666 [P17776/D3/T423] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 1ms)
+ 2018-05-07 08:36:20,668 [P17776/D3/T423] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
+ 2018-05-07 08:36:20,685 [P17776/D3/T423] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 17ms)
+ 2018-05-07 08:36:22,479 [P17776/D3/T423] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2018-05-07 08:36:22,750 [P17776/D3/T423] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2018-05-07 08:36:22,954 [P17776/D3/T423] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2018-05-07 08:36:22,956 [P17776/D3/T423] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2018-05-07 08:36:22,966 [P17776/D3/T423] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 3105ms)
+ 2018-05-07 08:36:23,187 [P17776/D3/T416] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - New ApplicationUrl detected: http://localhost:49744/umbraco
+ 2018-05-07 08:36:23,189 [P17776/D3/T398] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:49744/umbraco (UmbracoModule request)
+ 2018-05-07 08:36:23,189 [P17776/D3/T416] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:49744/umbraco (UmbracoModule request)
+ 2018-05-07 08:36:23,461 [P17776/D3/T416] INFO  umbraco.content - Load Xml from file...
+ 2018-05-07 08:36:23,463 [P17776/D3/T416] INFO  umbraco.content - Loaded Xml from file.
+ 2018-05-07 08:36:24,073 [P17776/D3/T416] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-05-07 08:36:24,074 [P17776/D3/T416] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 1ms)
+ 2018-05-07 08:36:24,075 [P17776/D3/T416] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IParameterEditor
+ 2018-05-07 08:36:24,095 [P17776/D3/T416] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IParameterEditor (took 19ms)
+ 2018-05-07 08:36:39,392 [P17776/D2/T410] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: BinDirChangeOrDirectoryRename
+
+_shutDownMessage=Change Notification for critical directories.
+bin dir change or directory rename
+HostingEnvironment initiated shutdown
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change in C:\Users\karaulan\AppData\Local\Temp\Temporary ASP.NET Files\vs\c38f5304\22d239e1\hash\hash.web
+Change in C:\Users\karaulan\AppData\Local\Temp\Temporary ASP.NET Files\vs\c38f5304\22d239e1\hash\hash.web
+HostingEnvironment caused shutdown
+
+_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   at System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   at System.Web.HttpRuntime.OnCriticalDirectoryChange(Object sender, FileChangeEvent e)
+   at System.Web.FileChangesMonitor.OnCriticaldirChange(Object sender, FileChangeEvent e)
+   at System.Web.DirectoryMonitor.FireNotifications()
+   at System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   at System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   at System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+ 2018-05-07 08:37:06,736 [P17776/D3/T392] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2018-05-07 08:37:06,737 [P17776/D3/T392] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2018-05-07 08:37:06,740 [P17776/D3/T392] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2018-05-07 08:37:06,743 [P17776/D3/T392] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2018-05-07 08:37:06,745 [P17776/D3/T403] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2018-05-07 08:37:06,747 [P17776/D3/T403] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2018-05-07 08:37:06,751 [P17776/D3/T392] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2018-05-07 08:37:06,752 [P17776/D3/T392] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2018-05-07 08:37:06,753 [P17776/D3/T392] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2018-05-07 08:37:06,754 [P17776/D3/T392] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2018-05-07 08:37:06,756 [P17776/D3/T392] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Terminating
+ 2018-05-07 08:37:06,758 [P17776/D3/T392] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Waiting for tasks to complete
+ 2018-05-07 08:37:06,756 [P17776/D3/T408] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2018-05-07 08:37:06,753 [P17776/D3/T398] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2018-05-07 08:37:06,760 [P17776/D3/T392] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Tasks completed, terminated
+ 2018-05-07 08:37:06,769 [P17776/D3/T392] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2018-05-07 08:37:06,769 [P17776/D3/T392] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2018-05-07 08:37:06,770 [P17776/D3/T392] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [InstructionProcessing] Terminating
+ 2018-05-07 08:37:06,773 [P17776/D3/T392] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [InstructionProcessing] Waiting for tasks to complete
+ 2018-05-07 08:37:06,770 [P17776/D3/T422] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2018-05-07 08:37:06,775 [P17776/D3/T422] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [InstructionProcessing] Tasks completed, terminated
+ 2018-05-07 08:37:06,776 [P17776/D3/T392] INFO  Umbraco.Core.MainDom - Stopping...
+ 2018-05-07 08:37:06,780 [P17776/D3/T392] INFO  Umbraco.Web.ExamineStartup - Examine shutting down
+ 2018-05-07 08:37:06,783 [P17776/D3/T392] INFO  Umbraco.Web.ExamineStartup - Complete (took 3ms)
+ 2018-05-07 08:37:06,784 [P17776/D3/T392] INFO  Umbraco.Core.MainDom - Released MainDom.
+ 2018-05-07 08:37:15,586 [P17776/D4/T377] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.10.4 application starting on IA-2085881
+ 2018-05-07 08:37:15,625 [P17776/D4/T377] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2018-05-07 08:37:15,638 [P17776/D4/T377] INFO  Umbraco.Core.PluginManager - Hash determined (took 12ms)
+ 2018-05-07 08:37:15,717 [P17776/D4/T377] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2018-05-07 08:37:15,720 [P17776/D4/T377] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2018-05-07 08:37:15,722 [P17776/D4/T377] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-05-07 08:37:16,147 [P17776/D4/T377] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 424ms)
+ 2018-05-07 08:37:16,148 [P17776/D4/T377] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
+ 2018-05-07 08:37:16,158 [P17776/D4/T377] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 9ms)
+ 2018-05-07 08:37:16,180 [P17776/D4/T377] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-05-07 08:37:16,181 [P17776/D4/T377] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 1ms)
+ 2018-05-07 08:37:16,182 [P17776/D4/T377] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2018-05-07 08:37:16,186 [P17776/D4/T377] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 3ms)
+ 2018-05-07 08:37:16,187 [P17776/D4/T377] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-05-07 08:37:16,188 [P17776/D4/T377] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-05-07 08:37:16,188 [P17776/D4/T377] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2018-05-07 08:37:16,193 [P17776/D4/T377] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 5ms)
+ 2018-05-07 08:37:16,213 [P17776/D4/T377] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-05-07 08:37:16,214 [P17776/D4/T377] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-05-07 08:37:16,214 [P17776/D4/T377] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
+ 2018-05-07 08:37:16,222 [P17776/D4/T377] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 7ms)
+ 2018-05-07 08:37:16,223 [P17776/D4/T377] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-05-07 08:37:16,224 [P17776/D4/T377] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-05-07 08:37:16,224 [P17776/D4/T377] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
+ 2018-05-07 08:37:16,228 [P17776/D4/T377] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 4ms)
+ 2018-05-07 08:37:17,996 [P17776/D4/T377] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2018-05-07 08:37:18,267 [P17776/D4/T377] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2018-05-07 08:37:18,356 [P17776/D4/T377] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2018-05-07 08:37:18,466 [P17776/D4/T377] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2018-05-07 08:37:18,477 [P17776/D4/T377] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 2988ms)
+ 2018-05-07 08:37:18,680 [P17776/D4/T398] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - New ApplicationUrl detected: http://localhost:49744/umbraco
+ 2018-05-07 08:37:18,683 [P17776/D4/T398] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:49744/umbraco (UmbracoModule request)
+ 2018-05-07 08:37:18,908 [P17776/D4/T398] INFO  umbraco.content - Load Xml from file...
+ 2018-05-07 08:37:18,910 [P17776/D4/T398] INFO  umbraco.content - Loaded Xml from file.
+ 2018-05-07 08:37:19,479 [P17776/D4/T398] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-05-07 08:37:19,480 [P17776/D4/T398] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-05-07 08:37:19,481 [P17776/D4/T398] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IParameterEditor
+ 2018-05-07 08:37:19,491 [P17776/D4/T398] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IParameterEditor (took 10ms)
+ 2018-05-07 08:37:36,794 [P17776/D3/T169] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: BinDirChangeOrDirectoryRename
+
+_shutDownMessage=Change Notification for critical directories.
+bin dir change or directory rename
+HostingEnvironment initiated shutdown
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change in C:\Users\karaulan\AppData\Local\Temp\Temporary ASP.NET Files\vs\c38f5304\22d239e1\hash\hash.web
+Change in C:\Users\karaulan\AppData\Local\Temp\Temporary ASP.NET Files\vs\c38f5304\22d239e1\hash\hash.web
+HostingEnvironment caused shutdown
+
+_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   at System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   at System.Web.HttpRuntime.OnCriticalDirectoryChange(Object sender, FileChangeEvent e)
+   at System.Web.FileChangesMonitor.OnCriticaldirChange(Object sender, FileChangeEvent e)
+   at System.Web.DirectoryMonitor.FireNotifications()
+   at System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   at System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   at System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+ 2018-05-07 08:38:18,968 [P17776/D4/T437] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-05-07 08:38:18,970 [P17776/D4/T437] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 1ms)
+ 2018-05-07 08:38:18,971 [P17776/D4/T437] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2018-05-07 08:38:18,985 [P17776/D4/T410] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-05-06 08:38:18
+ 2018-05-07 08:38:18,991 [P17776/D4/T437] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper (took 19ms)
+ 2018-05-07 08:41:31,504 [P17776/D4/T20] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: demetrous@gmail.com, IP Address: ::1
+ 2018-05-07 08:41:37,492 [P17776/D4/T20] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: demetrous@gmail.com, IP Address: ::1
+ 2018-05-07 08:44:23,580 [P17776/D4/T369] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username demetrous@gmail.com from IP address ::1
+ 2018-05-07 08:44:23,585 [P17776/D4/T369] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: demetrous@gmail.com logged in from IP address ::1
+ 2018-05-07 08:44:24,125 [P17776/D4/T20] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-05-07 08:44:24,126 [P17776/D4/T20] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-05-07 08:44:24,128 [P17776/D4/T20] INFO  Umbraco.Core.PluginManager - Resolving [umbraco.businesslogic.ApplicationAttribute]umbraco.interfaces.IApplication
+ 2018-05-07 08:44:24,138 [P17776/D4/T20] INFO  Umbraco.Core.PluginManager - Resolved [umbraco.businesslogic.ApplicationAttribute]umbraco.interfaces.IApplication (took 10ms)
+ 2018-05-07 08:44:31,084 [P17776/D4/T369] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-05-07 08:44:31,084 [P17776/D4/T429] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field editor
+ 2018-05-07 08:44:31,090 [P17776/D4/T429] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field hideLabel
+ 2018-05-07 08:44:55,430 [P17776/D4/T391] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-05-07 08:44:55,431 [P17776/D4/T391] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 1ms)
+ 2018-05-07 08:44:55,432 [P17776/D4/T391] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IAction
+ 2018-05-07 08:44:55,442 [P17776/D4/T391] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IAction (took 9ms)
+ 2018-05-07 08:45:10,325 [P17776/D4/T483] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-05-07 08:45:10,325 [P17776/D4/T380] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field editor
+ 2018-05-07 08:45:10,327 [P17776/D4/T380] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field hideLabel
+ 2018-05-07 08:45:53,185 [P17776/D4/T456] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-05-07 08:45:53,186 [P17776/D4/T456] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-05-07 08:45:53,186 [P17776/D4/T456] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Editors.IEditorValidator
+ 2018-05-07 08:45:53,193 [P17776/D4/T456] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Editors.IEditorValidator (took 7ms)
+ 2018-05-07 08:45:53,293 [P17776/D4/T456] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-05-07 08:45:53,294 [P17776/D4/T456] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-05-07 08:45:53,295 [P17776/D4/T456] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.ICacheRefresher
+ 2018-05-07 08:45:53,303 [P17776/D4/T456] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.ICacheRefresher (took 7ms)
+ 2018-05-07 08:45:57,260 [P17776/D4/T483] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-05-07 08:45:57,260 [P17776/D4/T371] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field editor
+ 2018-05-07 08:45:57,265 [P17776/D4/T371] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field hideLabel
+ 2018-05-07 08:46:28,328 [P17776/D4/T388] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-05-07 08:46:28,330 [P17776/D4/T464] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field editor
+ 2018-05-07 08:46:28,332 [P17776/D4/T464] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field hideLabel
+ 2018-05-07 08:47:10,292 [P17776/D4/T375] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Decision Support' with Id '1063' has been published.
+ 2018-05-07 08:47:10,378 [P17776/D4/T375] INFO  Umbraco.Core.Services.ContentService - Call was made to ContentService.Publish, use PublishWithStatus instead since that method will provide more detailed information on the outcome
+ 2018-05-07 08:47:14,379 [P17776/D4/T466] INFO  umbraco.content - Save Xml to file...
+ 2018-05-07 08:47:16,238 [P17776/D4/T468] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Decision Support' with Id '1063' has been published.
+ 2018-05-07 08:47:20,292 [P17776/D4/T484] INFO  umbraco.content - Save Xml to file...
+ 2018-05-07 08:47:20,300 [P17776/D4/T484] INFO  umbraco.content - Saved Xml to file.
+ 2018-05-07 08:48:32,349 [P17776/D4/T470] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-05-07 08:48:32,350 [P17776/D4/T460] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field editor
+ 2018-05-07 08:48:32,352 [P17776/D4/T460] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field hideLabel
+ 2018-05-07 08:48:46,721 [P17776/D4/T370] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-05-07 08:48:46,722 [P17776/D4/T468] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field editor
+ 2018-05-07 08:48:46,722 [P17776/D4/T468] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field hideLabel
+ 2018-05-07 08:50:01,095 [P17776/D4/T473] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Planning' with Id '1068' has been published.
+ 2018-05-07 08:50:01,132 [P17776/D4/T473] INFO  Umbraco.Core.Services.ContentService - Call was made to ContentService.Publish, use PublishWithStatus instead since that method will provide more detailed information on the outcome
+ 2018-05-07 08:50:05,143 [P17776/D4/T482] INFO  umbraco.content - Save Xml to file...
+ 2018-05-07 08:50:05,149 [P17776/D4/T482] INFO  umbraco.content - Saved Xml to file.
+ 2018-05-07 08:50:05,288 [P17776/D4/T483] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Planning' with Id '1068' has been published.
+ 2018-05-07 08:50:09,326 [P17776/D4/T384] INFO  umbraco.content - Save Xml to file...
+ 2018-05-07 08:50:09,332 [P17776/D4/T384] INFO  umbraco.content - Saved Xml to file.
+ 2018-05-07 08:50:23,304 [P17776/D4/T464] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Contact' with Id '1069' has been published.
+ 2018-05-07 08:50:23,343 [P17776/D4/T464] INFO  Umbraco.Core.Services.ContentService - Call was made to ContentService.Publish, use PublishWithStatus instead since that method will provide more detailed information on the outcome
+ 2018-05-07 08:50:25,838 [P17776/D4/T482] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Contact' with Id '1069' has been published.
+ 2018-05-07 08:50:29,888 [P17776/D4/T427] INFO  umbraco.content - Save Xml to file...
+ 2018-05-07 08:50:29,896 [P17776/D4/T427] INFO  umbraco.content - Saved Xml to file.
+ 2018-05-07 08:50:51,016 [P17776/D4/T473] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-05-07 08:50:51,016 [P17776/D4/T422] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field editor
+ 2018-05-07 08:50:51,020 [P17776/D4/T422] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field hideLabel
+ 2018-05-07 08:51:01,347 [P17776/D4/T427] INFO  umbraco.content - Loading content from database...
+ 2018-05-07 08:51:05,455 [P17776/D4/T468] INFO  umbraco.content - Save Xml to file...
+ 2018-05-07 08:51:05,460 [P17776/D4/T468] INFO  umbraco.content - Saved Xml to file.
+ 2018-05-07 08:51:06,319 [P17776/D4/T20] INFO  umbraco.content - Loading content from database...
+ 2018-05-07 08:51:10,353 [P17776/D4/T429] INFO  umbraco.content - Save Xml to file...
+ 2018-05-07 08:51:10,358 [P17776/D4/T429] INFO  umbraco.content - Saved Xml to file.
+ 2018-05-07 08:51:11,556 [P17776/D4/T400] INFO  umbraco.content - Loading content from database...
+ 2018-05-07 08:51:15,583 [P17776/D4/T460] INFO  umbraco.content - Save Xml to file...
+ 2018-05-07 08:51:15,591 [P17776/D4/T460] INFO  umbraco.content - Saved Xml to file.
+ 2018-05-07 08:51:18,455 [P17776/D4/T402] INFO  umbraco.content - Loading content from database...
+ 2018-05-07 08:51:22,478 [P17776/D4/T429] INFO  umbraco.content - Save Xml to file...
+ 2018-05-07 08:51:22,484 [P17776/D4/T429] INFO  umbraco.content - Saved Xml to file.
+ 2018-05-07 08:52:21,712 [P17776/D4/T461] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Decision Support' with Id '1063' has been published.
+ 2018-05-07 08:52:25,769 [P17776/D4/T425] INFO  umbraco.content - Save Xml to file...
+ 2018-05-07 08:52:25,776 [P17776/D4/T425] INFO  umbraco.content - Saved Xml to file.
+ 2018-05-07 08:52:36,829 [P17776/D4/T369] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Planning' with Id '1068' has been published.
+ 2018-05-07 08:52:40,870 [P17776/D4/T117] INFO  umbraco.content - Save Xml to file...
+ 2018-05-07 08:52:40,876 [P17776/D4/T117] INFO  umbraco.content - Saved Xml to file.
+ 2018-05-07 08:53:15,969 [P17776/D4/T468] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Contact' with Id '1069' has been published.
+ 2018-05-07 08:53:20,015 [P17776/D4/T385] INFO  umbraco.content - Save Xml to file...
+ 2018-05-07 08:53:20,024 [P17776/D4/T385] INFO  umbraco.content - Saved Xml to file.
+ 2018-05-07 08:55:07,948 [P17776/D4/T117] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2018-05-07 08:55:19,389 [P17776/D4/T427] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2018-05-07 08:56:07,194 [P17776/D4/T20] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-05-07 08:56:07,195 [P17776/D4/T20] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 1ms)
+ 2018-05-07 08:56:07,196 [P17776/D4/T20] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.ITree
+ 2018-05-07 08:56:07,211 [P17776/D4/T20] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.ITree (took 15ms)
+ 2018-05-07 08:56:07,474 [P17776/D4/T461] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-05-07 08:56:07,475 [P17776/D4/T461] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-05-07 08:56:07,478 [P17776/D4/T461] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.HealthCheck.HealthCheck
+ 2018-05-07 08:56:07,488 [P17776/D4/T461] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.HealthCheck.HealthCheck (took 10ms)
+ 2018-05-07 08:56:09,753 [P17776/D4/T400] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-05-07 08:56:09,753 [P17776/D4/T422] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field editor
+ 2018-05-07 08:56:09,755 [P17776/D4/T422] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field hideLabel
+ 2018-05-07 08:56:58,846 [P17776/D4/T370] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2018-05-07 08:57:04,409 [P17776/D4/T365] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2018-05-07 08:57:44,887 [P17776/D4/T413] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Decision Support' with Id '1063' has been published.
+ 2018-05-07 08:57:48,941 [P17776/D4/T464] INFO  umbraco.content - Save Xml to file...
+ 2018-05-07 08:57:48,985 [P17776/D4/T464] INFO  umbraco.content - Saved Xml to file.
+ 2018-05-07 09:14:46,621 [P17776/D4/T304] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: demetrous@gmail.com, IP Address: ::1
+ 2018-05-07 12:38:19,473 [P17776/D4/T395] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-05-06 12:38:19
+ 2018-05-07 13:24:52,654 [P17776/D4/T274] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username demetrous@gmail.com from IP address ::1
+ 2018-05-07 13:24:52,655 [P17776/D4/T274] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: demetrous@gmail.com logged in from IP address ::1
+ 2018-05-07 13:25:59,465 [P17776/D4/T70] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-05-07 13:25:59,499 [P17776/D4/T274] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field editor
+ 2018-05-07 13:25:59,500 [P17776/D4/T274] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field hideLabel
+ 2018-05-07 13:26:12,108 [P17776/D4/T94] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-05-07 13:26:12,109 [P17776/D4/T278] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field editor
+ 2018-05-07 13:26:12,110 [P17776/D4/T278] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field hideLabel
+ 2018-05-07 13:26:19,488 [P17776/D4/T20] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field editor
+ 2018-05-07 13:26:19,489 [P17776/D4/T20] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field hideLabel
+ 2018-05-07 13:26:56,680 [P17776/D4/T278] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field editor
+ 2018-05-07 13:26:56,682 [P17776/D4/T278] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field hideLabel
+ 2018-05-07 13:36:53,969 [P17776/D4/T67] WARN  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: Unprotect ticket failed
+ 2018-05-07 13:36:53,970 [P17776/D4/T49] WARN  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: Unprotect ticket failed
+ 2018-05-07 13:36:54,116 [P17776/D4/T409] WARN  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: Unprotect ticket failed
+ 2018-05-07 16:38:20,088 [P17776/D4/T294] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-05-06 16:38:20
+ 2018-05-07 20:38:20,622 [P17776/D4/T384] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-05-06 20:38:20

@@ -1,0 +1,158 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@using Umbraco.Core.Security
+
+
+@*@using Umbraco.Core
+
+    @using Umbraco.Core.Models.Membership
+
+    @using System;
+    @using System.Collections.Generic;
+    @using System.IO;
+    @using System.Linq;
+    @using System.Net;
+    @using System.Net.Http;
+    @using System.Net.Http.Headers;
+    @using System.Text;
+    @using System.Threading;
+    @using System.Threading.Tasks;*@
+
+
+@{
+    Layout = "WebBase.cshtml";
+
+    var auth = new HttpContextWrapper(HttpContext.Current).GetUmbracoAuthTicket();
+
+    //IUser currentUser = ApplicationContext.Services.UserService.GetByUsername(auth.Name);
+
+
+
+    string reportDbName;
+
+    bool hasReport = false;
+    bool isExperim = false;
+
+    reportDbName = (hasReport = (Umbraco.AssignedContentItem.HasProperty("reportDbName")
+                    && !string.IsNullOrEmpty(Umbraco.AssignedContentItem.GetPropertyValue("reportDbName").ToString())))
+                    ? Umbraco.AssignedContentItem.GetPropertyValue("reportDbName").ToString()
+                    : "";
+
+    isExperim = reportDbName.Contains("Experim");
+
+
+}
+
+
+<div class="row row-sidebars justify-content-center">
+  @*<div class="col-xl sidebar-outer">*@
+  <div class="col-xxl sidebar-outer">
+    <div class="sidebar">
+      <form class="bd-search d-flex align-items-center" action="/UmbracoODS/simple-search/" method="GET">
+
+        <input type="search" name="query" class="form-control" placeholder="Search..." role="combobox" style="position: relative; vertical-align: top;">
+        <button class="btn btn-link bd-search-docs-toggle p-0 ml-3" type="button" data-toggle="collapse" data-target="#chapter-menu" aria-controls="chapter-menu" aria-expanded="true" aria-label="Toggle docs navigation"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button>
+      </form>
+
+      <div id="chapter-menu" class="report-menu-custom-scroll collapse">
+        @*<div class="child-list-container pt-3 d-none d-xl-block">*@
+        <div class="child-list-container pt-3 d-xxl-block">
+
+          @{ Html.RenderAction("RenderChapterStructure", "SiteLayout");}
+          <div class="scroll-down-box"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  @*<div class="col-xl-8 main-content-fluid">*@
+    <div class="col-xxl-main main-content-fluid">
+
+
+
+      <div id="content" class="content">
+
+
+
+        <h1 class="page-header mb-4">@Umbraco.Field("title")</h1>
+
+        <div>
+          @Umbraco.Field("subtitle")
+        </div>
+
+
+
+        <div>
+          @Umbraco.Field("mainContent")
+        </div>
+
+        @*<div class="d-flex justify-content-center pb-5">
+
+              <object data="/media/1004/updated-student-graphic-instructions-blue.pdf#view=fitH&toolbar=0&statusbar=0&messages=0&navpanes=0" type="application/pdf" width="70%" height="600px">
+                  <param name="background-color" value="0xFFFFFF31" />
+                  alt : <a href="/media/1004/updated-student-graphic-instructions-blue.pdf">updated-student-graphic-instructions-blue.pdf</a>
+              </object>
+
+          </div>*@
+
+
+        @if (Umbraco.Field("title").ToString().ToLower() == "test obiee access")
+        {
+          Html.RenderPartial("OBIEE/AdmissionFunnel");
+
+
+        }
+
+
+
+        @if (hasReport)
+        {
+          <div id="reportContent">
+            <div id="reportContentTable"></div> @*TEMP CONTENT*@
+          </div>
+        }
+
+      </div>
+    </div>
+    @*<div class="col-xl sidebar-outer">*@
+    <div class="col-xxl sidebar-outer">
+      <div class="sidebar">
+
+        <div class="child-list-container right-side d-none d-xxl-block smooth-scroll">
+          <ul id="" class="child-list smooth-scroll pl-0">
+            @*
+              <li><a class="child-list-item" href="#background_1">Background</a></li>
+              <li><a class="child-list-item" href="#unlvnow_2">UNLV Now</a></li>
+              <li><a class="child-list-item" href="#midtownunlv_3">Midtown UNLV</a></li>*@
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  @section ScriptsBottom
+{
+    <script src="~/scripts/ods-right-menu.js"></script>
+    <script src="~/scripts/ods-smooth-scroll.js"></script>
+    <script src="~/scripts/ods-object-pdf.js"></script>
+
+
+    @if (hasReport)
+    {
+      if (isExperim)
+      {
+        Html.RenderAction("RenderExperim", "Reports", new { CensusKey = "EP2112" });@*TEMP CONTENT*@
+      }
+      else
+      {
+        Html.RenderPartial("Reports/_" + reportDbName);
+      }
+
+    }
+
+
+
+
+
+  }

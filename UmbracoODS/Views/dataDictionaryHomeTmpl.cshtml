@@ -1,0 +1,57 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@using Umbraco.Web.Models
+
+@{
+    Layout = "WebBase.cshtml";
+
+
+    RelatedLinks relatedLinks = Umbraco.AssignedContentItem.GetPropertyValue<RelatedLinks>("linksToTheTerms");
+    RelatedLink prettyLink = null;
+
+    //if (relatedLinks != null && relatedLinks.Count() > 0)
+    //{
+    //    prettyLink = relatedLinks.FirstOrDefault();
+    //    Response.RedirectPermanent(prettyLink.Link);
+    //}
+
+
+}
+
+
+<div class="container main-content">
+
+    <h3 class="mb-4">@Umbraco.Field("title")</h3>
+
+   
+
+    <div class="row mb-4">
+        <div class="col">
+            <h4>Description</h4>
+            @Umbraco.Field("description")
+        </div>
+
+    </div>
+    
+    <div class="row mb-4">
+        <div class="col">
+            here goes the list of ITEM GROUPS
+        </div>
+
+    </div>
+  
+
+</div>
+
+
+
+
+
+<div class="container main-content">
+
+    @foreach(RelatedLink link in relatedLinks)
+    {
+    <a href="@link.Link">@link.Caption</a>
+    }
+
+
+</div>

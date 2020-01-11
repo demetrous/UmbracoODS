@@ -1,0 +1,39 @@
+﻿ 2018-12-13 00:27:51,001 [P13688/D2/T36] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-12-12 00:27:50
+ 2018-12-13 04:27:51,643 [P13688/D2/T50] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-12-12 04:27:51
+ 2018-12-13 08:27:52,296 [P13688/D2/T64] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-12-12 08:27:52
+ 2018-12-13 12:27:52,950 [P13688/D2/T184] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-12-12 12:27:52
+ 2018-12-13 13:26:49,346 [P13688/D2/T215] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [InstructionProcessing] Terminating
+ 2018-12-13 13:26:49,347 [P13688/D2/T215] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [InstructionProcessing] Waiting for tasks to complete
+ 2018-12-13 13:26:49,377 [P13688/D2/T160] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [InstructionProcessing] Tasks completed, terminated
+ 2018-12-13 13:26:49,406 [P13688/D2/T215] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Terminating
+ 2018-12-13 13:26:49,407 [P13688/D2/T215] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Waiting for tasks to complete
+ 2018-12-13 13:26:49,407 [P13688/D2/T215] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Tasks completed, terminated
+ 2018-12-13 13:26:49,407 [P13688/D2/T215] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2018-12-13 13:26:49,407 [P13688/D2/T215] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2018-12-13 13:26:49,408 [P13688/D2/T215] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2018-12-13 13:26:49,408 [P13688/D2/T215] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2018-12-13 13:26:49,408 [P13688/D2/T141] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2018-12-13 13:26:49,409 [P13688/D2/T152] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2018-12-13 13:26:49,415 [P13688/D2/T215] INFO  Umbraco.Core.MainDom - Stopping...
+ 2018-12-13 13:26:49,422 [P13688/D2/T215] INFO  Umbraco.Web.ExamineStartup - Examine shutting down
+ 2018-12-13 13:26:49,426 [P13688/D2/T215] INFO  Umbraco.Web.ExamineStartup - Complete (took 4ms)
+ 2018-12-13 13:26:49,427 [P13688/D2/T215] INFO  Umbraco.Core.MainDom - Released MainDom.
+ 2018-12-13 13:26:49,427 [P13688/D2/T215] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2018-12-13 13:26:49,428 [P13688/D2/T215] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2018-12-13 13:26:49,428 [P13688/D2/T215] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2018-12-13 13:26:49,428 [P13688/D2/T156] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2018-12-13 13:26:49,428 [P13688/D2/T215] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2018-12-13 13:26:49,430 [P13688/D2/T215] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2018-12-13 13:26:49,430 [P13688/D2/T215] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2018-12-13 13:26:49,430 [P13688/D2/T153] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2018-12-13 13:26:49,431 [P13688/D2/T160] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2018-12-13 13:27:19,456 [P13688/D2/T132] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: HostingEnvironment
+
+_shutDownMessage=HostingEnvironment initiated shutdown
+HostingEnvironment caused shutdown
+
+_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   at System.Web.Hosting.PipelineRuntime.StopProcessing()

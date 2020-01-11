@@ -1,0 +1,150 @@
+﻿@inherits UmbracoViewPage
+
+<style>
+
+    .search {
+        display: inline-block;
+        position: relative;
+        height: 70px;
+        width: 70px;
+        box-sizing: border-box;
+        margin: 0px 8px 7px 0px;
+        padding: 7px 9px 0px 9px;
+        border: 3px solid #ffffff;
+        border-radius: 35px;
+        transition: all 300ms ease;
+        cursor: text;
+    }
+
+        .search:after {
+            content: "";
+            position: absolute;
+            width: 3px;
+            height: 35px;
+            right: -5px;
+            top: 50px;
+            background: #ffffff;
+            border-radius: 3px;
+            transform: rotate(-45deg);
+            transition: all 300ms ease;
+        }
+
+        .search.active,
+        .search:hover {
+            width: 700px;
+            margin-right: 0px;
+            background-color:white;
+        }
+
+            .search.active:after,
+            .search:hover:after {
+                height: 0px;
+            }
+
+        .search input {
+            width: 100%;
+            border: none;
+            box-sizing: border-box;
+            /* font-family: Helvetica; */
+            font-size: 2em;
+            color: black;
+            background: transparent;
+            outline-width: 0px;
+        }
+</style>
+
+
+
+<div class="intro">
+
+
+    <div class="overlay"></div>
+
+
+    <div class="row justify-content-center mt-5">
+        <form action="/simple-search/" method="GET" style="max-width:700px;">
+            <label class="search" for="inpt_search">
+                <input id="inpt_search" type="text" name="query" />
+            </label>
+        </form>
+    </div>
+
+
+
+    <div class="row">
+
+
+
+        <div class="col mx-auto py-5 intro-container">
+            <h2>@Umbraco.Field("title")</h2>
+            <p>
+                @Umbraco.Field("subtitle")
+            </p>
+        </div>
+
+        <div class="w-100"></div> <!-- divider for multiline column grid https://getbootstrap.com/docs/4.0/layout/grid/#equal-width-multi-row -->
+
+        <div class="col px-0">
+            <div class="z-index-up quick-links">
+                <div class="intro-container mx-auto py-2">
+                    <div class="row">
+                        <div class="col-lg-6 m-auto">
+                            <p class="quick-links-header">Quick Links</p>
+                            <div class="row quick-links-content">
+
+                                <div class="col-md-4 col-sm-6 col-12">
+                                    <a class="btn btn-default" href="/IAP/decisionsupport/Content/UNLV_Analytics.aspx">UNLV Analytics</a>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6 col-12">
+                                    <a class="btn btn-default" href="/IAP/decisionsupport/Content/About_Data_Dictionary.aspx">Data Dictionary</a>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6 col-12">
+                                    <a class="btn btn-default" href="/IAP/decisionsupport/Content/At+UNLV+-+Student+Profiles.aspx">Student Profiles</a>
+                                </div>
+
+
+                                @*TEMPORARY LINK*@
+                                <div class="col-md-4 col-sm-6 col-12">
+                                    <a class="btn btn-default bg-primary" href="~/course-evaluations/">Course Evaluations</a>
+                                </div>
+
+                                @*<div class="col-md-4 col-sm-6 col-12">
+                                    <a class="btn btn-default" href="/IAP/decisionsupport/Content/At+UNLV+-+Degree+Profiles.aspx">Degree Profiles</a>
+                                </div>*@
+
+                                @*<div class="col-md-4 col-sm-6 col-12">
+                                    <a class="btn btn-default" href="/IAP/decisionsupport/Content/On+Point.aspx">On Point</a>
+                                </div>*@
+
+                                @*<div class="col-md-4 col-sm-6 col-12">
+                                    <a class="btn btn-default" href="/IAP/decisionsupport/Content/Legacy_Apps_Overview.aspx">Legacy Applications</a>
+                                </div>*@
+
+                                <div class="col-md-4 col-sm-6 col-12">
+                                    <a class="btn btn-default" href="/IAP/Reports.aspx">Reports</a>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6 col-12">
+                                    <a class="btn btn-default" href="/IAP/decisionsupport/Content/Common+Data+Set+2016-17.aspx">Common Data Set</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+</script>
+
+
+
+
+

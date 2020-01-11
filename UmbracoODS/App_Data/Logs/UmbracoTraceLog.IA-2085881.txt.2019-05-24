@@ -1,0 +1,68 @@
+﻿ 2019-05-24 01:36:01,049 [P3788/D2/T207] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2019-05-23 01:36:01
+ 2019-05-24 05:36:01,299 [P3788/D2/T223] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2019-05-23 05:36:01
+ 2019-05-24 09:36:02,288 [P3788/D2/T189] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2019-05-23 09:36:02
+ 2019-05-24 13:36:02,602 [P3788/D2/T270] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2019-05-23 13:36:02
+ 2019-05-24 14:31:43,545 [P3788/D2/T109] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-05-24 14:31:43,546 [P3788/D2/T109] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 1ms)
+ 2019-05-24 14:31:43,546 [P3788/D2/T109] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController
+ 2019-05-24 14:31:43,566 [P3788/D2/T109] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController (took 20ms)
+ 2019-05-24 14:31:43,841 [P3788/D2/T96] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-05-24 14:31:43,842 [P3788/D2/T96] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-05-24 14:31:43,842 [P3788/D2/T96] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IAction
+ 2019-05-24 14:31:43,855 [P3788/D2/T96] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IAction (took 12ms)
+ 2019-05-24 14:32:04,675 [P3788/D2/T132] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-05-24 14:32:04,675 [P3788/D2/T132] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-05-24 14:32:04,675 [P3788/D2/T132] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.ITree
+ 2019-05-24 14:32:04,681 [P3788/D2/T132] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.ITree (took 5ms)
+ 2019-05-24 14:32:04,713 [P3788/D2/T132] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-05-24 14:32:04,714 [P3788/D2/T132] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-05-24 14:32:04,714 [P3788/D2/T132] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController
+ 2019-05-24 14:32:04,714 [P3788/D2/T132] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController (took 0ms)
+ 2019-05-24 14:32:04,720 [P3788/D2/T132] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-05-24 14:32:04,721 [P3788/D2/T132] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-05-24 14:32:04,721 [P3788/D2/T132] INFO  Umbraco.Core.PluginManager - Resolving [umbraco.businesslogic.TreeAttribute]umbraco.interfaces.ITree
+ 2019-05-24 14:32:04,727 [P3788/D2/T132] INFO  Umbraco.Core.PluginManager - Resolved [umbraco.businesslogic.TreeAttribute]umbraco.interfaces.ITree (took 6ms)
+ 2019-05-24 14:32:04,755 [P3788/D2/T132] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-05-24 14:32:04,756 [P3788/D2/T132] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-05-24 14:32:04,756 [P3788/D2/T132] INFO  Umbraco.Core.PluginManager - Resolving [umbraco.businesslogic.ApplicationAttribute]umbraco.interfaces.IApplication
+ 2019-05-24 14:32:04,762 [P3788/D2/T132] INFO  Umbraco.Core.PluginManager - Resolved [umbraco.businesslogic.ApplicationAttribute]umbraco.interfaces.IApplication (took 6ms)
+ 2019-05-24 14:32:27,736 [P3788/D2/T140] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-05-24 14:32:27,737 [P3788/D2/T140] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-05-24 14:32:27,737 [P3788/D2/T140] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.ICacheRefresher
+ 2019-05-24 14:32:27,748 [P3788/D2/T140] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.ICacheRefresher (took 11ms)
+ 2019-05-24 17:36:03,475 [P3788/D2/T262] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2019-05-23 17:36:03
+ 2019-05-24 18:34:46,120 [P3788/D2/T210] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2019-05-24 18:34:46,121 [P3788/D2/T210] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2019-05-24 18:34:46,136 [P3788/D2/T210] INFO  Umbraco.Core.MainDom - Stopping...
+ 2019-05-24 18:34:46,145 [P3788/D2/T210] INFO  Umbraco.Web.ExamineStartup - Examine shutting down
+ 2019-05-24 18:34:46,151 [P3788/D2/T160] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2019-05-24 18:34:46,175 [P3788/D2/T210] INFO  Umbraco.Web.ExamineStartup - Complete (took 29ms)
+ 2019-05-24 18:34:46,176 [P3788/D2/T210] INFO  Umbraco.Core.MainDom - Released MainDom.
+ 2019-05-24 18:34:46,186 [P3788/D2/T210] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2019-05-24 18:34:46,186 [P3788/D2/T210] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2019-05-24 18:34:46,186 [P3788/D2/T210] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [InstructionProcessing] Terminating
+ 2019-05-24 18:34:46,187 [P3788/D2/T210] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [InstructionProcessing] Waiting for tasks to complete
+ 2019-05-24 18:34:46,187 [P3788/D2/T210] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2019-05-24 18:34:46,187 [P3788/D2/T210] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2019-05-24 18:34:46,188 [P3788/D2/T210] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2019-05-24 18:34:46,187 [P3788/D2/T46] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2019-05-24 18:34:46,187 [P3788/D2/T85] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [InstructionProcessing] Tasks completed, terminated
+ 2019-05-24 18:34:46,188 [P3788/D2/T255] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2019-05-24 18:34:46,188 [P3788/D2/T210] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2019-05-24 18:34:46,190 [P3788/D2/T255] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2019-05-24 18:34:46,191 [P3788/D2/T210] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Terminating
+ 2019-05-24 18:34:46,191 [P3788/D2/T210] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Waiting for tasks to complete
+ 2019-05-24 18:34:46,192 [P3788/D2/T210] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Tasks completed, terminated
+ 2019-05-24 18:34:46,192 [P3788/D2/T210] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2019-05-24 18:34:46,192 [P3788/D2/T210] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2019-05-24 18:34:46,193 [P3788/D2/T160] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2019-05-24 18:35:16,223 [P3788/D2/T228] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: HostingEnvironment
+
+_shutDownMessage=HostingEnvironment initiated shutdown
+HostingEnvironment caused shutdown
+
+_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   at System.Web.Hosting.PipelineRuntime.StopProcessing()

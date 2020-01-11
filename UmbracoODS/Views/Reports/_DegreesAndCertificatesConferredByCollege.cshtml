@@ -1,0 +1,747 @@
+﻿<link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" />
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+<style>
+
+
+  table.dataTable thead th,
+  table.dataTable thead td,
+  table.dataTable tfoot th,
+  table.dataTable tfoot td {
+    padding:  8px 10px;
+    border-bottom: none;
+  }
+
+  table.dataTable.no-footer {
+    border-bottom: none;
+  }
+
+  table.dataTable.hover > tbody > tr:hover td {
+    background-image: linear-gradient( 180deg, rgba(0,0,0,.07), rgba(0,0,0,.07)) !important;
+  }
+
+  td.summer-column,
+  td.fall-column,
+  td.spring-column,
+  td.total-column,
+  table.dataTable tfoot th.summer-column,
+  table.dataTable tfoot th.fall-column,
+  table.dataTable tfoot th.spring-column,
+  table.dataTable tfoot th.total-column {
+    text-align: right;
+    padding: 8px 10px;
+  }
+
+  table.dataTable tfoot th.race-ethnicity-column {
+    padding: 8px 10px;
+  }
+
+  th.summer-column,
+  th.fall-column,
+  th.spring-column,
+  th.total-column {
+    text-align: center;
+    width: 7vw !important;
+  }
+
+  .summer-column {
+    background-color: #ffe7e7;
+  }
+
+  .fall-column {
+    background-color: #fdf4e6;
+  }
+
+  .spring-column {
+    background-color: #eaffe9;
+  }
+
+  .total-column {
+    background-color: #fff;
+  }
+
+  table.dataTable thead th,
+  table.dataTable thead td {
+    border-bottom: 3px solid #dcdcdc;
+  }
+
+
+  table.dataTable tfoot th,
+  table.dataTable tfoot td {
+    border-top: 3px solid #dcdcdc;
+  }
+
+
+  /* Dropdown container styling */
+  .input-group-prepend {
+    margin-right: -1px;
+  }
+
+  .input-group-append, .input-group-prepend {
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+
+  .input-group {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+  }
+
+    .input-group > .input-group-prepend > .input-group-text {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+  /* Dropdown styling */
+  .input-group-text {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: .375rem .75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #e9ecef;
+    border: 1px solid #e9ecef; /*#ced4da;*/
+    border-radius: .25rem;
+  }
+
+  /* Margin for non-first dropdown, making spacing */
+  .input-group:not(:first-child) {
+    margin-left: 2em;
+  }
+
+
+
+  option[value=""][disabled] {
+    display: none;
+  }
+</style>
+
+
+<script>
+
+  // Begin scoping function
+  (function () {
+
+
+    let ferpaPlaceholder = '<div id="ferpaPlaceholder" class="alert alert-warning small" style="display: none !important;">The below content may contain information that is protected under <a href="http://www.ed.gov/policy/gen/guid/fpco/ferpa/index.html" target="_blank">FERPA (the Family Educational Rights Privacy Act)</a>. You are granted access to this information in your capacity as a UNLV employee. As a reminder, in reporting information, if cell size (typically 10 or fewer) or other information would make a student’s identity "easily traceable," that information would be considered "personally identifiable." <a href="http://www.ed.gov/policy/gen/reg/ferpa/index.html" target="_blank"> See 34 CFR § 99.3.</a> The educational agency or institution should use generally accepted statistical principles and methods to ensure that the data are reported in a manner that fully prevents the identification of students. If that cannot be done, the data must not be reported.</div>';
+    $('#reportContent').prepend(ferpaPlaceholder);
+
+    let loaderDiv = $(`<div id="loaderDiv" class="d-flex justify-content-center p-4">
+                          <div class="spinner-border text-danger" role="status">
+                            <span class="sr-only">Loading...</span>
+                          </div>
+                        </div>`);
+    $('#reportContent').append(loaderDiv);
+
+
+    let noDataPlaceholder = '<div id="noDataPlaceholder" class="alert alert-warning text-center p-4" style="display: none !important; font-size: 1.5em; font-weight:300;">No data available for the selected parameters</div>';
+    $('#reportContent').prepend(noDataPlaceholder);
+
+    let controlsPlaceholder = $('<div id="controlsPlaceholder" class="d-flex flex-row mb-3" />');
+    $('#reportContent').prepend(controlsPlaceholder);
+
+    
+
+
+
+
+
+    //let chartPlaceholder = $('<div id="chartPlaceholder" class="mt-5 pt-5"/>');
+    //$('#reportContent').append(chartPlaceholder);
+
+
+    //let chartPlaceholder2 = $('<div id="chartPlaceholder2" class="mt-5 pt-5"/>');
+    //$('#reportContent').append(chartPlaceholder2);
+
+
+
+
+
+
+
+
+
+
+
+  })();
+
+  //GENERAL
+  function showHideNoDataWarning(noData) {
+    if (noData) {
+      $('#noDataPlaceholder').fadeIn("slow");
+    } else {
+      $('#noDataPlaceholder').hide().fadeOut("slow");
+    }
+  }
+
+
+
+  //GENERAL
+  function showLoader(show) {
+    if (show) {
+      $("#loaderDiv").attr('style', 'display:flex !important');
+    } else {
+      $("#loaderDiv").attr('style', 'display:none !important');
+    }
+  }
+
+
+
+  //GENERAL, returns html with input group containing <select> dropdown
+  function createDropdownHtml(param) {
+
+    let optionValue = Object.keys(param.data[0])[0]; //Getting value name for <option value='....>
+    let optionText = (Object.keys(param.data[0])[1] != null) ? Object.keys(param.data[0])[1] : Object.keys(param.data[0])[0] ; //Getting text for <option >...</option>
+
+
+    $(`#InputGroup_${param.id}`).remove();
+
+    let inputGroupHtml = $(`<div id="InputGroup_${param.id}" class="input-group" ${param.htmlAttr}>
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect_${param.id}">
+                                    ${param.name}
+                                </label>
+                            </div>
+                          </div >`);
+
+    let selectControlHtml = $(`<select id="inputGroupSelect_${param.id}" class="form-control" onchange="updateAll(this);" />`);
+
+    $(inputGroupHtml).append(selectControlHtml);
+
+    param.data.map(function (row) {
+      $('<option />',
+        { value: row[optionValue], text: row[optionText] }
+      )
+        .appendTo(selectControlHtml);
+    });
+
+    return $(inputGroupHtml);
+
+  }
+
+
+
+  //GENERAL, appends dropdown to container, param = {id: '...', name: '...', data: someJsonData}
+  function createDropDown(param) {
+
+    $('#controlsPlaceholder').append(createDropdownHtml(param));
+  }
+
+
+
+  //CUSTOM, getting raceEthnicity data based on selected college
+  function getDegreeCertData(data, postData) {
+
+    let degreeCertData = new Array();
+
+    if (postData.PlanCollege != null && postData.PlanCollege !== "All") {
+
+      degreeCertData = generateCollegeTables(data);
+
+      //data.allCollegesTable.map(function (row) {
+      //  degreeCertData.push({
+      //    degreeType: row.degreeType,
+      //    summer: row.summer,
+      //    fall: row.fall,
+      //    spring: row.spring
+      //  });
+      //});
+
+
+    } else {
+      degreeCertData = data.degreeCertTable;
+    }
+    return degreeCertData;
+  }
+
+
+  //CUSTOM, get tables with degree types
+  function generateCollegeTables(data) {
+
+
+    let collegeData = {
+
+      collegeName: data.allCollegesDegreeCertTable[0].college,
+
+      totalUnduplicated : [{
+        major: "Total",
+        summer: data.degreeCertTable[0].summer,
+        fall: data.degreeCertTable[0].fall,
+        spring: data.degreeCertTable[0].spring,
+        total: data.degreeCertTable[0].total
+      }]
+
+    };
+
+    data.allCollegesDegreeCertTable.map((row, index, arr) => {
+
+
+      if (collegeData.data == null) collegeData.data = new Array();
+
+      if (row.major != "Total") {
+
+        if (collegeData.data[row.degreeType] == null) collegeData.data[row.degreeType] = new Array();
+
+        if (collegeData.data[row.degreeType].rows == null) collegeData.data[row.degreeType].rows = new Array();
+
+      }
+
+
+      if (row.degreeType != "College Sum" &&row.major != "Total") {
+        collegeData.data[row.degreeType].rows.push({
+          major: row.major,
+          summer: row.summer,
+          fall: row.fall,
+          spring: row.spring,
+          total: row.total
+        });
+      } else if (row.degreeType != "College Sum" && row.major == "Total") {
+        collegeData.data[row.degreeType].total = {          
+          summer: row.summer,
+          fall: row.fall,
+          spring: row.spring,
+          total: row.total
+        }
+      } else if (row.degreeType == "College Sum" && row.major == "Total") {
+        collegeData.total = [{   
+          major: "Total",
+          summer: row.summer,
+          fall: row.fall,
+          spring: row.spring,
+          total: row.total
+        }]
+      }
+
+
+
+
+
+    });
+
+    
+
+
+
+    //let tables = $.fn.dataTable.fnTables(true);
+
+    //$(tables).each(function () {
+
+    
+
+    //  $(this).dataTable().fnDestroy();
+    //});
+
+   
+
+
+    generateMultipleTables(collegeData);
+
+    return collegeData;
+
+  }
+
+
+  //CUSTOM, generate multiple html tables from JSON array
+  function generateMultipleTables(collegeData) {
+
+    console.log(collegeData);
+
+
+    let htmlBoilerplate = `
+                  <thead>
+                    <tr>
+                     <th>Major</th>
+                      <th>Summer</th>
+                      <th>Fall</th>
+                      <th>Spring</th>
+                      <th>Total</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <th>Total</th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                  </tfoot>
+                          `;
+
+    let htmlBoilerplateTotals = `
+                  <thead>
+                    <tr>
+                     <th>Major</th>
+                      <th>Summer</th>
+                      <th>Fall</th>
+                      <th>Spring</th>
+                      <th>Total</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+                 
+                          `;
+
+
+    
+
+    //$(`[id^='reportContentDataTable']`).DataTable().destroy();
+
+
+
+
+
+
+    Object.entries(collegeData.data).map((row, index, arr) => {
+      
+
+      let tablePlaceholderName = `reportContentDataTable_${index}`;
+
+      $('#reportContent').append(`<table id="${tablePlaceholderName}" class="hover"></table>`);
+
+
+      $(`#${tablePlaceholderName}`)
+        .html(htmlBoilerplate);
+
+
+      $(`#${tablePlaceholderName}`)
+        .html(drawDataTable(`#${tablePlaceholderName}`, row[1].rows, row[1].total, 'major', row[0]))
+        .width('100%')  // ...width '100%' is fix for style=0px DataTables
+        .fadeIn("slow");
+
+    });
+
+
+
+
+
+
+    let tablePlaceholderName = `reportContentDataTable_Totals`;
+
+    $('#reportContent').append(`<table id="${tablePlaceholderName}" class="hover"></table>`);
+
+
+    $(`#${tablePlaceholderName}`)
+      .html(htmlBoilerplateTotals);
+
+    $(`#${tablePlaceholderName}`)
+      .html(drawDataTable(`#${tablePlaceholderName}`, collegeData.total, undefined, 'major', 'College Sum'))
+      .width('100%')  // ...width '100%' is fix for style=0px DataTables
+      .fadeIn("slow");
+
+
+
+
+
+
+    tablePlaceholderName = `reportContentDataTable_TotalsUnduplicated`;
+
+    $('#reportContent').append(`<table id="${tablePlaceholderName}" class="hover mb-5"></table>`);
+
+
+    $(`#${tablePlaceholderName}`)
+      .html(htmlBoilerplateTotals);
+
+    $(`#${tablePlaceholderName}`)
+      .html(drawDataTable(`#${tablePlaceholderName}`, collegeData.totalUnduplicated, undefined, 'major', 'College Total - Unduplicated'))
+      .width('100%')  // ...width '100%' is fix for style=0px DataTables
+      .fadeIn("slow");
+
+    console.log(collegeData);
+  }
+
+
+
+  //CUSTOM, draws DataTable with given placeholder, data and separately calculated totals
+  function drawDataTable(tablePlaceholder, data, totals, firstColumn = 'degreeType', tableHeader) {
+
+   
+    //$(tablePlaceholder).DataTable().destroy();
+    //$('.dataTables_wrapper').remove();
+
+   let table = $(tablePlaceholder).DataTable({
+      data: data,
+      paging: false,
+      info: false,
+      searching: false,
+      ordering: data.length == 1 ? false : true,
+      initComplete: function (settings, json) {
+
+        if (totals != null) {
+          $(this.api().column('.summer-column.amount').footer()).html(totals.summer);
+          $(this.api().column('.fall-column.amount').footer()).html(totals.fall);
+          $(this.api().column('.spring-column.amount').footer()).html(totals.spring);
+          $(this.api().column('.total-column.amount').footer()).html(totals.total);
+        }
+      }
+      ,
+      columns: [
+        {
+          data: firstColumn
+        },
+
+
+        {
+          data: 'summer',
+          class: 'summer-column amount'
+        },
+
+        /*
+        {
+          data: '%',
+          class: 'fall-column percent',                               // WIP
+          render: function (data, type, row) {                        // WIP
+            return Math.round(row.female / totals.total * 100) + '%';
+          },
+        },*/
+
+        {
+          data: 'fall',
+          class: 'fall-column amount'
+        },
+        {
+          data: 'spring',
+          class: 'spring-column amount'
+        },
+
+
+        /*
+        {
+          data: '%',
+          class: 'summer-column percent',                             // WIP
+          render: function (data, type, row) {                        // WIP
+            return Math.round(row.male / totals.total * 100) + '%';
+          },
+        },
+        */
+
+        {
+          data: 'total',
+          class: 'total-column amount'
+        }
+
+        //,
+
+        /*
+        {
+          data: 'calculated column',
+          class: 'total-column percent',                              // WIP
+          render: function (data, type, row) {                        // WIP
+            return Math.round(row.total / totals.total * 100) + '%';
+          },
+        }*/
+      ]
+    });
+
+
+    if (tableHeader != null) { $(tablePlaceholder).before(`<h3 class="mt-5">${tableHeader}</h3>`); }
+
+
+
+
+  }
+
+
+
+  //CUSTOM, putting all together and placing all content into its placeholders
+  function generateUniversityTable(degreeCertData) {
+
+
+    let dataTotals = {
+      summer: 0,
+      fall: 0,
+      spring: 0,
+      total: 0
+    };
+
+
+    let htmlBoilerplate = `
+                  <thead>
+                    <tr>
+                     <th>Degree Type</th>
+                      <th>Summer</th>
+                      <th>Fall</th>
+                      <th>Spring</th>
+                      <th>Total</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <th>Total</th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                  </tfoot>
+                          `;
+
+
+   
+
+
+    degreeCertData.map((value, index, arr) => {
+
+      dataTotals.summer += value.summer;
+      dataTotals.fall += value.fall;
+      dataTotals.spring += value.spring;
+      dataTotals.total += value.total;
+
+
+    });
+
+
+
+
+    //$('.dataTables_wrapper').remove();
+
+    $('#reportContent').append('<table id="reportContentDataTable" class="hover mb-5"></table>');
+
+
+    $('#reportContentDataTable')
+      .html(htmlBoilerplate);       
+
+
+    //showHideFerpaWarning(ferpa);
+
+
+    
+
+    $('#reportContentDataTable')
+      .html(drawDataTable('#reportContentDataTable', degreeCertData, dataTotals, undefined, "University Totals"))
+      .width('100%')  // ...width '100%' is fix for style=0px DataTables
+      .fadeIn("slow");
+
+
+
+
+
+  }
+
+
+
+
+  //CUSTOM, main function, puts everything together
+  function updateAll(callElem) {
+
+
+
+    //Id of the dropdown caused a call of updateAll()
+    //var currDDId = $(callElem).attr("id") !== undefined ? $(callElem).attr("id") : "";
+
+
+    let postData = {
+      //CensusKey: $('#inputGroupSelect_censusKey').val(),
+      AcadYear: $('#inputGroupSelect_acadYear').val(),
+      PlanCollege: $('#inputGroupSelect_planCollege option:selected').val()
+        //? 'All'
+        //: $('#inputGroupSelect_planCollege option:selected').val()
+    };
+
+    let rootUrl = '@HttpContext.Current.Request.ApplicationPath' !== '/' ? '@HttpContext.Current.Request.ApplicationPath' : '';
+
+
+    $.ajax({
+      type: 'POST',
+      url: rootUrl + '/umbraco/api/ReportsApi/DegreesAndCertificatesConferredByCollege',
+      dataType: 'json',
+      data: postData,
+
+      beforeSend: function () {
+
+        showHideNoDataWarning(false);
+        $('.dataTables_wrapper').remove();
+        $('#reportContentDataTable').hide();
+        showLoader(true);
+       
+
+      },
+
+      success: function (data) {
+
+        
+
+        //let degreeCertData = getDegreeCertData(data, postData);
+
+        let selectedCollege = $('#inputGroupSelect_planCollege option:selected').text();
+
+
+    
+
+        // NO DATA check
+        let noData = (data.allCollegesDegreeCertTable == null) ? true : false;
+
+        
+
+        if (postData.AcadYear == null) {
+          createDropDown({ id: 'acadYear', name: 'Year', data: data.acadYearList, htmlAttr: 'style="width: 14vw;"' });
+        }
+
+        createDropDown({ id: 'planCollege', name: 'College', data: data.planCollege, htmlAttr: 'style="width: 28vw;"' });
+
+        if (postData.PlanCollege != null) {
+          $('#inputGroupSelect_planCollege').val(postData.PlanCollege);
+        }
+
+        showLoader(false);
+        showHideNoDataWarning(noData);
+
+        
+
+        
+        if (!noData && (postData.PlanCollege == "All" || postData.PlanCollege == null)) {          
+          generateUniversityTable(data.degreeCertTable);
+        } else if (!noData && (postData.PlanCollege !== "All" || postData.PlanCollege !== null)) {          
+          generateCollegeTables(data);
+        } else {
+          $('#inputGroupSelect_planCollege')
+            .prepend(`<option value='${postData.PlanCollege}'disabled selected style='display: none;'>${selectedCollege}</option>`);
+        }
+
+
+      },
+
+      error: function (ex) {
+        let r = jQuery.parseJSON(response.responseText);
+        alert("Message: " + r.Message);
+        alert("StackTrace: " + r.StackTrace);
+        alert("ExceptionType: " + r.ExceptionType);
+
+      }
+    });
+  }
+
+
+  updateAll();
+
+
+
+
+
+
+
+
+</script>

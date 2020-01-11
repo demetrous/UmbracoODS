@@ -1,0 +1,243 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "WebBase.cshtml";
+}
+
+
+<style>
+
+    .main-content ul {
+        list-style-type: none;
+    }
+
+    .main-content li {
+        padding-top: .5em;
+    }
+
+    .main-content .rpRootGroup > li {
+        margin-bottom: 2em;
+    }
+
+        .main-content .rpRootGroup > li > .rpText {
+            font-weight: bold;
+        }
+</style>
+
+<script>
+
+
+</script>
+
+<div class="container main-content">
+
+    <div class="row mb-3 ">
+        <div class="col">
+            <div class="page-header">
+                <h3 id="student-profile" class="text-center mb-3">
+                    Reports
+                </h3>
+                <p>
+                    UNLV draws most of its students from the surrounding metropolitan area of approximately 2 million people, and reflects the diverse and non-traditional nature of its surroundings. Awareness of the characteristics of our students is an important first step in meeting their needs, and this is the purpose of providing the Student Profile summaries available here.
+
+                    Nearly 25% of all UNLV undergraduates are 25 years or older, and 48% of graduate and professional students are 30 years or older.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-12">
+
+            <input id="myInput" type="text" class="form-control" placeholder="Search for...">
+
+        </div>
+    </div>
+
+    <div id="reports" class="row">
+        <div class="col-6">
+            <ul class="rpRootGroup">
+                <li class="rpItem rpFirst">
+                    <span class="rpText">Student Profiles</span><div class="rpSlide">
+                        <ul class="rpGroup rpLevel1 ">
+                            <li class="rpItem rpFirst"><a href="https://ir.unlv.edu/IAP/Reports/Content/At+UNLV+-+Student+Profiles.aspx" class="rpLink "><span class="rpText">At UNLV...</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/UniversityStudentProfile_Fall2017.aspx" class="rpLink "><span class="rpText">University Student Profile</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/UndergraduateStudentProfile_Fall2017.aspx" class="rpLink "><span class="rpText">Undergraduate Student Profile </span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/GraduateStudentProfile_Fall2017.aspx" class="rpLink "><span class="rpText">Graduate and Professional Student Profile</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/NewStudents.aspx" class="rpLink "><span class="rpText">Applicants, Admits, Enrolled Students</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/Participation+Rates.aspx" class="rpLink "><span class="rpText">Participation Rates</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/HeadcountByCollegeAndMajorSummarizedByDegreeType.aspx" class="rpLink "><span class="rpText">Headcount by Major, Summarized by Degree Type</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/HeadcountByCollegeRaceAndGender.aspx" class="rpLink "><span class="rpText">Headcount by College, Race and Gender</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/Student+Diversity+Trends.aspx" class="rpLink "><span class="rpText">Student Diversity Trends</span></a></li>
+                            <li class="rpItem rpLast"><a href="https://ir.unlv.edu/IAP/Reports/Content/New+NSHE+Community+College+Transfers+Enrolled.aspx" class="rpLink "><span class="rpText">Transfer Students</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="rpItem">
+                    <span class="rpText">Course Profiles</span><div class="rpSlide">
+                        <ul class="rpGroup rpLevel1 ">
+                            <li class="rpItem rpFirst"><a href="https://ir.unlv.edu/IAP/Reports/Content/At+UNLV+-+Course+Profiles.aspx" class="rpLink "><span class="rpText">At UNLV...</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/ClassSizeSummary.aspx" class="rpLink "><span class="rpText">Class Size Summary</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/Distance+Education+.aspx" class="rpLink "><span class="rpText">Distance Education</span></a></li>
+                            <li class="rpItem rpLast"><a href="https://ir.unlv.edu/IAP/Reports/Content/GradeDistribution_v1.aspx" class="rpLink "><span class="rpText">Grade Distribution</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="rpItem">
+                    <span class="rpText">Diversity</span><div class="rpSlide">
+                        <ul class="rpGroup rpLevel1 ">
+                            <li class="rpItem rpFirst"><a href="https://ir.unlv.edu/IAP/Reports/Content/At+UNLV+-+Diversity.aspx" class="rpLink "><span class="rpText">At UNLV...</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/HeadcountByCollegeRaceAndGender.aspx" class="rpLink "><span class="rpText">Headcount by College, Race and Gender</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/FirstYearRetentionByCollege.aspx" class="rpLink "><span class="rpText">Retention by College, Race and Gender</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/DegreesConferredByRaceAndGender.aspx" class="rpLink "><span class="rpText">Degrees Conferred by Race and Gender</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/Instructional+and+Administrative+Faculty.aspx" class="rpLink "><span class="rpText">Instructional and Administrative Faculty</span></a></li>
+                            <li class="rpItem rpLast"><a href="https://ir.unlv.edu/IAP/Reports/Content/Student+Diversity+Trends.aspx" class="rpLink "><span class="rpText">Student Diversity Trends</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="rpItem">
+                    <span class="rpText">FTE Enrollments</span><div class="rpSlide">
+                        <ul class="rpGroup rpLevel1 ">
+                            <li class="rpItem rpFirst"><a href="https://ir.unlv.edu/IAP/Reports/Content/At+UNLV+-+FTE+Enrollments.aspx" class="rpLink "><span class="rpText">At UNLV...</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/FTE+-+NSHE+Enrollments.aspx" class="rpLink "><span class="rpText">NSHE Enrollment Reports</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/FTEbyCollegeAndDepartment.aspx" class="rpLink "><span class="rpText">FTE Students by Department and Level of Instruction</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/SCHbyCollegeAndDept.aspx" class="rpLink "><span class="rpText">SCH by Department and Level of Instruction</span></a></li>
+                            <li class="rpItem rpLast"><a href="https://ir.unlv.edu/IAP/Reports/Content/AnnualFTEByCollegeAndDept.aspx" class="rpLink "><span class="rpText">Annual FTE by Department and Level of Instruction</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="rpItem">
+                    <span class="rpText">Student Tracking</span><div class="rpSlide">
+                        <ul class="rpGroup rpLevel1 ">
+                            <li class="rpItem rpFirst"><a href="https://ir.unlv.edu/IAP/Reports/Content/At+UNLV+-+Student+Tracking.aspx" class="rpLink "><span class="rpText">At UNLV...</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/RetentionSummaries.aspx" class="rpLink "><span class="rpText">Summary Trend Tables</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/FirstYearRetention.aspx" class="rpLink "><span class="rpText">First-year Retention</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/SixYearGraduationRates.aspx" class="rpLink "><span class="rpText">Six-year Graduation Rates</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/RetentionProgressionGraduationTrends.aspx" class="rpLink "><span class="rpText">Related RPC Studies</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/StudentTracker.aspx" class="rpLink "><span class="rpText">About StudentTracker</span></a></li>
+                            <li class="rpItem rpLast"><a href="https://ir.unlv.edu/IAP/Reports/Content/StudentTracker+App.aspx" class="rpLink "><span class="rpText">Launch StudentTracker</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="rpItem">
+                    <span class="rpText">Degree Profiles</span><div class="rpSlide">
+                        <ul class="rpGroup rpLevel1 ">
+                            <li class="rpItem rpFirst"><a href="https://ir.unlv.edu/IAP/Reports/Content/At+UNLV+-+Degree+Profiles.aspx" class="rpLink "><span class="rpText">At UNLV...</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/DegreeProgramsandCertificatesOffered.aspx" class="rpLink "><span class="rpText">Degree Programs and Certificates Offered</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/DegreesAndCertsConferredByCollege.aspx" class="rpLink "><span class="rpText">Degrees Conferred by College</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/DegreesConferredByRaceAndGender.aspx" class="rpLink "><span class="rpText">Degrees Conferred by Race and Gender</span></a></li>
+                            <li class="rpItem rpLast"><a href="https://ir.unlv.edu/IAP/Reports/Content/Total+Degrees+Conferred+-+Historical.aspx" class="rpLink "><span class="rpText">Total Degrees Conferred - Historical</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="rpItem">
+                    <span class="rpText">Faculty and Staff Profiles</span><div class="rpSlide">
+                        <ul class="rpGroup rpLevel1 ">
+                            <li class="rpItem rpFirst"><a href="https://ir.unlv.edu/IAP/Reports/Content/At+UNLV+-+Faculty+and+Staff+Profiles.aspx" class="rpLink "><span class="rpText">At UNLV...</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/Instructional+Faculty+.aspx" class="rpLink "><span class="rpText">Instructional Faculty </span></a></li>
+                            <li class="rpItem rpLast"><a href="https://ir.unlv.edu/IAP/Reports/Content/Instructional+and+Administrative+Faculty.aspx" class="rpLink "><span class="rpText">Instructional and Administrative Faculty</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="col-6">
+            <ul class="rpRootGroup">
+                <li class="rpItem">
+                    <span class="rpText">Institutional Profiles</span><div class="rpSlide">
+                        <ul class="rpGroup rpLevel1 ">
+                            <li class="rpItem rpFirst"><a href="https://ir.unlv.edu/IAP/Reports/Content/At+UNLV+-+Institutional+Profiles.aspx" class="rpLink "><span class="rpText">At UNLV...</span></a></li>
+                            <li class="rpItem"><a href="https://www.unlv.edu/provost/nwccu" target="_blank" class="rpLink "><span class="rpText">Accreditation</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/Common+Data+Set+2017-18.aspx" class="rpLink "><span class="rpText">Common Data Set</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/Historical+Headcount+.aspx" class="rpLink "><span class="rpText">Historical Headcount </span></a></li>
+                            <li class="rpItem"><a href="http://www.collegeportraits.org/NV/UNLV" target="_blank" class="rpLink "><span class="rpText">VSA College Portrait</span></a></li>
+                            <li class="rpItem rpLast"><a href="https://ir.unlv.edu/IAP/Reports/Content/On+Point.aspx" class="rpLink "><span class="rpText">On Point</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="rpItem">
+                    <span class="rpText">Research</span><div class="rpSlide">
+                        <ul class="rpGroup rpLevel1 ">
+                            <li class="rpItem rpFirst"><a href="https://ir.unlv.edu/IAP/Reports/Content/At+UNLV+-+Research.aspx" class="rpLink "><span class="rpText">At UNLV...</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/Sponsored+Programs+and+Research.aspx" class="rpLink "><span class="rpText">Sponsored Programs and Research</span></a></li>
+                            <li class="rpItem rpLast"><a href="https://ir.unlv.edu/IAP/Reports/Content/ExternalResourcesResearch.aspx" class="rpLink "><span class="rpText">External Resources</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="rpItem">
+                    <span class="rpText">Reports Archive</span><div class="rpSlide">
+                        <ul class="rpGroup rpLevel1 ">
+                            <li class="rpItem rpFirst"><a href="https://ir.unlv.edu/IAP/Reports/Content/Factbook+Archive.aspx" class="rpLink "><span class="rpText">Factbook</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/StudentProfileArchives.aspx" class="rpLink "><span class="rpText">Student Profiles</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/CDS+Archive.aspx" class="rpLink "><span class="rpText">Common Data Set</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/Courses+in+Session.aspx" class="rpLink "><span class="rpText">Courses in Session</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/DegreeProductivityByMajor.aspx" class="rpLink "><span class="rpText">Degree Productivity by Major</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/MajorProfile_DegreesConferred.aspx" class="rpLink "><span class="rpText">Degree Profiles by Major</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/MajorProfile_Enrollment.aspx" class="rpLink "><span class="rpText">Enrollment Profiles by Major</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/Evening+Courses.aspx" class="rpLink "><span class="rpText">Evening Courses</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/Historical+Highlights.aspx" class="rpLink "><span class="rpText">Historical Highlights</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/International+Scholars.aspx" class="rpLink "><span class="rpText">International Scholars</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/Honors+Student+Profile.aspx" class="rpLink "><span class="rpText">Honors Student Profile</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/Average+Age.aspx" class="rpLink "><span class="rpText">Student Average Age</span></a></li>
+                            <li class="rpItem rpLast"><a href="https://ir.unlv.edu/IAP/Reports/Content/Student+Credit+Load.aspx" class="rpLink "><span class="rpText">Student Credit Load</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="rpItem">
+                    <span class="rpText">Campus Resources</span><div class="rpSlide">
+                        <ul class="rpGroup rpLevel1 ">
+                            <li class="rpItem rpFirst"><a href="https://ir.unlv.edu/IAP/Reports/Content/Library+Collections+and+Services.aspx" class="rpLink "><span class="rpText">UNLV Libraries</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/UNLV+Campus+Master+Plan+(2012).aspx" class="rpLink "><span class="rpText">Campus Master Plan</span></a></li>
+                            <li class="rpItem"><a href="http://maps.unlv.edu/" target="_blank" class="rpLink "><span class="rpText">Campus Maps</span></a></li>
+                            <li class="rpItem rpLast"><a href="https://ir.unlv.edu/IAP/Reports/Content/General+Building+Description.aspx" class="rpLink "><span class="rpText">General Building Description</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="rpItem">
+                    <span class="rpText">Fiscal Resources</span><div class="rpSlide">
+                        <ul class="rpGroup rpLevel1 ">
+                            <li class="rpItem rpFirst"><a href="https://ir.unlv.edu/IAP/Reports/Content/At+UNLV+-+Fiscal+Resources.aspx" class="rpLink "><span class="rpText">At UNLV...</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/Financial+Aid.aspx" class="rpLink "><span class="rpText">Financial Aid</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/Student+Costs.aspx" class="rpLink "><span class="rpText">Student Costs</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/State+Appropriations.aspx" class="rpLink "><span class="rpText">State Appropriations</span></a></li>
+                            <li class="rpItem rpLast"><a href="https://ir.unlv.edu/IAP/Reports/Content/University+Development.aspx" class="rpLink "><span class="rpText">University Development</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="rpItem">
+                    <span class="rpText">IR Resources</span><div class="rpSlide">
+                        <ul class="rpGroup rpLevel1 ">
+                            <li class="rpItem rpFirst"><a href="https://ir.unlv.edu/IAP/Reports/Content/At+UNLV+-+Reporting+Tools.aspx" class="rpLink "><span class="rpText">At UNLV...</span></a></li>
+                            <li class="rpItem"><a href="https://ir.unlv.edu/IAP/Reports/Content/External+Reporting+Tools.aspx" class="rpLink "><span class="rpText">External Reporting Tools</span></a></li>
+                            <li class="rpItem rpLast"><a href="https://ir.unlv.edu/IAP/Reports/Content/ExternalOrganizationsAndStudies.aspx" class="rpLink "><span class="rpText">External Organizations and Selected Studies</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="rpItem rpLast">
+                    <span class="rpText">Methods and Standards</span><div class="rpSlide">
+                        <ul class="rpGroup rpLevel1 ">
+                            <li class="rpItem rpFirst"><a href="https://ir.unlv.edu/IAP/Reports/Content/CensusDateInfo.aspx" class="rpLink "><span class="rpText">About Census Dates</span></a></li>
+                            <li class="rpItem rpLast"><a href="https://ir.unlv.edu/IAP/Reports/Content/CensusDateListing_New.aspx" class="rpLink "><span class="rpText">Census Date Listing</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+@section ScriptsBottom
+{
+    <script>
+        $("#myInput").on("keyup", function () {
+            var value = $(this).val().toLowerCase();
+            $("#reports li").filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+
+    </script>
+}
+
+
+
+
+

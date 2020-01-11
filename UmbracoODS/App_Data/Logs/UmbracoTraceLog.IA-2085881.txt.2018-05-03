@@ -1,0 +1,9 @@
+﻿ 2018-05-03 02:12:27,561 [P7276/D8/T457] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-05-02 02:12:27
+ 2018-05-03 06:12:28,178 [P7276/D8/T5] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-05-02 06:12:28
+ 2018-05-03 10:12:28,793 [P7276/D8/T71] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-05-02 10:12:28
+ 2018-05-03 11:36:05,109 [P7276/D8/T348] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username demetrous@gmail.com from IP address ::1
+ 2018-05-03 11:36:05,110 [P7276/D8/T348] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: demetrous@gmail.com logged in from IP address ::1
+ 2018-05-03 11:55:40,185 [P7276/D8/T257] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: demetrous@gmail.com, IP Address: ::1
+ 2018-05-03 14:12:29,275 [P7276/D8/T140] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-05-02 14:12:29
+ 2018-05-03 18:12:29,893 [P7276/D8/T104] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-05-02 18:12:29
+ 2018-05-03 22:12:30,356 [P7276/D8/T316] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-05-02 22:12:30

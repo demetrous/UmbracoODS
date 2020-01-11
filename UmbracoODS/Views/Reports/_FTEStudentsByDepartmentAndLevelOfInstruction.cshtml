@@ -1,0 +1,719 @@
+﻿<link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" />
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+<style>
+
+
+	table.dataTable thead th,
+	table.dataTable thead td,
+	table.dataTable tbody td,
+	table.dataTable tfoot th,
+	table.dataTable tfoot td {
+		padding: 8px 18px;
+		border-bottom: none;
+	}
+
+	table.dataTable thead th,
+	table.dataTable thead td,
+	table.dataTable tbody td,
+	table.dataTable tfoot th,
+	table.dataTable tfoot td {
+		text-align: right;
+	}
+
+	table.dataTable thead .top-row th {
+		text-align: center;
+	}
+
+		table.dataTable .first-column,
+		table.dataTable thead .top-row th.first-column {
+			text-align: left;
+		}
+
+	table.dataTable.no-footer {
+		border-bottom: none;
+	}
+
+
+	table.dataTable.hover > tbody > tr:hover td {
+		background-image: linear-gradient( 180deg, rgba(0,0,0,.07), rgba(0,0,0,.07)) !important;
+	}
+
+	/*td.first-column,
+		table.dataTable tfoot th.headcount-column {
+			padding: 8px 10px;
+		}*/
+
+
+
+	td.headcount-column,
+	th.headcount-column,
+	table.dataTable tfoot th.headcount-column {
+		text-align: right;
+	}
+
+	table.dataTable tfoot th.race-ethnicity-column {
+		padding: 8px 10px;
+	}
+
+	table.dataTable .first-column {
+		width: 35%;
+	}
+
+
+
+	table.dataTable thead th,
+	table.dataTable thead td {
+		border-bottom: 3px solid #dcdcdc;
+	}
+
+
+	table.dataTable tfoot th,
+	table.dataTable tfoot td {
+		border-top: 3px solid #dcdcdc;
+	}
+
+
+	/* Dropdown container styling */
+	.input-group-prepend {
+		margin-right: -1px;
+	}
+
+	.input-group-append, .input-group-prepend {
+		display: -ms-flexbox;
+		display: flex;
+	}
+
+
+	.input-group {
+		position: relative;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-ms-flex-align: stretch;
+		align-items: stretch;
+		width: 100%;
+	}
+
+		.input-group > .input-group-prepend > .input-group-text {
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+
+	/* Dropdown styling */
+	.input-group-text {
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-align: center;
+		align-items: center;
+		padding: .375rem .75rem;
+		margin-bottom: 0;
+		font-size: 1rem;
+		font-weight: 400;
+		line-height: 1.5;
+		color: #495057;
+		text-align: center;
+		white-space: nowrap;
+		background-color: #e9ecef;
+		border: 1px solid #e9ecef; /*#ced4da;*/
+		border-radius: .25rem;
+	}
+
+	/* Margin for non-first dropdown, making spacing */
+	.input-group:not(:first-child) {
+		margin-left: 2em;
+	}
+
+
+
+	option[value=""][disabled] {
+		display: none;
+	}
+
+
+	table.dataTable thead .first-column.sorting,
+	table.dataTable thead .first-column.sorting_asc,
+	table.dataTable thead .first-column.sorting_desc {
+		background-position: center left;
+	}
+
+
+	/*.u-column {
+		background-color: #ffe4e2;
+	}
+
+	.g-column {
+		background-color: #fff1e4;
+	}
+
+	.dual-column {
+		background-color: #fffbea;
+	}
+
+	.total-column {
+		background-color: #e5f5dc;
+	}
+
+	.enrolled-column,
+	.enrolled-divby-admitted-column {
+		background-color: #f0fff3;*/
+	}
+</style>
+
+<script>
+	(function () {
+
+
+
+
+		let loaderDiv = $(`<div id="loaderDiv" class="d-flex justify-content-center p-4">
+													<div class="spinner-border text-danger" role="status">
+														<span class="sr-only">Loading...</span>
+													</div>
+												</div>`);    //WIP: Image to local res
+		$('#reportContent').append(loaderDiv);
+
+
+
+
+
+		//let loaderDiv = $('<div id="loaderDiv" class="text-center p-4"><img src="https://ir.unlv.edu/images/ajax-loader.gif" /></div>');    //WIP: Image to local res
+		//$('#reportContent').append(loaderDiv);
+
+		let noDataPlaceholder = '<div id="noDataPlaceholder" class="alert alert-warning text-center p-4" style="display: none !important; font-size: 1.5em; font-weight:300;">No data available for the selected parameters</div>';
+		$('#reportContent').prepend(noDataPlaceholder);
+
+		let controlsPlaceholder = $('<div id="controlsPlaceholder" class="d-flex flex-row mb-3" />');
+		$('#reportContent').prepend(controlsPlaceholder);
+
+
+		$('#reportContent').append(`<div id="totalsContent" class="row" />`);
+
+		$('#reportContent').append('<div id="tableContent"/>');
+
+
+		var notes = `<div id="ReportNotes" class="row" style="display: none !important;">
+									<div class="col">
+											Notes:
+                      <br />
+                      FTE enrollment is calculated by dividing student credit hours by the following divisors: 
+                
+
+
+
+										<ul style="list-style-type: none;">
+                      <li>
+                        15 - Lower and Upper 
+                      </li>
+                      <li>
+                        12 - Master 
+                      </li>
+                      <li>
+                        12 - Professional
+                      </li>
+                      <li>
+                        9 - Doctoral
+                      </li>
+                    </ul>	
+										<ul style="list-style-type: none; padding-inline-start: 0;margin-top: 2rem;">
+											 <li>Source: UNLV Office of Decision Support </li>
+											 <li>Report date: ${getShortDate()} </li>
+										</ul>
+									</div>
+								</div>`;
+
+		$('#reportContent').append(notes);
+
+		//$('#reportContent').append('<table id="reportContentDataTable" class="hover"></table>');
+
+
+
+
+
+		//let chartPlaceholder = $('<div id="chartPlaceholder" class="mt-5 pt-5"/>');
+		//$('#reportContent').append(chartPlaceholder);
+
+
+		//let chartPlaceholder2 = $('<div id="chartPlaceholder2" class="mt-5 pt-5"/>');
+		//$('#reportContent').append(chartPlaceholder2);
+
+	})();
+
+
+	//GENERAL
+	function calcPercent(dividend, divisor) {
+		return Math.round(dividend / divisor * 100) + '%'
+	}
+
+
+	//GENERAL, returns date string like "May 24, 2019"
+	function getShortDate() {
+		const monthNames = ["January", "February", "March", "April", "May", "June",
+			"July", "August", "September", "October", "November", "December"
+		];
+
+		const d = new Date();
+
+		let dateString = `${monthNames[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`
+
+		return dateString;
+	}
+
+
+	//GENERAL, show if no data has been sent
+	function showHideNoDataWarning(noData) {
+		if (noData) {
+			$('#noDataPlaceholder').fadeIn("slow");
+		} else {
+			$('#noDataPlaceholder').hide().fadeOut("slow");
+		}
+	}
+
+
+	//GENERAL, show or hide loader spinner while data is loading
+	function showLoader(show) {
+		if (show) {
+			$("#loaderDiv").attr('style', 'display:flex !important');
+		} else {
+			$("#loaderDiv").attr('style', 'display:none !important');
+		}
+	}
+
+	//GENERAL, show or hide notes div in the end of the page
+	function showNotes(show) {
+		if (show) {
+			$("#ReportNotes").attr('style', 'display:block !important');
+		} else {
+			$("#ReportNotes").attr('style', 'display:none !important');
+		}
+	}
+
+
+	//GENERAL, returns html with input group containing <select> dropdown
+	function createDropdownHtml(param) {
+
+		let optionValue = Object.keys(param.data[0])[0]; //Getting value name for <option value='....>
+		let optionText = (Object.keys(param.data[0])[1] != null) ? Object.keys(param.data[0])[1] : Object.keys(param.data[0])[0]; //Getting text for <option >...</option>
+
+
+		$(`#InputGroup_${param.id}`).remove();
+
+		let inputGroupHtml = $(`<div id="InputGroup_${param.id}" class="input-group" ${param.htmlAttr}>
+														<div class="input-group-prepend">
+																<label class="input-group-text" for="inputGroupSelect_${param.id}">
+																		${param.name}
+																</label>
+														</div>
+													</div >`);
+
+		let selectControlHtml = $(`<select id="inputGroupSelect_${param.id}" class="form-control" onchange="updateAll(this);" />`);
+
+		$(inputGroupHtml).append(selectControlHtml);
+
+		param.data.map(function (row) {
+			$('<option />',
+				{ value: row[optionValue], text: row[optionText] }
+			)
+				.appendTo(selectControlHtml);
+		});
+
+		return $(inputGroupHtml);
+
+	}
+
+
+	//GENERAL, appends dropdown to container, param = {id: '...', name: '...', data: someJsonData}
+	function createDropDown(param) {
+
+		$('#controlsPlaceholder').append(createDropdownHtml(param));
+	}
+
+   
+  //GENERAL, round number to one decimal 
+  function roundNumber(data) {
+    return data.toFixed(1);
+  }
+
+
+	//CUSTOM calculate average from enrollment/sectionCount
+	function getAvg(enrollment, sectionCount) {
+		return sectionCount != 0 ? Math.round(enrollment / sectionCount) : 0;
+	}
+
+
+	//CUSTOM, draws DataTable with given placeholder, data and separately calculated totals
+  function drawDataTable(tablePlaceholder, data, totals, firstColumn = 'department', tableHeader, stateSupportedOnly) {
+
+
+    //var professionalColVisibility = (stateSupportedOnly == "true");
+
+    //if (stateSupportedOnly) {
+    //  professionalColVisibility = true;
+    //}
+    //else if (!stateSupportedOnly) {
+    //  professionalColVisibility = false;
+    //} 
+
+
+    
+
+    //console.log(`stateSupportedOnly = ${stateSupportedOnly}`);
+    //console.log(`professionalColVisibility = ${professionalColVisibility}`);
+
+		//$(tablePlaceholder).DataTable().destroy();
+		//$('.dataTables_wrapper').remove();
+
+    //if (tableHeader=="University Total")
+    console.log(data);
+
+		let table = $(tablePlaceholder).DataTable({
+			data: data,
+			paging: false,
+      info: false,      
+			searching: false,
+			order: [], // to keep original sort order
+			ordering: data.length == 1 ? false : true,
+			initComplete: function (settings, json) {
+
+				if (totals != null) {
+
+          $(this.api().column('.lower-column').footer()).html(roundNumber(totals.lower));
+          $(this.api().column('.upper-column').footer()).html(roundNumber(totals.upper));
+          $(this.api().column('.master-column').footer()).html(roundNumber(totals.master));
+          $(this.api().column('.doctoral-column').footer()).html(roundNumber(totals.doctoral));
+          $(this.api().column('.professional-column').footer()).html(roundNumber(totals.professional));
+          $(this.api().column('.total-column').footer()).html(roundNumber(totals.total));
+
+				}
+			}
+      ,
+      //columnDefs: [
+      //  {
+      //    targets: [5],
+      //    visible: professionalColVisibility ? false : true
+      //  }
+      //],
+			columns: [
+				{
+					data: firstColumn,
+					className: 'first-column'
+				},
+        {
+          data: 'lower',
+          className: 'lower-column',
+          render: roundNumber
+        },
+        {
+          data: 'upper',
+          className: 'upper-column',
+          render: roundNumber
+        },
+        {
+          data: 'master',
+          className: 'master-column',
+          render: roundNumber
+        },
+        {
+          data: 'doctoral',
+          className: 'doctoral-column',
+          render: roundNumber
+        },
+        {
+          data: 'professional',
+          className: 'professional-column',
+          render: roundNumber,
+          visible: !stateSupportedOnly
+        },
+        {
+          data: 'total',
+          className: 'total-column',
+          render: roundNumber
+        },
+			]
+
+		});
+
+
+    
+    //table.column(5).visible(false);
+
+    //if (stateSupportedOnly) $(`${tablePlaceholder} tr > *:nth-child(6)`).hide();
+
+
+		if (tableHeader != null) { $(tablePlaceholder).before(`<h3 class="mt-5">${tableHeader}</h3>`); }
+	}
+
+
+	//CUSTOM, generates table with drawDataTable function and custom html
+  function generateTable(fteTable, stateSupportedOnly) {
+
+		let universityData = {
+      total: [{
+
+        department: "University Total",
+        //department: "Allied Health Sciences"
+        lower: 0,
+        upper: 0,
+        master: 0,
+        doctoral: 0,
+        professional: 0,
+        total: 0        
+
+			}]
+
+		};
+
+
+    fteTable.map((row) => {
+
+
+			if (universityData.data == null) universityData.data = new Array();
+
+			if (universityData.data[row.college] == null) universityData.data[row.college] = new Array();
+
+			if (universityData.data[row.college].rows == null) universityData.data[row.college].rows = new Array();
+
+			if (universityData.data[row.college].total == null) universityData.data[row.college].total =
+				{
+
+        //college: row.college,
+        //department: row.department,
+        lower: 0,
+        upper: 0,
+        master: 0,
+        doctoral: 0,
+        professional: 0,
+        total: 0      
+				};
+
+
+
+			universityData.data[row.college].rows.push({
+
+        department: row.department,
+        lower: row.lower,
+        upper: row.upper,
+        master: row.master,
+        doctoral: row.doctoral,
+        professional: row.professional,
+        total: row.total      
+
+			});
+           
+      
+      universityData.data[row.college].total.lower += row.lower;
+      universityData.data[row.college].total.upper += row.upper;
+      universityData.data[row.college].total.master += row.master;
+      universityData.data[row.college].total.doctoral += row.doctoral;
+      universityData.data[row.college].total.professional += row.professional;
+      universityData.data[row.college].total.total += row.total;      
+      
+      
+      universityData.total[0].lower += row.lower;
+      universityData.total[0].upper += row.upper;
+      universityData.total[0].master += row.master;
+      universityData.total[0].doctoral += row.doctoral;
+      universityData.total[0].professional += row.professional;
+      universityData.total[0].total += row.total;    
+
+
+		});
+
+		console.log(universityData);
+
+		let htmlBoilerplate = `
+									<thead>											
+											<tr>
+												<th class='first-column department-column'>Department</th>
+												<th class='lower-column'>Lower</th>
+												<th class='upper-column'>Upper</th>
+												<th class='master-column'>Master</th>
+												<th class='doctoral-column'>Doctoral</th>
+												<th class='professional-column'>Professional</th>
+												<th class='total-column'>Total</th>				
+											</tr>
+									</thead>
+									<tbody>
+									</tbody>
+									<tfoot>
+										<tr>	
+                      <th class='first-column department-column'>College Total</th>
+												<th class='lower-column'>Lower</th>
+												<th class='upper-column'>Upper</th>
+												<th class='master-column'>Master</th>
+												<th class='doctoral-column'>Doctoral</th>
+												<th class='professional-column'>Professional</th>
+												<th class='total-column'>Total</th>				
+										</tr>
+									</tfoot>
+													`;
+
+
+
+    let htmlBoilerplateUniversityTotal = `
+									<thead>											
+											<tr>
+												<th class='first-column'></th>
+												<th class='lower-column'>Lower</th>
+												<th class='upper-column'>Upper</th>
+												<th class='master-column'>Master</th>
+												<th class='doctoral-column'>Doctoral</th>
+												<th class='professional-column'>Professional</th>
+												<th class='total-column'>Total</th>				
+											</tr>
+									</thead>
+									<tbody>
+									</tbody>									
+													`;
+
+
+
+		Object.entries(universityData.data).map((row, index, arr) => {
+
+			let tablePlaceholderName = `reportContentDataTable_${index}`;
+
+			$('#tableContent').append(`
+												<div class="row">
+													<div class="col">
+														<table id="${tablePlaceholderName}" class="hover mb-5"></table>
+													</div>
+												</div>`);
+
+
+			$(`#${tablePlaceholderName}`)
+				.html(htmlBoilerplate);
+
+
+      $(`#${tablePlaceholderName}`)
+        .html(drawDataTable(`#${tablePlaceholderName}`, row[1].rows, row[1].total, 'department', row[0], stateSupportedOnly))
+				.width('100%')  // ...width '100%' is fix for style=0px DataTables
+				.fadeIn("slow");
+
+    });
+
+
+    tablePlaceholderName = `reportContentDataTable_UniversityTotals`;
+
+    $('#tableContent').append(`
+												<div class="row">
+													<div class="col">
+														<table id="${tablePlaceholderName}" class="hover mb-5"></table>
+													</div>
+												</div>`);
+
+
+    $(`#${tablePlaceholderName}`)
+      .html(htmlBoilerplateUniversityTotal);
+
+    console.log(universityData.total[0]);
+
+
+    $(`#${tablePlaceholderName}`)
+      .html(drawDataTable(`#${tablePlaceholderName}`, universityData.total, undefined, 'department', 'University Total', stateSupportedOnly))
+      .width('100%')  // ...width '100%' is fix for style=0px DataTables
+      .fadeIn("slow");
+
+    $(`#${tablePlaceholderName} td`).css('font-weight', 'bold');
+
+
+	}
+
+
+
+
+
+			//=========================================================================
+
+	//CUSTOM, main function, puts everything together
+	function updateAll(callElem) {
+
+		let postData = {
+      CensusKey: $('#inputGroupSelect_censusKey').val(),
+      StateSupportedOnly: $('#inputGroupSelect_stateSupportedOnly').val()
+		};
+
+		//TODO: move to separate function (or file)
+		let rootUrl = '@HttpContext.Current.Request.ApplicationPath' !== '/' ? '@HttpContext.Current.Request.ApplicationPath' : '';
+
+
+		$.ajax({
+			type: 'POST',
+			url: rootUrl + '/umbraco/api/ReportsApi/FTEStudentsByDepartmentAndLevelOfInstruction',
+			dataType: 'json',
+			data: postData,
+
+			beforeSend: function () {
+
+
+				showNotes(false);
+				showHideNoDataWarning(false);
+				$('.dataTables_wrapper,#byLevelContent').remove();
+				$('#totalsContent,#tableContent').empty();
+				showLoader(true);
+
+
+			},
+
+			success: function (data) {
+
+				console.log(data);
+
+				// NO DATA check
+        let noData = (data.fteTable == null) ? true : false;        
+        let boolStateSupportedOnly = (postData.StateSupportedOnly == "true" || postData.StateSupportedOnly == null); //Explicit bool variable to avoid conversion collision when "true"(string) converts to false(boolean)
+
+        console.log(boolStateSupportedOnly);
+
+        if (postData.CensusKey == null) {
+					createDropDown({
+            id: 'censusKey', name: 'Term', data: data.censusKeyList, htmlAttr: 'style="width: 17rem; order: 1;"'
+					});
+				}
+
+        let stateSupportedOnlyData = [                     //WIP: move to server?
+          { value: "true", name: "Only state-supported (formula-funded)" },
+          { value: "false", name: "All (including Professional)" }
+        ];
+
+        if (postData.StateSupportedOnly == null) {
+          createDropDown({ id: 'stateSupportedOnly', name: 'Enrollments', data: stateSupportedOnlyData, htmlAttr: 'style="width: 29rem; order: 2;"' });
+        }
+
+
+
+
+				showLoader(false);
+				showHideNoDataWarning(noData);
+
+
+
+		    if (!noData) {
+          generateTable(data.fteTable, boolStateSupportedOnly);
+				}
+
+				showNotes(true);
+
+			},
+
+			error: function (ex) {
+				let r = jQuery.parseJSON(response.responseText);
+				alert("Message: " + r.Message);
+				alert("StackTrace: " + r.StackTrace);
+				alert("ExceptionType: " + r.ExceptionType);
+
+			}
+		});
+	}
+
+
+	updateAll();
+
+
+
+</script>
+

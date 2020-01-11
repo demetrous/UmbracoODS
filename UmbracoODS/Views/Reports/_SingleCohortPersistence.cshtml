@@ -1,0 +1,152 @@
+﻿<link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" />
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/sunburst.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+<script src="~/scripts/Reports/SingleCohortPersistence.js"></script>
+
+<style>
+
+
+  table.dataTable thead th,
+  table.dataTable thead td,
+  table.dataTable tbody td,
+  table.dataTable tfoot th,
+  table.dataTable tfoot td {
+    padding: 8px 10px;
+    border-bottom: none;
+  }
+
+  table.dataTable.no-footer {
+    border-bottom: none;
+  }
+
+
+  table.dataTable.hover > tbody > tr:hover td {
+    background-image: linear-gradient( 180deg, rgba(0,0,0,.07), rgba(0,0,0,.07)) !important;
+  }
+
+  /*td.first-column,
+    table.dataTable tfoot th.headcount-column {
+      padding: 8px 10px;
+    }*/
+
+  th.first-column,
+  td.first-column,
+  table.dataTable tfoot th.first-column {
+    text-align: left;
+  }
+
+  td.headcount-column,
+  th.headcount-column,
+  table.dataTable tfoot th.headcount-column {
+    text-align: right;
+  }
+
+  table.dataTable tfoot th.race-ethnicity-column {
+    padding: 8px 10px;
+  }
+
+  table.dataTable .first-column {
+    width: 48%;
+  }
+
+
+
+  table.dataTable thead th,
+  table.dataTable thead td {
+    border-bottom: 3px solid #dcdcdc;
+  }
+
+
+  table.dataTable tfoot th,
+  table.dataTable tfoot td {
+    border-top: 3px solid #dcdcdc;
+  }
+
+
+  /* Dropdown container styling */
+  .input-group-prepend {
+    margin-right: -1px;
+  }
+
+  .input-group-append, .input-group-prepend {
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+
+  .input-group {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+  }
+
+    .input-group > .input-group-prepend > .input-group-text {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+  /* Dropdown styling */
+  .input-group-text {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: .375rem .75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #e9ecef;
+    border: 1px solid #e9ecef; /*#ced4da;*/
+    border-radius: .25rem;
+  }
+
+  /* Margin for non-first dropdown, making spacing */
+  .input-group:not(:first-child) {
+    margin-left: 2em;
+  }
+
+
+
+  option[value=""][disabled] {
+    display: none;
+  }
+
+
+  table.dataTable thead .sorting:first-child,
+  table.dataTable thead .sorting_asc:first-child,
+  table.dataTable thead .sorting_desc:first-child {
+    background-position: -5px center;
+  }
+
+  table.dataTable thead .sorting,
+  table.dataTable thead .sorting_asc,
+  table.dataTable thead .sorting_desc {
+    background-position: right -5px center;
+  }
+
+  /*************TEMP*************/
+
+  .btn-outline-secondary {
+    border-color: transparent;
+  }
+</style>
+
+<script>
+  const APP_URL = '@HttpContext.Current.Request.ApplicationPath' !== '/' ? '@HttpContext.Current.Request.ApplicationPath' : '';
+
+  updateAll();
+</script>

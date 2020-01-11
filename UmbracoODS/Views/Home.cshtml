@@ -1,0 +1,57 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@using UmbracoODS.Models
+
+@{
+    Layout = "WebBase.cshtml";
+}
+
+@section Head
+{
+    @*<link rel="stylesheet" href="~/css/oldStyles.css">*@
+    <style>
+        body {
+            background-color: #4a4e54;
+        }
+    </style>
+}
+
+@{ Html.RenderPartial("Home/_Jumbotron");}
+@*
+    <div class="container main-content">
+
+        <div class="row">
+            <div class="col">
+                @Umbraco.Field("mainContent")
+            </div>
+        </div>
+    </div>
+
+    @{ Html.RenderPartial("Home/_Cards");}*@
+
+
+
+@section ScriptsBottom
+{
+    <script>
+        $("#inpt_search").on('focus', function () {
+            $(this).parent('label').addClass('active');
+        });
+
+        $("#inpt_search").on('blur', function () {
+            if ($(this).val().length == 0)
+                $(this).parent('label').removeClass('active');
+        });
+
+
+        @*d3.json('@Url.Action("GetData","Reports", new { urlParams = "{'censusKey':'EP2178','acadCareer':'Grad','planCollege':'All'}" })', function (data) {
+
+
+            console.log(data);
+        });*@
+
+        var str = "@AppDomain.CurrentDomain.BaseDirectory ";
+
+        console.log(str);
+
+    </script>
+}

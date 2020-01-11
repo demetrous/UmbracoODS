@@ -1,0 +1,4391 @@
+[
+ {
+   "date": 2012,
+   "college": "Allied Health Sciences",
+   "department": "Health Phy and Diagnostic Sci",
+   "level": "Undergraduate",
+   "headcount": 370
+ },
+ {
+   "date": 2012,
+   "college": "Allied Health Sciences",
+   "department": "Health Phy and Diagnostic Sci",
+   "level": "Graduate",
+   "headcount": 8
+ },
+ {
+   "date": 2012,
+   "college": "Allied Health Sciences",
+   "department": "Kinesiology & Nutrition Sci",
+   "level": "Undergraduate",
+   "headcount": 1084
+ },
+ {
+   "date": 2012,
+   "college": "Allied Health Sciences",
+   "department": "Kinesiology & Nutrition Sci",
+   "level": "Graduate",
+   "headcount": 56
+ },
+ {
+   "date": 2012,
+   "college": "Allied Health Sciences",
+   "department": "Physical Therapy",
+   "level": "Graduate",
+   "headcount": 87
+ },
+ {
+   "date": 2012,
+   "college": "College of Education",
+   "department": "College of Education",
+   "level": "Undergraduate",
+   "headcount": 2
+ },
+ {
+   "date": 2012,
+   "college": "College of Education",
+   "department": "College of Education",
+   "level": "Graduate",
+   "headcount": 21
+ },
+ {
+   "date": 2012,
+   "college": "College of Education",
+   "department": "Educ Psychology and Higher Ed",
+   "level": "Undergraduate",
+   "headcount": 17
+ },
+ {
+   "date": 2012,
+   "college": "College of Education",
+   "department": "Educ Psychology and Higher Ed",
+   "level": "Graduate",
+   "headcount": 150
+ },
+ {
+   "date": 2012,
+   "college": "College of Education",
+   "department": "Educational & Clinical Studies",
+   "level": "Undergraduate",
+   "headcount": 380
+ },
+ {
+   "date": 2012,
+   "college": "College of Education",
+   "department": "Educational & Clinical Studies",
+   "level": "Graduate",
+   "headcount": 321
+ },
+ {
+   "date": 2012,
+   "college": "College of Education",
+   "department": "Teaching & Learning",
+   "level": "Undergraduate",
+   "headcount": 719
+ },
+ {
+   "date": 2012,
+   "college": "College of Education",
+   "department": "Teaching & Learning",
+   "level": "Graduate",
+   "headcount": 552
+ },
+ {
+   "date": 2012,
+   "college": "College of Engineering",
+   "department": "Aerospace Studies",
+   "level": "Undergraduate",
+   "headcount": 4
+ },
+ {
+   "date": 2012,
+   "college": "College of Engineering",
+   "department": "Civil & Environmental Enginr",
+   "level": "Undergraduate",
+   "headcount": 234
+ },
+ {
+   "date": 2012,
+   "college": "College of Engineering",
+   "department": "Civil & Environmental Enginr",
+   "level": "Graduate",
+   "headcount": 82
+ },
+ {
+   "date": 2012,
+   "college": "College of Engineering",
+   "department": "College of Engineering",
+   "level": "Undergraduate",
+   "headcount": 47
+ },
+ {
+   "date": 2012,
+   "college": "College of Engineering",
+   "department": "Computer Science",
+   "level": "Undergraduate",
+   "headcount": 534
+ },
+ {
+   "date": 2012,
+   "college": "College of Engineering",
+   "department": "Computer Science",
+   "level": "Graduate",
+   "headcount": 47
+ },
+ {
+   "date": 2012,
+   "college": "College of Engineering",
+   "department": "Construction Management",
+   "level": "Undergraduate",
+   "headcount": 38
+ },
+ {
+   "date": 2012,
+   "college": "College of Engineering",
+   "department": "Construction Management",
+   "level": "Graduate",
+   "headcount": 6
+ },
+ {
+   "date": 2012,
+   "college": "College of Engineering",
+   "department": "Electrical & Comp Engineering",
+   "level": "Undergraduate",
+   "headcount": 448
+ },
+ {
+   "date": 2012,
+   "college": "College of Engineering",
+   "department": "Electrical & Comp Engineering",
+   "level": "Graduate",
+   "headcount": 53
+ },
+ {
+   "date": 2012,
+   "college": "College of Engineering",
+   "department": "Informatics",
+   "level": "Undergraduate",
+   "headcount": 17
+ },
+ {
+   "date": 2012,
+   "college": "College of Engineering",
+   "department": "Mechanical Engineering",
+   "level": "Undergraduate",
+   "headcount": 376
+ },
+ {
+   "date": 2012,
+   "college": "College of Engineering",
+   "department": "Mechanical Engineering",
+   "level": "Graduate",
+   "headcount": 46
+ },
+ {
+   "date": 2012,
+   "college": "College of Engineering",
+   "department": "Military Science",
+   "level": "Undergraduate",
+   "headcount": 4
+ },
+ {
+   "date": 2012,
+   "college": "College of Fine Arts",
+   "department": "Architecture",
+   "level": "Undergraduate",
+   "headcount": 404
+ },
+ {
+   "date": 2012,
+   "college": "College of Fine Arts",
+   "department": "Architecture",
+   "level": "Graduate",
+   "headcount": 45
+ },
+ {
+   "date": 2012,
+   "college": "College of Fine Arts",
+   "department": "Art",
+   "level": "Undergraduate",
+   "headcount": 431
+ },
+ {
+   "date": 2012,
+   "college": "College of Fine Arts",
+   "department": "Art",
+   "level": "Graduate",
+   "headcount": 13
+ },
+ {
+   "date": 2012,
+   "college": "College of Fine Arts",
+   "department": "College of Fine Arts",
+   "level": "Undergraduate",
+   "headcount": 56
+ },
+ {
+   "date": 2012,
+   "college": "College of Fine Arts",
+   "department": "Dance",
+   "level": "Undergraduate",
+   "headcount": 99
+ },
+ {
+   "date": 2012,
+   "college": "College of Fine Arts",
+   "department": "Film",
+   "level": "Undergraduate",
+   "headcount": 360
+ },
+ {
+   "date": 2012,
+   "college": "College of Fine Arts",
+   "department": "Film",
+   "level": "Graduate",
+   "headcount": 8
+ },
+ {
+   "date": 2012,
+   "college": "College of Fine Arts",
+   "department": "Music",
+   "level": "Undergraduate",
+   "headcount": 325
+ },
+ {
+   "date": 2012,
+   "college": "College of Fine Arts",
+   "department": "Music",
+   "level": "Graduate",
+   "headcount": 111
+ },
+ {
+   "date": 2012,
+   "college": "College of Fine Arts",
+   "department": "Theatre",
+   "level": "Undergraduate",
+   "headcount": 185
+ },
+ {
+   "date": 2012,
+   "college": "College of Fine Arts",
+   "department": "Theatre",
+   "level": "Graduate",
+   "headcount": 38
+ },
+ {
+   "date": 2012,
+   "college": "College of Hotel Admin",
+   "department": "College of Hotel Admin",
+   "level": "Undergraduate",
+   "headcount": 2345
+ },
+ {
+   "date": 2012,
+   "college": "College of Hotel Admin",
+   "department": "College of Hotel Admin",
+   "level": "Graduate",
+   "headcount": 154
+ },
+ {
+   "date": 2012,
+   "college": "College of Hotel Admin",
+   "department": "Recreation & Sport Management",
+   "level": "Undergraduate",
+   "headcount": 1
+ },
+ {
+   "date": 2012,
+   "college": "College of Hotel Admin",
+   "department": "Singapore Campus",
+   "level": "Undergraduate",
+   "headcount": 637
+ },
+ {
+   "date": 2012,
+   "college": "College of Hotel Admin",
+   "department": "Singapore Campus",
+   "level": "Graduate",
+   "headcount": 1
+ },
+ {
+   "date": 2012,
+   "college": "College of Liberal Arts",
+   "department": "Anthropology & Ethnic Studies",
+   "level": "Undergraduate",
+   "headcount": 170
+ },
+ {
+   "date": 2012,
+   "college": "College of Liberal Arts",
+   "department": "Anthropology & Ethnic Studies",
+   "level": "Graduate",
+   "headcount": 38
+ },
+ {
+   "date": 2012,
+   "college": "College of Liberal Arts",
+   "department": "College of Liberal Arts",
+   "level": "Undergraduate",
+   "headcount": 38
+ },
+ {
+   "date": 2012,
+   "college": "College of Liberal Arts",
+   "department": "English",
+   "level": "Undergraduate",
+   "headcount": 378
+ },
+ {
+   "date": 2012,
+   "college": "College of Liberal Arts",
+   "department": "English",
+   "level": "Graduate",
+   "headcount": 76
+ },
+ {
+   "date": 2012,
+   "college": "College of Liberal Arts",
+   "department": "Foreign Languages",
+   "level": "Undergraduate",
+   "headcount": 349
+ },
+ {
+   "date": 2012,
+   "college": "College of Liberal Arts",
+   "department": "Foreign Languages",
+   "level": "Graduate",
+   "headcount": 13
+ },
+ {
+   "date": 2012,
+   "college": "College of Liberal Arts",
+   "department": "History",
+   "level": "Undergraduate",
+   "headcount": 251
+ },
+ {
+   "date": 2012,
+   "college": "College of Liberal Arts",
+   "department": "History",
+   "level": "Graduate",
+   "headcount": 60
+ },
+ {
+   "date": 2012,
+   "college": "College of Liberal Arts",
+   "department": "Interdisciplinary Studies",
+   "level": "Undergraduate",
+   "headcount": 459
+ },
+ {
+   "date": 2012,
+   "college": "College of Liberal Arts",
+   "department": "Philosophy",
+   "level": "Undergraduate",
+   "headcount": 144
+ },
+ {
+   "date": 2012,
+   "college": "College of Liberal Arts",
+   "department": "Political Science",
+   "level": "Undergraduate",
+   "headcount": 484
+ },
+ {
+   "date": 2012,
+   "college": "College of Liberal Arts",
+   "department": "Political Science",
+   "level": "Graduate",
+   "headcount": 28
+ },
+ {
+   "date": 2012,
+   "college": "College of Liberal Arts",
+   "department": "Psychology",
+   "level": "Undergraduate",
+   "headcount": 1456
+ },
+ {
+   "date": 2012,
+   "college": "College of Liberal Arts",
+   "department": "Psychology",
+   "level": "Graduate",
+   "headcount": 76
+ },
+ {
+   "date": 2012,
+   "college": "College of Liberal Arts",
+   "department": "Sociology",
+   "level": "Undergraduate",
+   "headcount": 250
+ },
+ {
+   "date": 2012,
+   "college": "College of Liberal Arts",
+   "department": "Sociology",
+   "level": "Graduate",
+   "headcount": 49
+ },
+ {
+   "date": 2012,
+   "college": "College of Liberal Arts",
+   "department": "Women's Studies",
+   "level": "Undergraduate",
+   "headcount": 29
+ },
+ {
+   "date": 2012,
+   "college": "College of Liberal Arts",
+   "department": "Women's Studies",
+   "level": "Graduate",
+   "headcount": 8
+ },
+ {
+   "date": 2012,
+   "college": "College of Sciences",
+   "department": "Chemistry",
+   "level": "Undergraduate",
+   "headcount": 428
+ },
+ {
+   "date": 2012,
+   "college": "College of Sciences",
+   "department": "Chemistry",
+   "level": "Graduate",
+   "headcount": 49
+ },
+ {
+   "date": 2012,
+   "college": "College of Sciences",
+   "department": "College of Sciences",
+   "level": "Graduate",
+   "headcount": 1
+ },
+ {
+   "date": 2012,
+   "college": "College of Sciences",
+   "department": "Geoscience",
+   "level": "Undergraduate",
+   "headcount": 101
+ },
+ {
+   "date": 2012,
+   "college": "College of Sciences",
+   "department": "Geoscience",
+   "level": "Graduate",
+   "headcount": 52
+ },
+ {
+   "date": 2012,
+   "college": "College of Sciences",
+   "department": "Life Sciences",
+   "level": "Undergraduate",
+   "headcount": 1888
+ },
+ {
+   "date": 2012,
+   "college": "College of Sciences",
+   "department": "Life Sciences",
+   "level": "Graduate",
+   "headcount": 38
+ },
+ {
+   "date": 2012,
+   "college": "College of Sciences",
+   "department": "Mathematical Sciences",
+   "level": "Undergraduate",
+   "headcount": 216
+ },
+ {
+   "date": 2012,
+   "college": "College of Sciences",
+   "department": "Mathematical Sciences",
+   "level": "Graduate",
+   "headcount": 59
+ },
+ {
+   "date": 2012,
+   "college": "College of Sciences",
+   "department": "Physics and Astronomy",
+   "level": "Undergraduate",
+   "headcount": 119
+ },
+ {
+   "date": 2012,
+   "college": "College of Sciences",
+   "department": "Physics and Astronomy",
+   "level": "Graduate",
+   "headcount": 16
+ },
+ {
+   "date": 2012,
+   "college": "College of Sciences",
+   "department": "Water Resources Management",
+   "level": "Graduate",
+   "headcount": 10
+ },
+ {
+   "date": 2012,
+   "college": "College of Urban Affairs",
+   "department": "Communication Studies",
+   "level": "Undergraduate",
+   "headcount": 420
+ },
+ {
+   "date": 2012,
+   "college": "College of Urban Affairs",
+   "department": "Communication Studies",
+   "level": "Graduate",
+   "headcount": 15
+ },
+ {
+   "date": 2012,
+   "college": "College of Urban Affairs",
+   "department": "Criminal Justice",
+   "level": "Undergraduate",
+   "headcount": 1009
+ },
+ {
+   "date": 2012,
+   "college": "College of Urban Affairs",
+   "department": "Criminal Justice",
+   "level": "Graduate",
+   "headcount": 44
+ },
+ {
+   "date": 2012,
+   "college": "College of Urban Affairs",
+   "department": "Environmental & Public Affairs",
+   "level": "Undergraduate",
+   "headcount": 300
+ },
+ {
+   "date": 2012,
+   "college": "College of Urban Affairs",
+   "department": "Environmental & Public Affairs",
+   "level": "Graduate",
+   "headcount": 216
+ },
+ {
+   "date": 2012,
+   "college": "College of Urban Affairs",
+   "department": "Journalism and Media Studies",
+   "level": "Undergraduate",
+   "headcount": 437
+ },
+ {
+   "date": 2012,
+   "college": "College of Urban Affairs",
+   "department": "Journalism and Media Studies",
+   "level": "Graduate",
+   "headcount": 34
+ },
+ {
+   "date": 2012,
+   "college": "College of Urban Affairs",
+   "department": "Marriage and Family Therapy",
+   "level": "Undergraduate",
+   "headcount": 101
+ },
+ {
+   "date": 2012,
+   "college": "College of Urban Affairs",
+   "department": "Marriage and Family Therapy",
+   "level": "Graduate",
+   "headcount": 78
+ },
+ {
+   "date": 2012,
+   "college": "College of Urban Affairs",
+   "department": "Social Work",
+   "level": "Undergraduate",
+   "headcount": 199
+ },
+ {
+   "date": 2012,
+   "college": "College of Urban Affairs",
+   "department": "Social Work",
+   "level": "Graduate",
+   "headcount": 201
+ },
+ {
+   "date": 2012,
+   "college": "Community Health Sciences",
+   "department": "Community Health Sciences",
+   "level": "Graduate",
+   "headcount": 98
+ },
+ {
+   "date": 2012,
+   "college": "Community Health Sciences",
+   "department": "Health Care Administration",
+   "level": "Undergraduate",
+   "headcount": 144
+ },
+ {
+   "date": 2012,
+   "college": "Community Health Sciences",
+   "department": "Health Care Administration",
+   "level": "Graduate",
+   "headcount": 58
+ },
+ {
+   "date": 2012,
+   "college": "Community Health Sciences",
+   "department": "Health Promotion",
+   "level": "Undergraduate",
+   "headcount": 55
+ },
+ {
+   "date": 2012,
+   "college": "Community Health Sciences",
+   "department": "Health Promotion",
+   "level": "Graduate",
+   "headcount": 3
+ },
+ {
+   "date": 2012,
+   "college": "Dentistry",
+   "department": "Dentistry",
+   "level": "Graduate",
+   "headcount": 12
+ },
+ {
+   "date": 2012,
+   "college": "Dentistry",
+   "department": "Dentistry",
+   "level": "Professional",
+   "headcount": 319
+ },
+ {
+   "date": 2012,
+   "college": "Law",
+   "department": "Law",
+   "level": "Professional",
+   "headcount": 447
+ },
+ {
+   "date": 2012,
+   "college": "Lee Business School",
+   "department": "Accounting",
+   "level": "Undergraduate",
+   "headcount": 466
+ },
+ {
+   "date": 2012,
+   "college": "Lee Business School",
+   "department": "Accounting",
+   "level": "Graduate",
+   "headcount": 109
+ },
+ {
+   "date": 2012,
+   "college": "Lee Business School",
+   "department": "Economics",
+   "level": "Undergraduate",
+   "headcount": 113
+ },
+ {
+   "date": 2012,
+   "college": "Lee Business School",
+   "department": "Economics",
+   "level": "Graduate",
+   "headcount": 35
+ },
+ {
+   "date": 2012,
+   "college": "Lee Business School",
+   "department": "Finance",
+   "level": "Undergraduate",
+   "headcount": 259
+ },
+ {
+   "date": 2012,
+   "college": "Lee Business School",
+   "department": "Lee Business School",
+   "level": "Undergraduate",
+   "headcount": 1923
+ },
+ {
+   "date": 2012,
+   "college": "Lee Business School",
+   "department": "MBA",
+   "level": "Graduate",
+   "headcount": 193
+ },
+ {
+   "date": 2012,
+   "college": "Lee Business School",
+   "department": "Management",
+   "level": "Undergraduate",
+   "headcount": 320
+ },
+ {
+   "date": 2012,
+   "college": "Lee Business School",
+   "department": "Management",
+   "level": "Graduate",
+   "headcount": 1
+ },
+ {
+   "date": 2012,
+   "college": "Lee Business School",
+   "department": "Management Information Systems",
+   "level": "Undergraduate",
+   "headcount": 100
+ },
+ {
+   "date": 2012,
+   "college": "Lee Business School",
+   "department": "Management Information Systems",
+   "level": "Graduate",
+   "headcount": 71
+ },
+ {
+   "date": 2012,
+   "college": "Lee Business School",
+   "department": "Marketing",
+   "level": "Undergraduate",
+   "headcount": 227
+ },
+ {
+   "date": 2012,
+   "college": "Nursing",
+   "department": "Nursing",
+   "level": "Undergraduate",
+   "headcount": 1148
+ },
+ {
+   "date": 2012,
+   "college": "Nursing",
+   "department": "Nursing",
+   "level": "Graduate",
+   "headcount": 140
+ },
+ {
+   "date": 2013,
+   "college": "Allied Health Sciences",
+   "department": "Health Phy and Diagnostic Sci",
+   "level": "Undergraduate",
+   "headcount": 388
+ },
+ {
+   "date": 2013,
+   "college": "Allied Health Sciences",
+   "department": "Health Phy and Diagnostic Sci",
+   "level": "Graduate",
+   "headcount": 11
+ },
+ {
+   "date": 2013,
+   "college": "Allied Health Sciences",
+   "department": "Kinesiology & Nutrition Sci",
+   "level": "Undergraduate",
+   "headcount": 1235
+ },
+ {
+   "date": 2013,
+   "college": "Allied Health Sciences",
+   "department": "Kinesiology & Nutrition Sci",
+   "level": "Graduate",
+   "headcount": 57
+ },
+ {
+   "date": 2013,
+   "college": "Allied Health Sciences",
+   "department": "Physical Therapy",
+   "level": "Graduate",
+   "headcount": 91
+ },
+ {
+   "date": 2013,
+   "college": "College of Education",
+   "department": "Educ Psychology and Higher Ed",
+   "level": "Graduate",
+   "headcount": 136
+ },
+ {
+   "date": 2013,
+   "college": "College of Education",
+   "department": "Educational & Clinical Studies",
+   "level": "Undergraduate",
+   "headcount": 395
+ },
+ {
+   "date": 2013,
+   "college": "College of Education",
+   "department": "Educational & Clinical Studies",
+   "level": "Graduate",
+   "headcount": 350
+ },
+ {
+   "date": 2013,
+   "college": "College of Education",
+   "department": "Teaching & Learning",
+   "level": "Undergraduate",
+   "headcount": 718
+ },
+ {
+   "date": 2013,
+   "college": "College of Education",
+   "department": "Teaching & Learning",
+   "level": "Graduate",
+   "headcount": 548
+ },
+ {
+   "date": 2013,
+   "college": "College of Engineering",
+   "department": "Aerospace Studies",
+   "level": "Undergraduate",
+   "headcount": 6
+ },
+ {
+   "date": 2013,
+   "college": "College of Engineering",
+   "department": "Civil & Environmental Enginr",
+   "level": "Undergraduate",
+   "headcount": 237
+ },
+ {
+   "date": 2013,
+   "college": "College of Engineering",
+   "department": "Civil & Environmental Enginr",
+   "level": "Graduate",
+   "headcount": 80
+ },
+ {
+   "date": 2013,
+   "college": "College of Engineering",
+   "department": "College of Engineering",
+   "level": "Undergraduate",
+   "headcount": 81
+ },
+ {
+   "date": 2013,
+   "college": "College of Engineering",
+   "department": "Computer Science",
+   "level": "Undergraduate",
+   "headcount": 643
+ },
+ {
+   "date": 2013,
+   "college": "College of Engineering",
+   "department": "Computer Science",
+   "level": "Graduate",
+   "headcount": 50
+ },
+ {
+   "date": 2013,
+   "college": "College of Engineering",
+   "department": "Construction Management",
+   "level": "Undergraduate",
+   "headcount": 38
+ },
+ {
+   "date": 2013,
+   "college": "College of Engineering",
+   "department": "Construction Management",
+   "level": "Graduate",
+   "headcount": 3
+ },
+ {
+   "date": 2013,
+   "college": "College of Engineering",
+   "department": "Electrical & Comp Engineering",
+   "level": "Undergraduate",
+   "headcount": 486
+ },
+ {
+   "date": 2013,
+   "college": "College of Engineering",
+   "department": "Electrical & Comp Engineering",
+   "level": "Graduate",
+   "headcount": 45
+ },
+ {
+   "date": 2013,
+   "college": "College of Engineering",
+   "department": "Informatics",
+   "level": "Undergraduate",
+   "headcount": 6
+ },
+ {
+   "date": 2013,
+   "college": "College of Engineering",
+   "department": "Mechanical Engineering",
+   "level": "Undergraduate",
+   "headcount": 417
+ },
+ {
+   "date": 2013,
+   "college": "College of Engineering",
+   "department": "Mechanical Engineering",
+   "level": "Graduate",
+   "headcount": 53
+ },
+ {
+   "date": 2013,
+   "college": "College of Engineering",
+   "department": "Military Science",
+   "level": "Undergraduate",
+   "headcount": 1
+ },
+ {
+   "date": 2013,
+   "college": "College of Fine Arts",
+   "department": "Architecture",
+   "level": "Undergraduate",
+   "headcount": 330
+ },
+ {
+   "date": 2013,
+   "college": "College of Fine Arts",
+   "department": "Architecture",
+   "level": "Graduate",
+   "headcount": 49
+ },
+ {
+   "date": 2013,
+   "college": "College of Fine Arts",
+   "department": "Art",
+   "level": "Undergraduate",
+   "headcount": 425
+ },
+ {
+   "date": 2013,
+   "college": "College of Fine Arts",
+   "department": "Art",
+   "level": "Graduate",
+   "headcount": 12
+ },
+ {
+   "date": 2013,
+   "college": "College of Fine Arts",
+   "department": "College of Fine Arts",
+   "level": "Undergraduate",
+   "headcount": 75
+ },
+ {
+   "date": 2013,
+   "college": "College of Fine Arts",
+   "department": "Dance",
+   "level": "Undergraduate",
+   "headcount": 119
+ },
+ {
+   "date": 2013,
+   "college": "College of Fine Arts",
+   "department": "Film",
+   "level": "Undergraduate",
+   "headcount": 314
+ },
+ {
+   "date": 2013,
+   "college": "College of Fine Arts",
+   "department": "Film",
+   "level": "Graduate",
+   "headcount": 9
+ },
+ {
+   "date": 2013,
+   "college": "College of Fine Arts",
+   "department": "Music",
+   "level": "Undergraduate",
+   "headcount": 345
+ },
+ {
+   "date": 2013,
+   "college": "College of Fine Arts",
+   "department": "Music",
+   "level": "Graduate",
+   "headcount": 109
+ },
+ {
+   "date": 2013,
+   "college": "College of Fine Arts",
+   "department": "Theatre",
+   "level": "Undergraduate",
+   "headcount": 194
+ },
+ {
+   "date": 2013,
+   "college": "College of Fine Arts",
+   "department": "Theatre",
+   "level": "Graduate",
+   "headcount": 37
+ },
+ {
+   "date": 2013,
+   "college": "College of Hotel Admin",
+   "department": "College of Hotel Admin",
+   "level": "Undergraduate",
+   "headcount": 2369
+ },
+ {
+   "date": 2013,
+   "college": "College of Hotel Admin",
+   "department": "College of Hotel Admin",
+   "level": "Graduate",
+   "headcount": 139
+ },
+ {
+   "date": 2013,
+   "college": "College of Hotel Admin",
+   "department": "Recreation & Sport Management",
+   "level": "Undergraduate",
+   "headcount": 1
+ },
+ {
+   "date": 2013,
+   "college": "College of Hotel Admin",
+   "department": "Singapore Campus",
+   "level": "Undergraduate",
+   "headcount": 501
+ },
+ {
+   "date": 2013,
+   "college": "College of Liberal Arts",
+   "department": "Anthropology",
+   "level": "Undergraduate",
+   "headcount": 181
+ },
+ {
+   "date": 2013,
+   "college": "College of Liberal Arts",
+   "department": "Anthropology",
+   "level": "Graduate",
+   "headcount": 43
+ },
+ {
+   "date": 2013,
+   "college": "College of Liberal Arts",
+   "department": "College of Liberal Arts",
+   "level": "Undergraduate",
+   "headcount": 38
+ },
+ {
+   "date": 2013,
+   "college": "College of Liberal Arts",
+   "department": "English",
+   "level": "Undergraduate",
+   "headcount": 411
+ },
+ {
+   "date": 2013,
+   "college": "College of Liberal Arts",
+   "department": "English",
+   "level": "Graduate",
+   "headcount": 78
+ },
+ {
+   "date": 2013,
+   "college": "College of Liberal Arts",
+   "department": "History",
+   "level": "Undergraduate",
+   "headcount": 217
+ },
+ {
+   "date": 2013,
+   "college": "College of Liberal Arts",
+   "department": "History",
+   "level": "Graduate",
+   "headcount": 61
+ },
+ {
+   "date": 2013,
+   "college": "College of Liberal Arts",
+   "department": "Interdisciplinary Studies",
+   "level": "Undergraduate",
+   "headcount": 381
+ },
+ {
+   "date": 2013,
+   "college": "College of Liberal Arts",
+   "department": "Philosophy",
+   "level": "Undergraduate",
+   "headcount": 136
+ },
+ {
+   "date": 2013,
+   "college": "College of Liberal Arts",
+   "department": "Political Science",
+   "level": "Undergraduate",
+   "headcount": 481
+ },
+ {
+   "date": 2013,
+   "college": "College of Liberal Arts",
+   "department": "Political Science",
+   "level": "Graduate",
+   "headcount": 36
+ },
+ {
+   "date": 2013,
+   "college": "College of Liberal Arts",
+   "department": "Psychology",
+   "level": "Undergraduate",
+   "headcount": 1552
+ },
+ {
+   "date": 2013,
+   "college": "College of Liberal Arts",
+   "department": "Psychology",
+   "level": "Graduate",
+   "headcount": 74
+ },
+ {
+   "date": 2013,
+   "college": "College of Liberal Arts",
+   "department": "Sociology",
+   "level": "Undergraduate",
+   "headcount": 265
+ },
+ {
+   "date": 2013,
+   "college": "College of Liberal Arts",
+   "department": "Sociology",
+   "level": "Graduate",
+   "headcount": 46
+ },
+ {
+   "date": 2013,
+   "college": "College of Liberal Arts",
+   "department": "Women's Studies",
+   "level": "Undergraduate",
+   "headcount": 27
+ },
+ {
+   "date": 2013,
+   "college": "College of Liberal Arts",
+   "department": "World Languages & Cultures",
+   "level": "Undergraduate",
+   "headcount": 316
+ },
+ {
+   "date": 2013,
+   "college": "College of Liberal Arts",
+   "department": "World Languages & Cultures",
+   "level": "Graduate",
+   "headcount": 9
+ },
+ {
+   "date": 2013,
+   "college": "College of Sciences",
+   "department": "Chemistry",
+   "level": "Undergraduate",
+   "headcount": 413
+ },
+ {
+   "date": 2013,
+   "college": "College of Sciences",
+   "department": "Chemistry",
+   "level": "Graduate",
+   "headcount": 49
+ },
+ {
+   "date": 2013,
+   "college": "College of Sciences",
+   "department": "Geoscience",
+   "level": "Undergraduate",
+   "headcount": 129
+ },
+ {
+   "date": 2013,
+   "college": "College of Sciences",
+   "department": "Geoscience",
+   "level": "Graduate",
+   "headcount": 46
+ },
+ {
+   "date": 2013,
+   "college": "College of Sciences",
+   "department": "Life Sciences",
+   "level": "Undergraduate",
+   "headcount": 2015
+ },
+ {
+   "date": 2013,
+   "college": "College of Sciences",
+   "department": "Life Sciences",
+   "level": "Graduate",
+   "headcount": 38
+ },
+ {
+   "date": 2013,
+   "college": "College of Sciences",
+   "department": "Mathematical Sciences",
+   "level": "Undergraduate",
+   "headcount": 236
+ },
+ {
+   "date": 2013,
+   "college": "College of Sciences",
+   "department": "Mathematical Sciences",
+   "level": "Graduate",
+   "headcount": 65
+ },
+ {
+   "date": 2013,
+   "college": "College of Sciences",
+   "department": "Physics and Astronomy",
+   "level": "Undergraduate",
+   "headcount": 105
+ },
+ {
+   "date": 2013,
+   "college": "College of Sciences",
+   "department": "Physics and Astronomy",
+   "level": "Graduate",
+   "headcount": 21
+ },
+ {
+   "date": 2013,
+   "college": "College of Sciences",
+   "department": "Water Resources Management",
+   "level": "Graduate",
+   "headcount": 10
+ },
+ {
+   "date": 2013,
+   "college": "College of Urban Affairs",
+   "department": "College of Urban Affairs",
+   "level": "Undergraduate",
+   "headcount": 7
+ },
+ {
+   "date": 2013,
+   "college": "College of Urban Affairs",
+   "department": "Communication Studies",
+   "level": "Undergraduate",
+   "headcount": 432
+ },
+ {
+   "date": 2013,
+   "college": "College of Urban Affairs",
+   "department": "Communication Studies",
+   "level": "Graduate",
+   "headcount": 18
+ },
+ {
+   "date": 2013,
+   "college": "College of Urban Affairs",
+   "department": "Criminal Justice",
+   "level": "Undergraduate",
+   "headcount": 1111
+ },
+ {
+   "date": 2013,
+   "college": "College of Urban Affairs",
+   "department": "Criminal Justice",
+   "level": "Graduate",
+   "headcount": 32
+ },
+ {
+   "date": 2013,
+   "college": "College of Urban Affairs",
+   "department": "Environmental & Public Affairs",
+   "level": "Undergraduate",
+   "headcount": 327
+ },
+ {
+   "date": 2013,
+   "college": "College of Urban Affairs",
+   "department": "Environmental & Public Affairs",
+   "level": "Graduate",
+   "headcount": 212
+ },
+ {
+   "date": 2013,
+   "college": "College of Urban Affairs",
+   "department": "Journalism and Media Studies",
+   "level": "Undergraduate",
+   "headcount": 443
+ },
+ {
+   "date": 2013,
+   "college": "College of Urban Affairs",
+   "department": "Journalism and Media Studies",
+   "level": "Graduate",
+   "headcount": 28
+ },
+ {
+   "date": 2013,
+   "college": "College of Urban Affairs",
+   "department": "Marriage and Family Therapy",
+   "level": "Undergraduate",
+   "headcount": 134
+ },
+ {
+   "date": 2013,
+   "college": "College of Urban Affairs",
+   "department": "Marriage and Family Therapy",
+   "level": "Graduate",
+   "headcount": 87
+ },
+ {
+   "date": 2013,
+   "college": "College of Urban Affairs",
+   "department": "Social Work",
+   "level": "Undergraduate",
+   "headcount": 218
+ },
+ {
+   "date": 2013,
+   "college": "College of Urban Affairs",
+   "department": "Social Work",
+   "level": "Graduate",
+   "headcount": 192
+ },
+ {
+   "date": 2013,
+   "college": "Community Health Sciences",
+   "department": "Community Health Sciences",
+   "level": "Graduate",
+   "headcount": 88
+ },
+ {
+   "date": 2013,
+   "college": "Community Health Sciences",
+   "department": "Health Care Administration",
+   "level": "Undergraduate",
+   "headcount": 164
+ },
+ {
+   "date": 2013,
+   "college": "Community Health Sciences",
+   "department": "Health Care Administration",
+   "level": "Graduate",
+   "headcount": 57
+ },
+ {
+   "date": 2013,
+   "college": "Community Health Sciences",
+   "department": "Health Promotion",
+   "level": "Undergraduate",
+   "headcount": 51
+ },
+ {
+   "date": 2013,
+   "college": "Dentistry",
+   "department": "Dentistry",
+   "level": "Graduate",
+   "headcount": 12
+ },
+ {
+   "date": 2013,
+   "college": "Dentistry",
+   "department": "Dentistry",
+   "level": "Professional",
+   "headcount": 325
+ },
+ {
+   "date": 2013,
+   "college": "Law",
+   "department": "Law",
+   "level": "Professional",
+   "headcount": 417
+ },
+ {
+   "date": 2013,
+   "college": "Lee Business School",
+   "department": "Accounting",
+   "level": "Undergraduate",
+   "headcount": 477
+ },
+ {
+   "date": 2013,
+   "college": "Lee Business School",
+   "department": "Accounting",
+   "level": "Graduate",
+   "headcount": 118
+ },
+ {
+   "date": 2013,
+   "college": "Lee Business School",
+   "department": "Economics",
+   "level": "Undergraduate",
+   "headcount": 115
+ },
+ {
+   "date": 2013,
+   "college": "Lee Business School",
+   "department": "Economics",
+   "level": "Graduate",
+   "headcount": 28
+ },
+ {
+   "date": 2013,
+   "college": "Lee Business School",
+   "department": "Finance",
+   "level": "Undergraduate",
+   "headcount": 261
+ },
+ {
+   "date": 2013,
+   "college": "Lee Business School",
+   "department": "Lee Business School",
+   "level": "Undergraduate",
+   "headcount": 1942
+ },
+ {
+   "date": 2013,
+   "college": "Lee Business School",
+   "department": "MBA",
+   "level": "Graduate",
+   "headcount": 175
+ },
+ {
+   "date": 2013,
+   "college": "Lee Business School",
+   "department": "Management",
+   "level": "Undergraduate",
+   "headcount": 390
+ },
+ {
+   "date": 2013,
+   "college": "Lee Business School",
+   "department": "Management",
+   "level": "Graduate",
+   "headcount": 6
+ },
+ {
+   "date": 2013,
+   "college": "Lee Business School",
+   "department": "Management Information Systems",
+   "level": "Undergraduate",
+   "headcount": 60
+ },
+ {
+   "date": 2013,
+   "college": "Lee Business School",
+   "department": "Management Information Systems",
+   "level": "Graduate",
+   "headcount": 65
+ },
+ {
+   "date": 2013,
+   "college": "Lee Business School",
+   "department": "Marketing",
+   "level": "Undergraduate",
+   "headcount": 209
+ },
+ {
+   "date": 2013,
+   "college": "Nursing",
+   "department": "Nursing",
+   "level": "Undergraduate",
+   "headcount": 1316
+ },
+ {
+   "date": 2013,
+   "college": "Nursing",
+   "department": "Nursing",
+   "level": "Graduate",
+   "headcount": 139
+ },
+ {
+   "date": 2014,
+   "college": "Academic Success Center",
+   "department": "Academic Success Center",
+   "level": "Undergraduate",
+   "headcount": 1
+ },
+ {
+   "date": 2014,
+   "college": "Allied Health Sciences",
+   "department": "Health Phy and Diagnostic Sci",
+   "level": "Undergraduate",
+   "headcount": 415
+ },
+ {
+   "date": 2014,
+   "college": "Allied Health Sciences",
+   "department": "Health Phy and Diagnostic Sci",
+   "level": "Graduate",
+   "headcount": 15
+ },
+ {
+   "date": 2014,
+   "college": "Allied Health Sciences",
+   "department": "Kinesiology & Nutrition Sci",
+   "level": "Undergraduate",
+   "headcount": 1418
+ },
+ {
+   "date": 2014,
+   "college": "Allied Health Sciences",
+   "department": "Kinesiology & Nutrition Sci",
+   "level": "Graduate",
+   "headcount": 56
+ },
+ {
+   "date": 2014,
+   "college": "Allied Health Sciences",
+   "department": "Physical Therapy",
+   "level": "Graduate",
+   "headcount": 96
+ },
+ {
+   "date": 2014,
+   "college": "College of Education",
+   "department": "EXPIRED-Educational Psychology",
+   "level": "Graduate",
+   "headcount": 4
+ },
+ {
+   "date": 2014,
+   "college": "College of Education",
+   "department": "Educ Psychology and Higher Ed",
+   "level": "Graduate",
+   "headcount": 120
+ },
+ {
+   "date": 2014,
+   "college": "College of Education",
+   "department": "Educational & Clinical Studies",
+   "level": "Undergraduate",
+   "headcount": 370
+ },
+ {
+   "date": 2014,
+   "college": "College of Education",
+   "department": "Educational & Clinical Studies",
+   "level": "Graduate",
+   "headcount": 377
+ },
+ {
+   "date": 2014,
+   "college": "College of Education",
+   "department": "Teaching & Learning",
+   "level": "Undergraduate",
+   "headcount": 732
+ },
+ {
+   "date": 2014,
+   "college": "College of Education",
+   "department": "Teaching & Learning",
+   "level": "Graduate",
+   "headcount": 616
+ },
+ {
+   "date": 2014,
+   "college": "College of Engineering",
+   "department": "Aerospace Studies",
+   "level": "Undergraduate",
+   "headcount": 3
+ },
+ {
+   "date": 2014,
+   "college": "College of Engineering",
+   "department": "Civil & Environmental Enginr",
+   "level": "Undergraduate",
+   "headcount": 243
+ },
+ {
+   "date": 2014,
+   "college": "College of Engineering",
+   "department": "Civil & Environmental Enginr",
+   "level": "Graduate",
+   "headcount": 80
+ },
+ {
+   "date": 2014,
+   "college": "College of Engineering",
+   "department": "College of Engineering",
+   "level": "Undergraduate",
+   "headcount": 204
+ },
+ {
+   "date": 2014,
+   "college": "College of Engineering",
+   "department": "College of Engineering",
+   "level": "Graduate",
+   "headcount": 2
+ },
+ {
+   "date": 2014,
+   "college": "College of Engineering",
+   "department": "Computer Science",
+   "level": "Undergraduate",
+   "headcount": 776
+ },
+ {
+   "date": 2014,
+   "college": "College of Engineering",
+   "department": "Computer Science",
+   "level": "Graduate",
+   "headcount": 50
+ },
+ {
+   "date": 2014,
+   "college": "College of Engineering",
+   "department": "Construction Management",
+   "level": "Undergraduate",
+   "headcount": 46
+ },
+ {
+   "date": 2014,
+   "college": "College of Engineering",
+   "department": "Construction Management",
+   "level": "Graduate",
+   "headcount": 1
+ },
+ {
+   "date": 2014,
+   "college": "College of Engineering",
+   "department": "Electrical & Comp Engineering",
+   "level": "Undergraduate",
+   "headcount": 527
+ },
+ {
+   "date": 2014,
+   "college": "College of Engineering",
+   "department": "Electrical & Comp Engineering",
+   "level": "Graduate",
+   "headcount": 47
+ },
+ {
+   "date": 2014,
+   "college": "College of Engineering",
+   "department": "Informatics",
+   "level": "Undergraduate",
+   "headcount": 4
+ },
+ {
+   "date": 2014,
+   "college": "College of Engineering",
+   "department": "Mechanical Engineering",
+   "level": "Undergraduate",
+   "headcount": 506
+ },
+ {
+   "date": 2014,
+   "college": "College of Engineering",
+   "department": "Mechanical Engineering",
+   "level": "Graduate",
+   "headcount": 46
+ },
+ {
+   "date": 2014,
+   "college": "College of Engineering",
+   "department": "Military Science",
+   "level": "Undergraduate",
+   "headcount": 2
+ },
+ {
+   "date": 2014,
+   "college": "College of Fine Arts",
+   "department": "Architecture",
+   "level": "Undergraduate",
+   "headcount": 287
+ },
+ {
+   "date": 2014,
+   "college": "College of Fine Arts",
+   "department": "Architecture",
+   "level": "Graduate",
+   "headcount": 53
+ },
+ {
+   "date": 2014,
+   "college": "College of Fine Arts",
+   "department": "Art",
+   "level": "Undergraduate",
+   "headcount": 483
+ },
+ {
+   "date": 2014,
+   "college": "College of Fine Arts",
+   "department": "Art",
+   "level": "Graduate",
+   "headcount": 12
+ },
+ {
+   "date": 2014,
+   "college": "College of Fine Arts",
+   "department": "College of Fine Arts",
+   "level": "Undergraduate",
+   "headcount": 71
+ },
+ {
+   "date": 2014,
+   "college": "College of Fine Arts",
+   "department": "Dance",
+   "level": "Undergraduate",
+   "headcount": 112
+ },
+ {
+   "date": 2014,
+   "college": "College of Fine Arts",
+   "department": "Film",
+   "level": "Undergraduate",
+   "headcount": 326
+ },
+ {
+   "date": 2014,
+   "college": "College of Fine Arts",
+   "department": "Film",
+   "level": "Graduate",
+   "headcount": 10
+ },
+ {
+   "date": 2014,
+   "college": "College of Fine Arts",
+   "department": "Music",
+   "level": "Undergraduate",
+   "headcount": 366
+ },
+ {
+   "date": 2014,
+   "college": "College of Fine Arts",
+   "department": "Music",
+   "level": "Graduate",
+   "headcount": 104
+ },
+ {
+   "date": 2014,
+   "college": "College of Fine Arts",
+   "department": "Theatre",
+   "level": "Undergraduate",
+   "headcount": 219
+ },
+ {
+   "date": 2014,
+   "college": "College of Fine Arts",
+   "department": "Theatre",
+   "level": "Graduate",
+   "headcount": 35
+ },
+ {
+   "date": 2014,
+   "college": "College of Hotel Admin",
+   "department": "College of Hotel Admin",
+   "level": "Undergraduate",
+   "headcount": 2326
+ },
+ {
+   "date": 2014,
+   "college": "College of Hotel Admin",
+   "department": "College of Hotel Admin",
+   "level": "Graduate",
+   "headcount": 145
+ },
+ {
+   "date": 2014,
+   "college": "College of Hotel Admin",
+   "department": "Recreation & Sport Management",
+   "level": "Undergraduate",
+   "headcount": 1
+ },
+ {
+   "date": 2014,
+   "college": "College of Hotel Admin",
+   "department": "Singapore Campus",
+   "level": "Undergraduate",
+   "headcount": 238
+ },
+ {
+   "date": 2014,
+   "college": "College of Liberal Arts",
+   "department": "Anthropology",
+   "level": "Undergraduate",
+   "headcount": 166
+ },
+ {
+   "date": 2014,
+   "college": "College of Liberal Arts",
+   "department": "Anthropology",
+   "level": "Graduate",
+   "headcount": 48
+ },
+ {
+   "date": 2014,
+   "college": "College of Liberal Arts",
+   "department": "College of Liberal Arts",
+   "level": "Undergraduate",
+   "headcount": 20
+ },
+ {
+   "date": 2014,
+   "college": "College of Liberal Arts",
+   "department": "English",
+   "level": "Undergraduate",
+   "headcount": 419
+ },
+ {
+   "date": 2014,
+   "college": "College of Liberal Arts",
+   "department": "English",
+   "level": "Graduate",
+   "headcount": 76
+ },
+ {
+   "date": 2014,
+   "college": "College of Liberal Arts",
+   "department": "History",
+   "level": "Undergraduate",
+   "headcount": 194
+ },
+ {
+   "date": 2014,
+   "college": "College of Liberal Arts",
+   "department": "History",
+   "level": "Graduate",
+   "headcount": 50
+ },
+ {
+   "date": 2014,
+   "college": "College of Liberal Arts",
+   "department": "Interdisciplinary Studies",
+   "level": "Undergraduate",
+   "headcount": 336
+ },
+ {
+   "date": 2014,
+   "college": "College of Liberal Arts",
+   "department": "Philosophy",
+   "level": "Undergraduate",
+   "headcount": 126
+ },
+ {
+   "date": 2014,
+   "college": "College of Liberal Arts",
+   "department": "Political Science",
+   "level": "Undergraduate",
+   "headcount": 446
+ },
+ {
+   "date": 2014,
+   "college": "College of Liberal Arts",
+   "department": "Political Science",
+   "level": "Graduate",
+   "headcount": 44
+ },
+ {
+   "date": 2014,
+   "college": "College of Liberal Arts",
+   "department": "Psychology",
+   "level": "Undergraduate",
+   "headcount": 1623
+ },
+ {
+   "date": 2014,
+   "college": "College of Liberal Arts",
+   "department": "Psychology",
+   "level": "Graduate",
+   "headcount": 64
+ },
+ {
+   "date": 2014,
+   "college": "College of Liberal Arts",
+   "department": "Sociology",
+   "level": "Undergraduate",
+   "headcount": 275
+ },
+ {
+   "date": 2014,
+   "college": "College of Liberal Arts",
+   "department": "Sociology",
+   "level": "Graduate",
+   "headcount": 49
+ },
+ {
+   "date": 2014,
+   "college": "College of Liberal Arts",
+   "department": "Women's Studies",
+   "level": "Undergraduate",
+   "headcount": 20
+ },
+ {
+   "date": 2014,
+   "college": "College of Liberal Arts",
+   "department": "World Languages & Cultures",
+   "level": "Undergraduate",
+   "headcount": 307
+ },
+ {
+   "date": 2014,
+   "college": "College of Liberal Arts",
+   "department": "World Languages & Cultures",
+   "level": "Graduate",
+   "headcount": 13
+ },
+ {
+   "date": 2014,
+   "college": "College of Sciences",
+   "department": "Chemistry",
+   "level": "Undergraduate",
+   "headcount": 371
+ },
+ {
+   "date": 2014,
+   "college": "College of Sciences",
+   "department": "Chemistry",
+   "level": "Graduate",
+   "headcount": 52
+ },
+ {
+   "date": 2014,
+   "college": "College of Sciences",
+   "department": "Geoscience",
+   "level": "Undergraduate",
+   "headcount": 158
+ },
+ {
+   "date": 2014,
+   "college": "College of Sciences",
+   "department": "Geoscience",
+   "level": "Graduate",
+   "headcount": 45
+ },
+ {
+   "date": 2014,
+   "college": "College of Sciences",
+   "department": "Life Sciences",
+   "level": "Undergraduate",
+   "headcount": 2012
+ },
+ {
+   "date": 2014,
+   "college": "College of Sciences",
+   "department": "Life Sciences",
+   "level": "Graduate",
+   "headcount": 40
+ },
+ {
+   "date": 2014,
+   "college": "College of Sciences",
+   "department": "Mathematical Sciences",
+   "level": "Undergraduate",
+   "headcount": 244
+ },
+ {
+   "date": 2014,
+   "college": "College of Sciences",
+   "department": "Mathematical Sciences",
+   "level": "Graduate",
+   "headcount": 63
+ },
+ {
+   "date": 2014,
+   "college": "College of Sciences",
+   "department": "Physics and Astronomy",
+   "level": "Undergraduate",
+   "headcount": 96
+ },
+ {
+   "date": 2014,
+   "college": "College of Sciences",
+   "department": "Physics and Astronomy",
+   "level": "Graduate",
+   "headcount": 21
+ },
+ {
+   "date": 2014,
+   "college": "College of Sciences",
+   "department": "Water Resources Management",
+   "level": "Graduate",
+   "headcount": 8
+ },
+ {
+   "date": 2014,
+   "college": "College of Urban Affairs",
+   "department": "College of Urban Affairs",
+   "level": "Undergraduate",
+   "headcount": 10
+ },
+ {
+   "date": 2014,
+   "college": "College of Urban Affairs",
+   "department": "Communication Studies",
+   "level": "Undergraduate",
+   "headcount": 395
+ },
+ {
+   "date": 2014,
+   "college": "College of Urban Affairs",
+   "department": "Communication Studies",
+   "level": "Graduate",
+   "headcount": 12
+ },
+ {
+   "date": 2014,
+   "college": "College of Urban Affairs",
+   "department": "Criminal Justice",
+   "level": "Undergraduate",
+   "headcount": 1122
+ },
+ {
+   "date": 2014,
+   "college": "College of Urban Affairs",
+   "department": "Criminal Justice",
+   "level": "Graduate",
+   "headcount": 19
+ },
+ {
+   "date": 2014,
+   "college": "College of Urban Affairs",
+   "department": "Environmental & Public Affairs",
+   "level": "Undergraduate",
+   "headcount": 295
+ },
+ {
+   "date": 2014,
+   "college": "College of Urban Affairs",
+   "department": "Environmental & Public Affairs",
+   "level": "Graduate",
+   "headcount": 202
+ },
+ {
+   "date": 2014,
+   "college": "College of Urban Affairs",
+   "department": "Journalism and Media Studies",
+   "level": "Undergraduate",
+   "headcount": 447
+ },
+ {
+   "date": 2014,
+   "college": "College of Urban Affairs",
+   "department": "Journalism and Media Studies",
+   "level": "Graduate",
+   "headcount": 22
+ },
+ {
+   "date": 2014,
+   "college": "College of Urban Affairs",
+   "department": "Marriage and Family Therapy",
+   "level": "Undergraduate",
+   "headcount": 123
+ },
+ {
+   "date": 2014,
+   "college": "College of Urban Affairs",
+   "department": "Marriage and Family Therapy",
+   "level": "Graduate",
+   "headcount": 81
+ },
+ {
+   "date": 2014,
+   "college": "College of Urban Affairs",
+   "department": "Social Work",
+   "level": "Undergraduate",
+   "headcount": 255
+ },
+ {
+   "date": 2014,
+   "college": "College of Urban Affairs",
+   "department": "Social Work",
+   "level": "Graduate",
+   "headcount": 211
+ },
+ {
+   "date": 2014,
+   "college": "Community Health Sciences",
+   "department": "Community Health Sciences",
+   "level": "Graduate",
+   "headcount": 81
+ },
+ {
+   "date": 2014,
+   "college": "Community Health Sciences",
+   "department": "Health Care Administration",
+   "level": "Undergraduate",
+   "headcount": 211
+ },
+ {
+   "date": 2014,
+   "college": "Community Health Sciences",
+   "department": "Health Care Administration",
+   "level": "Graduate",
+   "headcount": 50
+ },
+ {
+   "date": 2014,
+   "college": "Community Health Sciences",
+   "department": "Health Promotion",
+   "level": "Undergraduate",
+   "headcount": 51
+ },
+ {
+   "date": 2014,
+   "college": "Dentistry",
+   "department": "Dentistry",
+   "level": "Graduate",
+   "headcount": 13
+ },
+ {
+   "date": 2014,
+   "college": "Dentistry",
+   "department": "Dentistry",
+   "level": "Professional",
+   "headcount": 324
+ },
+ {
+   "date": 2014,
+   "college": "Law",
+   "department": "Law",
+   "level": "Professional",
+   "headcount": 391
+ },
+ {
+   "date": 2014,
+   "college": "Lee Business School",
+   "department": "Accounting",
+   "level": "Undergraduate",
+   "headcount": 482
+ },
+ {
+   "date": 2014,
+   "college": "Lee Business School",
+   "department": "Accounting",
+   "level": "Graduate",
+   "headcount": 107
+ },
+ {
+   "date": 2014,
+   "college": "Lee Business School",
+   "department": "Economics",
+   "level": "Undergraduate",
+   "headcount": 128
+ },
+ {
+   "date": 2014,
+   "college": "Lee Business School",
+   "department": "Economics",
+   "level": "Graduate",
+   "headcount": 30
+ },
+ {
+   "date": 2014,
+   "college": "Lee Business School",
+   "department": "Finance",
+   "level": "Undergraduate",
+   "headcount": 255
+ },
+ {
+   "date": 2014,
+   "college": "Lee Business School",
+   "department": "Lee Business School",
+   "level": "Undergraduate",
+   "headcount": 2007
+ },
+ {
+   "date": 2014,
+   "college": "Lee Business School",
+   "department": "MBA",
+   "level": "Graduate",
+   "headcount": 201
+ },
+ {
+   "date": 2014,
+   "college": "Lee Business School",
+   "department": "Management,Entrenp, & Tech",
+   "level": "Undergraduate",
+   "headcount": 415
+ },
+ {
+   "date": 2014,
+   "college": "Lee Business School",
+   "department": "Management,Entrenp, & Tech",
+   "level": "Graduate",
+   "headcount": 67
+ },
+ {
+   "date": 2014,
+   "college": "Lee Business School",
+   "department": "Marketing & International Bus",
+   "level": "Undergraduate",
+   "headcount": 292
+ },
+ {
+   "date": 2014,
+   "college": "Nursing",
+   "department": "Nursing",
+   "level": "Undergraduate",
+   "headcount": 1386
+ },
+ {
+   "date": 2014,
+   "college": "Nursing",
+   "department": "Nursing",
+   "level": "Graduate",
+   "headcount": 139
+ },
+ {
+   "date": 2015,
+   "college": "Allied Health Sciences",
+   "department": "Health Phy and Diagnostic Sci",
+   "level": "Undergraduate",
+   "headcount": 437
+ },
+ {
+   "date": 2015,
+   "college": "Allied Health Sciences",
+   "department": "Health Phy and Diagnostic Sci",
+   "level": "Graduate",
+   "headcount": 16
+ },
+ {
+   "date": 2015,
+   "college": "Allied Health Sciences",
+   "department": "Kinesiology & Nutrition Sci",
+   "level": "Undergraduate",
+   "headcount": 1451
+ },
+ {
+   "date": 2015,
+   "college": "Allied Health Sciences",
+   "department": "Kinesiology & Nutrition Sci",
+   "level": "Graduate",
+   "headcount": 57
+ },
+ {
+   "date": 2015,
+   "college": "Allied Health Sciences",
+   "department": "Physical Therapy",
+   "level": "Graduate",
+   "headcount": 102
+ },
+ {
+   "date": 2015,
+   "college": "College of Education",
+   "department": "EXPIRED-Educational Psychology",
+   "level": "Graduate",
+   "headcount": 8
+ },
+ {
+   "date": 2015,
+   "college": "College of Education",
+   "department": "Educ Psychology and Higher Ed",
+   "level": "Undergraduate",
+   "headcount": 1
+ },
+ {
+   "date": 2015,
+   "college": "College of Education",
+   "department": "Educ Psychology and Higher Ed",
+   "level": "Graduate",
+   "headcount": 138
+ },
+ {
+   "date": 2015,
+   "college": "College of Education",
+   "department": "Educational & Clinical Studies",
+   "level": "Undergraduate",
+   "headcount": 399
+ },
+ {
+   "date": 2015,
+   "college": "College of Education",
+   "department": "Educational & Clinical Studies",
+   "level": "Graduate",
+   "headcount": 423
+ },
+ {
+   "date": 2015,
+   "college": "College of Education",
+   "department": "Teaching & Learning",
+   "level": "Undergraduate",
+   "headcount": 745
+ },
+ {
+   "date": 2015,
+   "college": "College of Education",
+   "department": "Teaching & Learning",
+   "level": "Graduate",
+   "headcount": 669
+ },
+ {
+   "date": 2015,
+   "college": "College of Engineering",
+   "department": "Aerospace Studies",
+   "level": "Undergraduate",
+   "headcount": 4
+ },
+ {
+   "date": 2015,
+   "college": "College of Engineering",
+   "department": "Civil & Environmental Enginr",
+   "level": "Undergraduate",
+   "headcount": 238
+ },
+ {
+   "date": 2015,
+   "college": "College of Engineering",
+   "department": "Civil & Environmental Enginr",
+   "level": "Graduate",
+   "headcount": 67
+ },
+ {
+   "date": 2015,
+   "college": "College of Engineering",
+   "department": "College of Engineering",
+   "level": "Undergraduate",
+   "headcount": 139
+ },
+ {
+   "date": 2015,
+   "college": "College of Engineering",
+   "department": "College of Engineering",
+   "level": "Graduate",
+   "headcount": 3
+ },
+ {
+   "date": 2015,
+   "college": "College of Engineering",
+   "department": "Computer Science",
+   "level": "Undergraduate",
+   "headcount": 887
+ },
+ {
+   "date": 2015,
+   "college": "College of Engineering",
+   "department": "Computer Science",
+   "level": "Graduate",
+   "headcount": 55
+ },
+ {
+   "date": 2015,
+   "college": "College of Engineering",
+   "department": "Construction Management",
+   "level": "Undergraduate",
+   "headcount": 47
+ },
+ {
+   "date": 2015,
+   "college": "College of Engineering",
+   "department": "Construction Management",
+   "level": "Graduate",
+   "headcount": 2
+ },
+ {
+   "date": 2015,
+   "college": "College of Engineering",
+   "department": "Electrical & Comp Engineering",
+   "level": "Undergraduate",
+   "headcount": 561
+ },
+ {
+   "date": 2015,
+   "college": "College of Engineering",
+   "department": "Electrical & Comp Engineering",
+   "level": "Graduate",
+   "headcount": 53
+ },
+ {
+   "date": 2015,
+   "college": "College of Engineering",
+   "department": "Mechanical Engineering",
+   "level": "Undergraduate",
+   "headcount": 568
+ },
+ {
+   "date": 2015,
+   "college": "College of Engineering",
+   "department": "Mechanical Engineering",
+   "level": "Graduate",
+   "headcount": 61
+ },
+ {
+   "date": 2015,
+   "college": "College of Engineering",
+   "department": "Military Science",
+   "level": "Undergraduate",
+   "headcount": 4
+ },
+ {
+   "date": 2015,
+   "college": "College of Fine Arts",
+   "department": "Architecture",
+   "level": "Undergraduate",
+   "headcount": 303
+ },
+ {
+   "date": 2015,
+   "college": "College of Fine Arts",
+   "department": "Architecture",
+   "level": "Graduate",
+   "headcount": 54
+ },
+ {
+   "date": 2015,
+   "college": "College of Fine Arts",
+   "department": "Art",
+   "level": "Undergraduate",
+   "headcount": 507
+ },
+ {
+   "date": 2015,
+   "college": "College of Fine Arts",
+   "department": "Art",
+   "level": "Graduate",
+   "headcount": 12
+ },
+ {
+   "date": 2015,
+   "college": "College of Fine Arts",
+   "department": "College of Fine Arts",
+   "level": "Undergraduate",
+   "headcount": 81
+ },
+ {
+   "date": 2015,
+   "college": "College of Fine Arts",
+   "department": "Dance",
+   "level": "Undergraduate",
+   "headcount": 112
+ },
+ {
+   "date": 2015,
+   "college": "College of Fine Arts",
+   "department": "Film",
+   "level": "Undergraduate",
+   "headcount": 318
+ },
+ {
+   "date": 2015,
+   "college": "College of Fine Arts",
+   "department": "Film",
+   "level": "Graduate",
+   "headcount": 8
+ },
+ {
+   "date": 2015,
+   "college": "College of Fine Arts",
+   "department": "Music",
+   "level": "Undergraduate",
+   "headcount": 318
+ },
+ {
+   "date": 2015,
+   "college": "College of Fine Arts",
+   "department": "Music",
+   "level": "Graduate",
+   "headcount": 89
+ },
+ {
+   "date": 2015,
+   "college": "College of Fine Arts",
+   "department": "Theatre",
+   "level": "Undergraduate",
+   "headcount": 224
+ },
+ {
+   "date": 2015,
+   "college": "College of Fine Arts",
+   "department": "Theatre",
+   "level": "Graduate",
+   "headcount": 39
+ },
+ {
+   "date": 2015,
+   "college": "College of Hotel Admin",
+   "department": "College of Hotel Admin",
+   "level": "Undergraduate",
+   "headcount": 2321
+ },
+ {
+   "date": 2015,
+   "college": "College of Hotel Admin",
+   "department": "College of Hotel Admin",
+   "level": "Graduate",
+   "headcount": 125
+ },
+ {
+   "date": 2015,
+   "college": "College of Liberal Arts",
+   "department": "Anthropology",
+   "level": "Undergraduate",
+   "headcount": 159
+ },
+ {
+   "date": 2015,
+   "college": "College of Liberal Arts",
+   "department": "Anthropology",
+   "level": "Graduate",
+   "headcount": 42
+ },
+ {
+   "date": 2015,
+   "college": "College of Liberal Arts",
+   "department": "College of Liberal Arts",
+   "level": "Undergraduate",
+   "headcount": 18
+ },
+ {
+   "date": 2015,
+   "college": "College of Liberal Arts",
+   "department": "English",
+   "level": "Undergraduate",
+   "headcount": 407
+ },
+ {
+   "date": 2015,
+   "college": "College of Liberal Arts",
+   "department": "English",
+   "level": "Graduate",
+   "headcount": 79
+ },
+ {
+   "date": 2015,
+   "college": "College of Liberal Arts",
+   "department": "History",
+   "level": "Undergraduate",
+   "headcount": 169
+ },
+ {
+   "date": 2015,
+   "college": "College of Liberal Arts",
+   "department": "History",
+   "level": "Graduate",
+   "headcount": 47
+ },
+ {
+   "date": 2015,
+   "college": "College of Liberal Arts",
+   "department": "Interdisciplinary Studies",
+   "level": "Undergraduate",
+   "headcount": 315
+ },
+ {
+   "date": 2015,
+   "college": "College of Liberal Arts",
+   "department": "Philosophy",
+   "level": "Undergraduate",
+   "headcount": 128
+ },
+ {
+   "date": 2015,
+   "college": "College of Liberal Arts",
+   "department": "Political Science",
+   "level": "Undergraduate",
+   "headcount": 389
+ },
+ {
+   "date": 2015,
+   "college": "College of Liberal Arts",
+   "department": "Political Science",
+   "level": "Graduate",
+   "headcount": 33
+ },
+ {
+   "date": 2015,
+   "college": "College of Liberal Arts",
+   "department": "Psychology",
+   "level": "Undergraduate",
+   "headcount": 1664
+ },
+ {
+   "date": 2015,
+   "college": "College of Liberal Arts",
+   "department": "Psychology",
+   "level": "Graduate",
+   "headcount": 70
+ },
+ {
+   "date": 2015,
+   "college": "College of Liberal Arts",
+   "department": "Sociology",
+   "level": "Undergraduate",
+   "headcount": 284
+ },
+ {
+   "date": 2015,
+   "college": "College of Liberal Arts",
+   "department": "Sociology",
+   "level": "Graduate",
+   "headcount": 42
+ },
+ {
+   "date": 2015,
+   "college": "College of Liberal Arts",
+   "department": "Women's Studies",
+   "level": "Undergraduate",
+   "headcount": 23
+ },
+ {
+   "date": 2015,
+   "college": "College of Liberal Arts",
+   "department": "World Languages & Cultures",
+   "level": "Undergraduate",
+   "headcount": 319
+ },
+ {
+   "date": 2015,
+   "college": "College of Liberal Arts",
+   "department": "World Languages & Cultures",
+   "level": "Graduate",
+   "headcount": 9
+ },
+ {
+   "date": 2015,
+   "college": "College of Sciences",
+   "department": "Chemistry and Biochemistry",
+   "level": "Undergraduate",
+   "headcount": 391
+ },
+ {
+   "date": 2015,
+   "college": "College of Sciences",
+   "department": "Chemistry and Biochemistry",
+   "level": "Graduate",
+   "headcount": 51
+ },
+ {
+   "date": 2015,
+   "college": "College of Sciences",
+   "department": "College of Sciences",
+   "level": "Graduate",
+   "headcount": 1
+ },
+ {
+   "date": 2015,
+   "college": "College of Sciences",
+   "department": "Geoscience",
+   "level": "Undergraduate",
+   "headcount": 158
+ },
+ {
+   "date": 2015,
+   "college": "College of Sciences",
+   "department": "Geoscience",
+   "level": "Graduate",
+   "headcount": 47
+ },
+ {
+   "date": 2015,
+   "college": "College of Sciences",
+   "department": "Life Sciences",
+   "level": "Undergraduate",
+   "headcount": 2068
+ },
+ {
+   "date": 2015,
+   "college": "College of Sciences",
+   "department": "Life Sciences",
+   "level": "Graduate",
+   "headcount": 49
+ },
+ {
+   "date": 2015,
+   "college": "College of Sciences",
+   "department": "Mathematical Sciences",
+   "level": "Undergraduate",
+   "headcount": 227
+ },
+ {
+   "date": 2015,
+   "college": "College of Sciences",
+   "department": "Mathematical Sciences",
+   "level": "Graduate",
+   "headcount": 60
+ },
+ {
+   "date": 2015,
+   "college": "College of Sciences",
+   "department": "Physics and Astronomy",
+   "level": "Undergraduate",
+   "headcount": 103
+ },
+ {
+   "date": 2015,
+   "college": "College of Sciences",
+   "department": "Physics and Astronomy",
+   "level": "Graduate",
+   "headcount": 22
+ },
+ {
+   "date": 2015,
+   "college": "College of Sciences",
+   "department": "Water Resources Management",
+   "level": "Graduate",
+   "headcount": 6
+ },
+ {
+   "date": 2015,
+   "college": "College of Urban Affairs",
+   "department": "College of Urban Affairs",
+   "level": "Undergraduate",
+   "headcount": 11
+ },
+ {
+   "date": 2015,
+   "college": "College of Urban Affairs",
+   "department": "Communication Studies",
+   "level": "Undergraduate",
+   "headcount": 396
+ },
+ {
+   "date": 2015,
+   "college": "College of Urban Affairs",
+   "department": "Communication Studies",
+   "level": "Graduate",
+   "headcount": 20
+ },
+ {
+   "date": 2015,
+   "college": "College of Urban Affairs",
+   "department": "Criminal Justice",
+   "level": "Undergraduate",
+   "headcount": 1138
+ },
+ {
+   "date": 2015,
+   "college": "College of Urban Affairs",
+   "department": "Criminal Justice",
+   "level": "Graduate",
+   "headcount": 31
+ },
+ {
+   "date": 2015,
+   "college": "College of Urban Affairs",
+   "department": "Environmental & Public Affairs",
+   "level": "Undergraduate",
+   "headcount": 297
+ },
+ {
+   "date": 2015,
+   "college": "College of Urban Affairs",
+   "department": "Environmental & Public Affairs",
+   "level": "Graduate",
+   "headcount": 214
+ },
+ {
+   "date": 2015,
+   "college": "College of Urban Affairs",
+   "department": "Journalism and Media Studies",
+   "level": "Undergraduate",
+   "headcount": 462
+ },
+ {
+   "date": 2015,
+   "college": "College of Urban Affairs",
+   "department": "Journalism and Media Studies",
+   "level": "Graduate",
+   "headcount": 12
+ },
+ {
+   "date": 2015,
+   "college": "College of Urban Affairs",
+   "department": "Marriage and Family Therapy",
+   "level": "Undergraduate",
+   "headcount": 117
+ },
+ {
+   "date": 2015,
+   "college": "College of Urban Affairs",
+   "department": "Marriage and Family Therapy",
+   "level": "Graduate",
+   "headcount": 81
+ },
+ {
+   "date": 2015,
+   "college": "College of Urban Affairs",
+   "department": "Social Work",
+   "level": "Undergraduate",
+   "headcount": 255
+ },
+ {
+   "date": 2015,
+   "college": "College of Urban Affairs",
+   "department": "Social Work",
+   "level": "Graduate",
+   "headcount": 221
+ },
+ {
+   "date": 2015,
+   "college": "Community Health Sciences",
+   "department": "Community Health Sciences",
+   "level": "Graduate",
+   "headcount": 95
+ },
+ {
+   "date": 2015,
+   "college": "Community Health Sciences",
+   "department": "Health Care Administration",
+   "level": "Undergraduate",
+   "headcount": 218
+ },
+ {
+   "date": 2015,
+   "college": "Community Health Sciences",
+   "department": "Health Care Administration",
+   "level": "Graduate",
+   "headcount": 36
+ },
+ {
+   "date": 2015,
+   "college": "Community Health Sciences",
+   "department": "Health Promotion",
+   "level": "Undergraduate",
+   "headcount": 98
+ },
+ {
+   "date": 2015,
+   "college": "Dentistry",
+   "department": "Dentistry",
+   "level": "Graduate",
+   "headcount": 15
+ },
+ {
+   "date": 2015,
+   "college": "Dentistry",
+   "department": "Dentistry",
+   "level": "Professional",
+   "headcount": 327
+ },
+ {
+   "date": 2015,
+   "college": "Law",
+   "department": "Law",
+   "level": "Professional",
+   "headcount": 386
+ },
+ {
+   "date": 2015,
+   "college": "Lee Business School",
+   "department": "Accounting",
+   "level": "Undergraduate",
+   "headcount": 449
+ },
+ {
+   "date": 2015,
+   "college": "Lee Business School",
+   "department": "Accounting",
+   "level": "Graduate",
+   "headcount": 112
+ },
+ {
+   "date": 2015,
+   "college": "Lee Business School",
+   "department": "Economics",
+   "level": "Undergraduate",
+   "headcount": 135
+ },
+ {
+   "date": 2015,
+   "college": "Lee Business School",
+   "department": "Economics",
+   "level": "Graduate",
+   "headcount": 31
+ },
+ {
+   "date": 2015,
+   "college": "Lee Business School",
+   "department": "Finance",
+   "level": "Undergraduate",
+   "headcount": 281
+ },
+ {
+   "date": 2015,
+   "college": "Lee Business School",
+   "department": "Lee Business School",
+   "level": "Undergraduate",
+   "headcount": 1992
+ },
+ {
+   "date": 2015,
+   "college": "Lee Business School",
+   "department": "MBA",
+   "level": "Graduate",
+   "headcount": 200
+ },
+ {
+   "date": 2015,
+   "college": "Lee Business School",
+   "department": "Management,Entrenp, & Tech",
+   "level": "Undergraduate",
+   "headcount": 433
+ },
+ {
+   "date": 2015,
+   "college": "Lee Business School",
+   "department": "Management,Entrenp, & Tech",
+   "level": "Graduate",
+   "headcount": 72
+ },
+ {
+   "date": 2015,
+   "college": "Lee Business School",
+   "department": "Marketing & International Bus",
+   "level": "Undergraduate",
+   "headcount": 308
+ },
+ {
+   "date": 2015,
+   "college": "Nursing",
+   "department": "Nursing",
+   "level": "Undergraduate",
+   "headcount": 1396
+ },
+ {
+   "date": 2015,
+   "college": "Nursing",
+   "department": "Nursing",
+   "level": "Graduate",
+   "headcount": 145
+ },
+ {
+   "date": 2016,
+   "college": "Allied Health Sciences",
+   "department": "Health Phy and Diagnostic Sci",
+   "level": "Undergraduate",
+   "headcount": 514
+ },
+ {
+   "date": 2016,
+   "college": "Allied Health Sciences",
+   "department": "Health Phy and Diagnostic Sci",
+   "level": "Graduate",
+   "headcount": 22
+ },
+ {
+   "date": 2016,
+   "college": "Allied Health Sciences",
+   "department": "Kinesiology & Nutrition Sci",
+   "level": "Undergraduate",
+   "headcount": 1471
+ },
+ {
+   "date": 2016,
+   "college": "Allied Health Sciences",
+   "department": "Kinesiology & Nutrition Sci",
+   "level": "Graduate",
+   "headcount": 48
+ },
+ {
+   "date": 2016,
+   "college": "Allied Health Sciences",
+   "department": "Physical Therapy",
+   "level": "Graduate",
+   "headcount": 104
+ },
+ {
+   "date": 2016,
+   "college": "College of Education",
+   "department": "EXPIRED-Educational Psychology",
+   "level": "Graduate",
+   "headcount": 17
+ },
+ {
+   "date": 2016,
+   "college": "College of Education",
+   "department": "Educ Psychology and Higher Ed",
+   "level": "Graduate",
+   "headcount": 150
+ },
+ {
+   "date": 2016,
+   "college": "College of Education",
+   "department": "Educational & Clinical Studies",
+   "level": "Undergraduate",
+   "headcount": 413
+ },
+ {
+   "date": 2016,
+   "college": "College of Education",
+   "department": "Educational & Clinical Studies",
+   "level": "Graduate",
+   "headcount": 458
+ },
+ {
+   "date": 2016,
+   "college": "College of Education",
+   "department": "Teaching & Learning",
+   "level": "Undergraduate",
+   "headcount": 782
+ },
+ {
+   "date": 2016,
+   "college": "College of Education",
+   "department": "Teaching & Learning",
+   "level": "Graduate",
+   "headcount": 799
+ },
+ {
+   "date": 2016,
+   "college": "College of Engineering",
+   "department": "Aerospace Studies",
+   "level": "Undergraduate",
+   "headcount": 7
+ },
+ {
+   "date": 2016,
+   "college": "College of Engineering",
+   "department": "Civil & Environmental Enginr",
+   "level": "Undergraduate",
+   "headcount": 251
+ },
+ {
+   "date": 2016,
+   "college": "College of Engineering",
+   "department": "Civil & Environmental Enginr",
+   "level": "Graduate",
+   "headcount": 63
+ },
+ {
+   "date": 2016,
+   "college": "College of Engineering",
+   "department": "College of Engineering",
+   "level": "Undergraduate",
+   "headcount": 82
+ },
+ {
+   "date": 2016,
+   "college": "College of Engineering",
+   "department": "College of Engineering",
+   "level": "Graduate",
+   "headcount": 2
+ },
+ {
+   "date": 2016,
+   "college": "College of Engineering",
+   "department": "Computer Science",
+   "level": "Undergraduate",
+   "headcount": 942
+ },
+ {
+   "date": 2016,
+   "college": "College of Engineering",
+   "department": "Computer Science",
+   "level": "Graduate",
+   "headcount": 58
+ },
+ {
+   "date": 2016,
+   "college": "College of Engineering",
+   "department": "Construction Management",
+   "level": "Undergraduate",
+   "headcount": 62
+ },
+ {
+   "date": 2016,
+   "college": "College of Engineering",
+   "department": "Construction Management",
+   "level": "Graduate",
+   "headcount": 6
+ },
+ {
+   "date": 2016,
+   "college": "College of Engineering",
+   "department": "Electrical & Comp Engineering",
+   "level": "Undergraduate",
+   "headcount": 562
+ },
+ {
+   "date": 2016,
+   "college": "College of Engineering",
+   "department": "Electrical & Comp Engineering",
+   "level": "Graduate",
+   "headcount": 49
+ },
+ {
+   "date": 2016,
+   "college": "College of Engineering",
+   "department": "Mechanical Engineering",
+   "level": "Undergraduate",
+   "headcount": 620
+ },
+ {
+   "date": 2016,
+   "college": "College of Engineering",
+   "department": "Mechanical Engineering",
+   "level": "Graduate",
+   "headcount": 68
+ },
+ {
+   "date": 2016,
+   "college": "College of Engineering",
+   "department": "Military Science",
+   "level": "Undergraduate",
+   "headcount": 4
+ },
+ {
+   "date": 2016,
+   "college": "College of Fine Arts",
+   "department": "Architecture",
+   "level": "Undergraduate",
+   "headcount": 323
+ },
+ {
+   "date": 2016,
+   "college": "College of Fine Arts",
+   "department": "Architecture",
+   "level": "Graduate",
+   "headcount": 49
+ },
+ {
+   "date": 2016,
+   "college": "College of Fine Arts",
+   "department": "Art",
+   "level": "Undergraduate",
+   "headcount": 562
+ },
+ {
+   "date": 2016,
+   "college": "College of Fine Arts",
+   "department": "Art",
+   "level": "Graduate",
+   "headcount": 11
+ },
+ {
+   "date": 2016,
+   "college": "College of Fine Arts",
+   "department": "College of Fine Arts",
+   "level": "Undergraduate",
+   "headcount": 91
+ },
+ {
+   "date": 2016,
+   "college": "College of Fine Arts",
+   "department": "Dance",
+   "level": "Undergraduate",
+   "headcount": 123
+ },
+ {
+   "date": 2016,
+   "college": "College of Fine Arts",
+   "department": "Film",
+   "level": "Undergraduate",
+   "headcount": 348
+ },
+ {
+   "date": 2016,
+   "college": "College of Fine Arts",
+   "department": "Film",
+   "level": "Graduate",
+   "headcount": 10
+ },
+ {
+   "date": 2016,
+   "college": "College of Fine Arts",
+   "department": "Music",
+   "level": "Undergraduate",
+   "headcount": 339
+ },
+ {
+   "date": 2016,
+   "college": "College of Fine Arts",
+   "department": "Music",
+   "level": "Graduate",
+   "headcount": 93
+ },
+ {
+   "date": 2016,
+   "college": "College of Fine Arts",
+   "department": "Theatre",
+   "level": "Undergraduate",
+   "headcount": 255
+ },
+ {
+   "date": 2016,
+   "college": "College of Fine Arts",
+   "department": "Theatre",
+   "level": "Graduate",
+   "headcount": 33
+ },
+ {
+   "date": 2016,
+   "college": "College of Hotel Admin",
+   "department": "College of Hotel Admin",
+   "level": "Undergraduate",
+   "headcount": 2261
+ },
+ {
+   "date": 2016,
+   "college": "College of Hotel Admin",
+   "department": "College of Hotel Admin",
+   "level": "Graduate",
+   "headcount": 124
+ },
+ {
+   "date": 2016,
+   "college": "College of Hotel Admin",
+   "department": "EXPIRED-Hotel Management",
+   "level": "Undergraduate",
+   "headcount": 1
+ },
+ {
+   "date": 2016,
+   "college": "College of Liberal Arts",
+   "department": "Anthropology",
+   "level": "Undergraduate",
+   "headcount": 155
+ },
+ {
+   "date": 2016,
+   "college": "College of Liberal Arts",
+   "department": "Anthropology",
+   "level": "Graduate",
+   "headcount": 44
+ },
+ {
+   "date": 2016,
+   "college": "College of Liberal Arts",
+   "department": "College of Liberal Arts",
+   "level": "Undergraduate",
+   "headcount": 10
+ },
+ {
+   "date": 2016,
+   "college": "College of Liberal Arts",
+   "department": "College of Liberal Arts",
+   "level": "Graduate",
+   "headcount": 3
+ },
+ {
+   "date": 2016,
+   "college": "College of Liberal Arts",
+   "department": "English",
+   "level": "Undergraduate",
+   "headcount": 417
+ },
+ {
+   "date": 2016,
+   "college": "College of Liberal Arts",
+   "department": "English",
+   "level": "Graduate",
+   "headcount": 78
+ },
+ {
+   "date": 2016,
+   "college": "College of Liberal Arts",
+   "department": "History",
+   "level": "Undergraduate",
+   "headcount": 169
+ },
+ {
+   "date": 2016,
+   "college": "College of Liberal Arts",
+   "department": "History",
+   "level": "Graduate",
+   "headcount": 43
+ },
+ {
+   "date": 2016,
+   "college": "College of Liberal Arts",
+   "department": "Interdisciplinary Studies",
+   "level": "Undergraduate",
+   "headcount": 306
+ },
+ {
+   "date": 2016,
+   "college": "College of Liberal Arts",
+   "department": "Philosophy",
+   "level": "Undergraduate",
+   "headcount": 133
+ },
+ {
+   "date": 2016,
+   "college": "College of Liberal Arts",
+   "department": "Political Science",
+   "level": "Undergraduate",
+   "headcount": 425
+ },
+ {
+   "date": 2016,
+   "college": "College of Liberal Arts",
+   "department": "Political Science",
+   "level": "Graduate",
+   "headcount": 36
+ },
+ {
+   "date": 2016,
+   "college": "College of Liberal Arts",
+   "department": "Psychology",
+   "level": "Undergraduate",
+   "headcount": 1746
+ },
+ {
+   "date": 2016,
+   "college": "College of Liberal Arts",
+   "department": "Psychology",
+   "level": "Graduate",
+   "headcount": 76
+ },
+ {
+   "date": 2016,
+   "college": "College of Liberal Arts",
+   "department": "Sociology",
+   "level": "Undergraduate",
+   "headcount": 301
+ },
+ {
+   "date": 2016,
+   "college": "College of Liberal Arts",
+   "department": "Sociology",
+   "level": "Graduate",
+   "headcount": 50
+ },
+ {
+   "date": 2016,
+   "college": "College of Liberal Arts",
+   "department": "Women's Studies",
+   "level": "Undergraduate",
+   "headcount": 16
+ },
+ {
+   "date": 2016,
+   "college": "College of Liberal Arts",
+   "department": "World Languages & Cultures",
+   "level": "Undergraduate",
+   "headcount": 331
+ },
+ {
+   "date": 2016,
+   "college": "College of Liberal Arts",
+   "department": "World Languages & Cultures",
+   "level": "Graduate",
+   "headcount": 15
+ },
+ {
+   "date": 2016,
+   "college": "College of Sciences",
+   "department": "Chemistry and Biochemistry",
+   "level": "Undergraduate",
+   "headcount": 367
+ },
+ {
+   "date": 2016,
+   "college": "College of Sciences",
+   "department": "Chemistry and Biochemistry",
+   "level": "Graduate",
+   "headcount": 48
+ },
+ {
+   "date": 2016,
+   "college": "College of Sciences",
+   "department": "College of Sciences",
+   "level": "Graduate",
+   "headcount": 2
+ },
+ {
+   "date": 2016,
+   "college": "College of Sciences",
+   "department": "Geoscience",
+   "level": "Undergraduate",
+   "headcount": 179
+ },
+ {
+   "date": 2016,
+   "college": "College of Sciences",
+   "department": "Geoscience",
+   "level": "Graduate",
+   "headcount": 46
+ },
+ {
+   "date": 2016,
+   "college": "College of Sciences",
+   "department": "Life Sciences",
+   "level": "Undergraduate",
+   "headcount": 2082
+ },
+ {
+   "date": 2016,
+   "college": "College of Sciences",
+   "department": "Life Sciences",
+   "level": "Graduate",
+   "headcount": 50
+ },
+ {
+   "date": 2016,
+   "college": "College of Sciences",
+   "department": "Mathematical Sciences",
+   "level": "Undergraduate",
+   "headcount": 243
+ },
+ {
+   "date": 2016,
+   "college": "College of Sciences",
+   "department": "Mathematical Sciences",
+   "level": "Graduate",
+   "headcount": 72
+ },
+ {
+   "date": 2016,
+   "college": "College of Sciences",
+   "department": "Physics and Astronomy",
+   "level": "Undergraduate",
+   "headcount": 102
+ },
+ {
+   "date": 2016,
+   "college": "College of Sciences",
+   "department": "Physics and Astronomy",
+   "level": "Graduate",
+   "headcount": 30
+ },
+ {
+   "date": 2016,
+   "college": "College of Sciences",
+   "department": "Water Resources Management",
+   "level": "Graduate",
+   "headcount": 5
+ },
+ {
+   "date": 2016,
+   "college": "College of Urban Affairs",
+   "department": "College of Urban Affairs",
+   "level": "Undergraduate",
+   "headcount": 13
+ },
+ {
+   "date": 2016,
+   "college": "College of Urban Affairs",
+   "department": "Communication Studies",
+   "level": "Undergraduate",
+   "headcount": 454
+ },
+ {
+   "date": 2016,
+   "college": "College of Urban Affairs",
+   "department": "Communication Studies",
+   "level": "Graduate",
+   "headcount": 22
+ },
+ {
+   "date": 2016,
+   "college": "College of Urban Affairs",
+   "department": "Criminal Justice",
+   "level": "Undergraduate",
+   "headcount": 1221
+ },
+ {
+   "date": 2016,
+   "college": "College of Urban Affairs",
+   "department": "Criminal Justice",
+   "level": "Graduate",
+   "headcount": 31
+ },
+ {
+   "date": 2016,
+   "college": "College of Urban Affairs",
+   "department": "Journalism and Media Studies",
+   "level": "Undergraduate",
+   "headcount": 481
+ },
+ {
+   "date": 2016,
+   "college": "College of Urban Affairs",
+   "department": "Journalism and Media Studies",
+   "level": "Graduate",
+   "headcount": 8
+ },
+ {
+   "date": 2016,
+   "college": "College of Urban Affairs",
+   "department": "Marriage and Family Therapy",
+   "level": "Undergraduate",
+   "headcount": 124
+ },
+ {
+   "date": 2016,
+   "college": "College of Urban Affairs",
+   "department": "Marriage and Family Therapy",
+   "level": "Graduate",
+   "headcount": 80
+ },
+ {
+   "date": 2016,
+   "college": "College of Urban Affairs",
+   "department": "Public Policy and Leadership",
+   "level": "Undergraduate",
+   "headcount": 201
+ },
+ {
+   "date": 2016,
+   "college": "College of Urban Affairs",
+   "department": "Public Policy and Leadership",
+   "level": "Graduate",
+   "headcount": 209
+ },
+ {
+   "date": 2016,
+   "college": "College of Urban Affairs",
+   "department": "Social Work",
+   "level": "Undergraduate",
+   "headcount": 310
+ },
+ {
+   "date": 2016,
+   "college": "College of Urban Affairs",
+   "department": "Social Work",
+   "level": "Graduate",
+   "headcount": 209
+ },
+ {
+   "date": 2016,
+   "college": "Community Health Sciences",
+   "department": "Community Health Sciences",
+   "level": "Undergraduate",
+   "headcount": 1
+ },
+ {
+   "date": 2016,
+   "college": "Community Health Sciences",
+   "department": "Community Health Sciences",
+   "level": "Graduate",
+   "headcount": 98
+ },
+ {
+   "date": 2016,
+   "college": "Community Health Sciences",
+   "department": "Environ & Occupational Health",
+   "level": "Graduate",
+   "headcount": 3
+ },
+ {
+   "date": 2016,
+   "college": "Community Health Sciences",
+   "department": "Health Care Administration",
+   "level": "Undergraduate",
+   "headcount": 208
+ },
+ {
+   "date": 2016,
+   "college": "Community Health Sciences",
+   "department": "Health Care Administration",
+   "level": "Graduate",
+   "headcount": 39
+ },
+ {
+   "date": 2016,
+   "college": "Community Health Sciences",
+   "department": "Health Promotion",
+   "level": "Undergraduate",
+   "headcount": 109
+ },
+ {
+   "date": 2016,
+   "college": "Dentistry",
+   "department": "Dentistry",
+   "level": "Graduate",
+   "headcount": 17
+ },
+ {
+   "date": 2016,
+   "college": "Dentistry",
+   "department": "Dentistry",
+   "level": "Professional",
+   "headcount": 326
+ },
+ {
+   "date": 2016,
+   "college": "Law",
+   "department": "Law",
+   "level": "Professional",
+   "headcount": 391
+ },
+ {
+   "date": 2016,
+   "college": "Lee Business School",
+   "department": "Accounting",
+   "level": "Undergraduate",
+   "headcount": 497
+ },
+ {
+   "date": 2016,
+   "college": "Lee Business School",
+   "department": "Accounting",
+   "level": "Graduate",
+   "headcount": 97
+ },
+ {
+   "date": 2016,
+   "college": "Lee Business School",
+   "department": "Economics",
+   "level": "Undergraduate",
+   "headcount": 167
+ },
+ {
+   "date": 2016,
+   "college": "Lee Business School",
+   "department": "Economics",
+   "level": "Graduate",
+   "headcount": 26
+ },
+ {
+   "date": 2016,
+   "college": "Lee Business School",
+   "department": "Finance",
+   "level": "Undergraduate",
+   "headcount": 320
+ },
+ {
+   "date": 2016,
+   "college": "Lee Business School",
+   "department": "Lee Business School",
+   "level": "Undergraduate",
+   "headcount": 1863
+ },
+ {
+   "date": 2016,
+   "college": "Lee Business School",
+   "department": "MBA",
+   "level": "Graduate",
+   "headcount": 218
+ },
+ {
+   "date": 2016,
+   "college": "Lee Business School",
+   "department": "Management,Entrenp, & Tech",
+   "level": "Undergraduate",
+   "headcount": 484
+ },
+ {
+   "date": 2016,
+   "college": "Lee Business School",
+   "department": "Management,Entrenp, & Tech",
+   "level": "Graduate",
+   "headcount": 82
+ },
+ {
+   "date": 2016,
+   "college": "Lee Business School",
+   "department": "Marketing & International Bus",
+   "level": "Undergraduate",
+   "headcount": 375
+ },
+ {
+   "date": 2016,
+   "college": "Nursing",
+   "department": "Nursing",
+   "level": "Undergraduate",
+   "headcount": 1502
+ },
+ {
+   "date": 2016,
+   "college": "Nursing",
+   "department": "Nursing",
+   "level": "Graduate",
+   "headcount": 133
+ },
+ {
+   "date": 2017,
+   "college": "Allied Health Sciences",
+   "department": "Health Phy and Diagnostic Sci",
+   "level": "Undergraduate",
+   "headcount": 511
+ },
+ {
+   "date": 2017,
+   "college": "Allied Health Sciences",
+   "department": "Health Phy and Diagnostic Sci",
+   "level": "Graduate",
+   "headcount": 38
+ },
+ {
+   "date": 2017,
+   "college": "Allied Health Sciences",
+   "department": "Kinesiology & Nutrition Sci",
+   "level": "Undergraduate",
+   "headcount": 1549
+ },
+ {
+   "date": 2017,
+   "college": "Allied Health Sciences",
+   "department": "Kinesiology & Nutrition Sci",
+   "level": "Graduate",
+   "headcount": 45
+ },
+ {
+   "date": 2017,
+   "college": "Allied Health Sciences",
+   "department": "Physical Therapy",
+   "level": "Graduate",
+   "headcount": 116
+ },
+ {
+   "date": 2017,
+   "college": "College of Education",
+   "department": "Educ Psychology and Higher Ed",
+   "level": "Graduate",
+   "headcount": 197
+ },
+ {
+   "date": 2017,
+   "college": "College of Education",
+   "department": "Educational & Clinical Studies",
+   "level": "Undergraduate",
+   "headcount": 390
+ },
+ {
+   "date": 2017,
+   "college": "College of Education",
+   "department": "Educational & Clinical Studies",
+   "level": "Graduate",
+   "headcount": 479
+ },
+ {
+   "date": 2017,
+   "college": "College of Education",
+   "department": "Teaching & Learning",
+   "level": "Undergraduate",
+   "headcount": 820
+ },
+ {
+   "date": 2017,
+   "college": "College of Education",
+   "department": "Teaching & Learning",
+   "level": "Graduate",
+   "headcount": 904
+ },
+ {
+   "date": 2017,
+   "college": "College of Engineering",
+   "department": "Aerospace Studies",
+   "level": "Undergraduate",
+   "headcount": 5
+ },
+ {
+   "date": 2017,
+   "college": "College of Engineering",
+   "department": "Civil & Environmental Enginr",
+   "level": "Undergraduate",
+   "headcount": 262
+ },
+ {
+   "date": 2017,
+   "college": "College of Engineering",
+   "department": "Civil & Environmental Enginr",
+   "level": "Graduate",
+   "headcount": 78
+ },
+ {
+   "date": 2017,
+   "college": "College of Engineering",
+   "department": "College of Engineering",
+   "level": "Undergraduate",
+   "headcount": 196
+ },
+ {
+   "date": 2017,
+   "college": "College of Engineering",
+   "department": "College of Engineering",
+   "level": "Graduate",
+   "headcount": 2
+ },
+ {
+   "date": 2017,
+   "college": "College of Engineering",
+   "department": "Computer Science",
+   "level": "Undergraduate",
+   "headcount": 996
+ },
+ {
+   "date": 2017,
+   "college": "College of Engineering",
+   "department": "Computer Science",
+   "level": "Graduate",
+   "headcount": 58
+ },
+ {
+   "date": 2017,
+   "college": "College of Engineering",
+   "department": "Construction Management",
+   "level": "Undergraduate",
+   "headcount": 64
+ },
+ {
+   "date": 2017,
+   "college": "College of Engineering",
+   "department": "Construction Management",
+   "level": "Graduate",
+   "headcount": 6
+ },
+ {
+   "date": 2017,
+   "college": "College of Engineering",
+   "department": "Electrical & Comp Engineering",
+   "level": "Undergraduate",
+   "headcount": 528
+ },
+ {
+   "date": 2017,
+   "college": "College of Engineering",
+   "department": "Electrical & Comp Engineering",
+   "level": "Graduate",
+   "headcount": 42
+ },
+ {
+   "date": 2017,
+   "college": "College of Engineering",
+   "department": "Mechanical Engineering",
+   "level": "Undergraduate",
+   "headcount": 615
+ },
+ {
+   "date": 2017,
+   "college": "College of Engineering",
+   "department": "Mechanical Engineering",
+   "level": "Graduate",
+   "headcount": 76
+ },
+ {
+   "date": 2017,
+   "college": "College of Engineering",
+   "department": "Military Science",
+   "level": "Undergraduate",
+   "headcount": 2
+ },
+ {
+   "date": 2017,
+   "college": "College of Fine Arts",
+   "department": "Architecture",
+   "level": "Undergraduate",
+   "headcount": 382
+ },
+ {
+   "date": 2017,
+   "college": "College of Fine Arts",
+   "department": "Architecture",
+   "level": "Graduate",
+   "headcount": 45
+ },
+ {
+   "date": 2017,
+   "college": "College of Fine Arts",
+   "department": "Art",
+   "level": "Undergraduate",
+   "headcount": 606
+ },
+ {
+   "date": 2017,
+   "college": "College of Fine Arts",
+   "department": "Art",
+   "level": "Graduate",
+   "headcount": 11
+ },
+ {
+   "date": 2017,
+   "college": "College of Fine Arts",
+   "department": "College of Fine Arts",
+   "level": "Undergraduate",
+   "headcount": 84
+ },
+ {
+   "date": 2017,
+   "college": "College of Fine Arts",
+   "department": "Dance",
+   "level": "Undergraduate",
+   "headcount": 115
+ },
+ {
+   "date": 2017,
+   "college": "College of Fine Arts",
+   "department": "Film",
+   "level": "Undergraduate",
+   "headcount": 383
+ },
+ {
+   "date": 2017,
+   "college": "College of Fine Arts",
+   "department": "Film",
+   "level": "Graduate",
+   "headcount": 8
+ },
+ {
+   "date": 2017,
+   "college": "College of Fine Arts",
+   "department": "Music",
+   "level": "Undergraduate",
+   "headcount": 357
+ },
+ {
+   "date": 2017,
+   "college": "College of Fine Arts",
+   "department": "Music",
+   "level": "Graduate",
+   "headcount": 92
+ },
+ {
+   "date": 2017,
+   "college": "College of Fine Arts",
+   "department": "Theatre",
+   "level": "Undergraduate",
+   "headcount": 237
+ },
+ {
+   "date": 2017,
+   "college": "College of Fine Arts",
+   "department": "Theatre",
+   "level": "Graduate",
+   "headcount": 33
+ },
+ {
+   "date": 2017,
+   "college": "College of Hospitality",
+   "department": "College of Hospitality",
+   "level": "Undergraduate",
+   "headcount": 2250
+ },
+ {
+   "date": 2017,
+   "college": "College of Hospitality",
+   "department": "College of Hospitality",
+   "level": "Graduate",
+   "headcount": 117
+ },
+ {
+   "date": 2017,
+   "college": "College of Liberal Arts",
+   "department": "Anthropology",
+   "level": "Undergraduate",
+   "headcount": 156
+ },
+ {
+   "date": 2017,
+   "college": "College of Liberal Arts",
+   "department": "Anthropology",
+   "level": "Graduate",
+   "headcount": 44
+ },
+ {
+   "date": 2017,
+   "college": "College of Liberal Arts",
+   "department": "College of Liberal Arts",
+   "level": "Undergraduate",
+   "headcount": 17
+ },
+ {
+   "date": 2017,
+   "college": "College of Liberal Arts",
+   "department": "College of Liberal Arts",
+   "level": "Graduate",
+   "headcount": 7
+ },
+ {
+   "date": 2017,
+   "college": "College of Liberal Arts",
+   "department": "English",
+   "level": "Undergraduate",
+   "headcount": 442
+ },
+ {
+   "date": 2017,
+   "college": "College of Liberal Arts",
+   "department": "English",
+   "level": "Graduate",
+   "headcount": 85
+ },
+ {
+   "date": 2017,
+   "college": "College of Liberal Arts",
+   "department": "History",
+   "level": "Undergraduate",
+   "headcount": 212
+ },
+ {
+   "date": 2017,
+   "college": "College of Liberal Arts",
+   "department": "History",
+   "level": "Graduate",
+   "headcount": 40
+ },
+ {
+   "date": 2017,
+   "college": "College of Liberal Arts",
+   "department": "Interdisciplinary Studies",
+   "level": "Undergraduate",
+   "headcount": 344
+ },
+ {
+   "date": 2017,
+   "college": "College of Liberal Arts",
+   "department": "Philosophy",
+   "level": "Undergraduate",
+   "headcount": 151
+ },
+ {
+   "date": 2017,
+   "college": "College of Liberal Arts",
+   "department": "Political Science",
+   "level": "Undergraduate",
+   "headcount": 442
+ },
+ {
+   "date": 2017,
+   "college": "College of Liberal Arts",
+   "department": "Political Science",
+   "level": "Graduate",
+   "headcount": 32
+ },
+ {
+   "date": 2017,
+   "college": "College of Liberal Arts",
+   "department": "Psychology",
+   "level": "Undergraduate",
+   "headcount": 1926
+ },
+ {
+   "date": 2017,
+   "college": "College of Liberal Arts",
+   "department": "Psychology",
+   "level": "Graduate",
+   "headcount": 74
+ },
+ {
+   "date": 2017,
+   "college": "College of Liberal Arts",
+   "department": "Sociology",
+   "level": "Undergraduate",
+   "headcount": 319
+ },
+ {
+   "date": 2017,
+   "college": "College of Liberal Arts",
+   "department": "Sociology",
+   "level": "Graduate",
+   "headcount": 46
+ },
+ {
+   "date": 2017,
+   "college": "College of Liberal Arts",
+   "department": "Women's Studies",
+   "level": "Undergraduate",
+   "headcount": 17
+ },
+ {
+   "date": 2017,
+   "college": "College of Liberal Arts",
+   "department": "World Languages & Cultures",
+   "level": "Undergraduate",
+   "headcount": 361
+ },
+ {
+   "date": 2017,
+   "college": "College of Liberal Arts",
+   "department": "World Languages & Cultures",
+   "level": "Graduate",
+   "headcount": 12
+ },
+ {
+   "date": 2017,
+   "college": "College of Sciences",
+   "department": "Chemistry and Biochemistry",
+   "level": "Undergraduate",
+   "headcount": 358
+ },
+ {
+   "date": 2017,
+   "college": "College of Sciences",
+   "department": "Chemistry and Biochemistry",
+   "level": "Graduate",
+   "headcount": 45
+ },
+ {
+   "date": 2017,
+   "college": "College of Sciences",
+   "department": "College of Sciences",
+   "level": "Undergraduate",
+   "headcount": 20
+ },
+ {
+   "date": 2017,
+   "college": "College of Sciences",
+   "department": "Geoscience",
+   "level": "Undergraduate",
+   "headcount": 173
+ },
+ {
+   "date": 2017,
+   "college": "College of Sciences",
+   "department": "Geoscience",
+   "level": "Graduate",
+   "headcount": 40
+ },
+ {
+   "date": 2017,
+   "college": "College of Sciences",
+   "department": "Life Sciences",
+   "level": "Undergraduate",
+   "headcount": 2005
+ },
+ {
+   "date": 2017,
+   "college": "College of Sciences",
+   "department": "Life Sciences",
+   "level": "Graduate",
+   "headcount": 54
+ },
+ {
+   "date": 2017,
+   "college": "College of Sciences",
+   "department": "Mathematical Sciences",
+   "level": "Undergraduate",
+   "headcount": 256
+ },
+ {
+   "date": 2017,
+   "college": "College of Sciences",
+   "department": "Mathematical Sciences",
+   "level": "Graduate",
+   "headcount": 65
+ },
+ {
+   "date": 2017,
+   "college": "College of Sciences",
+   "department": "Physics and Astronomy",
+   "level": "Undergraduate",
+   "headcount": 104
+ },
+ {
+   "date": 2017,
+   "college": "College of Sciences",
+   "department": "Physics and Astronomy",
+   "level": "Graduate",
+   "headcount": 30
+ },
+ {
+   "date": 2017,
+   "college": "College of Sciences",
+   "department": "Water Resources Management",
+   "level": "Graduate",
+   "headcount": 3
+ },
+ {
+   "date": 2017,
+   "college": "College of Urban Affairs",
+   "department": "College of Urban Affairs",
+   "level": "Undergraduate",
+   "headcount": 15
+ },
+ {
+   "date": 2017,
+   "college": "College of Urban Affairs",
+   "department": "Communication Studies",
+   "level": "Undergraduate",
+   "headcount": 431
+ },
+ {
+   "date": 2017,
+   "college": "College of Urban Affairs",
+   "department": "Communication Studies",
+   "level": "Graduate",
+   "headcount": 16
+ },
+ {
+   "date": 2017,
+   "college": "College of Urban Affairs",
+   "department": "Criminal Justice",
+   "level": "Undergraduate",
+   "headcount": 1264
+ },
+ {
+   "date": 2017,
+   "college": "College of Urban Affairs",
+   "department": "Criminal Justice",
+   "level": "Graduate",
+   "headcount": 28
+ },
+ {
+   "date": 2017,
+   "college": "College of Urban Affairs",
+   "department": "Journalism and Media Studies",
+   "level": "Undergraduate",
+   "headcount": 450
+ },
+ {
+   "date": 2017,
+   "college": "College of Urban Affairs",
+   "department": "Journalism and Media Studies",
+   "level": "Graduate",
+   "headcount": 9
+ },
+ {
+   "date": 2017,
+   "college": "College of Urban Affairs",
+   "department": "Marriage and Family Therapy",
+   "level": "Undergraduate",
+   "headcount": 109
+ },
+ {
+   "date": 2017,
+   "college": "College of Urban Affairs",
+   "department": "Marriage and Family Therapy",
+   "level": "Graduate",
+   "headcount": 83
+ },
+ {
+   "date": 2017,
+   "college": "College of Urban Affairs",
+   "department": "Public Policy and Leadership",
+   "level": "Undergraduate",
+   "headcount": 151
+ },
+ {
+   "date": 2017,
+   "college": "College of Urban Affairs",
+   "department": "Public Policy and Leadership",
+   "level": "Graduate",
+   "headcount": 203
+ },
+ {
+   "date": 2017,
+   "college": "College of Urban Affairs",
+   "department": "Social Work",
+   "level": "Undergraduate",
+   "headcount": 317
+ },
+ {
+   "date": 2017,
+   "college": "College of Urban Affairs",
+   "department": "Social Work",
+   "level": "Graduate",
+   "headcount": 206
+ },
+ {
+   "date": 2017,
+   "college": "Community Health Sciences",
+   "department": "Community Health Sciences",
+   "level": "Undergraduate",
+   "headcount": 11
+ },
+ {
+   "date": 2017,
+   "college": "Community Health Sciences",
+   "department": "Community Health Sciences",
+   "level": "Graduate",
+   "headcount": 94
+ },
+ {
+   "date": 2017,
+   "college": "Community Health Sciences",
+   "department": "Environ & Occupational Health",
+   "level": "Graduate",
+   "headcount": 13
+ },
+ {
+   "date": 2017,
+   "college": "Community Health Sciences",
+   "department": "Health Care Administration",
+   "level": "Undergraduate",
+   "headcount": 201
+ },
+ {
+   "date": 2017,
+   "college": "Community Health Sciences",
+   "department": "Health Care Administration",
+   "level": "Graduate",
+   "headcount": 55
+ },
+ {
+   "date": 2017,
+   "college": "Community Health Sciences",
+   "department": "Health Promotion",
+   "level": "Undergraduate",
+   "headcount": 130
+ },
+ {
+   "date": 2017,
+   "college": "Dentistry",
+   "department": "Dentistry",
+   "level": "Graduate",
+   "headcount": 18
+ },
+ {
+   "date": 2017,
+   "college": "Dentistry",
+   "department": "Dentistry",
+   "level": "Professional",
+   "headcount": 339
+ },
+ {
+   "date": 2017,
+   "college": "Law",
+   "department": "Law",
+   "level": "Professional",
+   "headcount": 377
+ },
+ {
+   "date": 2017,
+   "college": "Lee Business School",
+   "department": "Accounting",
+   "level": "Undergraduate",
+   "headcount": 469
+ },
+ {
+   "date": 2017,
+   "college": "Lee Business School",
+   "department": "Accounting",
+   "level": "Graduate",
+   "headcount": 100
+ },
+ {
+   "date": 2017,
+   "college": "Lee Business School",
+   "department": "Economics",
+   "level": "Undergraduate",
+   "headcount": 192
+ },
+ {
+   "date": 2017,
+   "college": "Lee Business School",
+   "department": "Economics",
+   "level": "Graduate",
+   "headcount": 23
+ },
+ {
+   "date": 2017,
+   "college": "Lee Business School",
+   "department": "Finance",
+   "level": "Undergraduate",
+   "headcount": 351
+ },
+ {
+   "date": 2017,
+   "college": "Lee Business School",
+   "department": "Lee Business School",
+   "level": "Undergraduate",
+   "headcount": 1788
+ },
+ {
+   "date": 2017,
+   "college": "Lee Business School",
+   "department": "Lee Business School",
+   "level": "Graduate",
+   "headcount": 8
+ },
+ {
+   "date": 2017,
+   "college": "Lee Business School",
+   "department": "MBA",
+   "level": "Graduate",
+   "headcount": 204
+ },
+ {
+   "date": 2017,
+   "college": "Lee Business School",
+   "department": "Management,Entrenp, & Tech",
+   "level": "Undergraduate",
+   "headcount": 504
+ },
+ {
+   "date": 2017,
+   "college": "Lee Business School",
+   "department": "Management,Entrenp, & Tech",
+   "level": "Graduate",
+   "headcount": 82
+ },
+ {
+   "date": 2017,
+   "college": "Lee Business School",
+   "department": "Marketing & International Bus",
+   "level": "Undergraduate",
+   "headcount": 418
+ },
+ {
+   "date": 2017,
+   "college": "Nursing",
+   "department": "Nursing",
+   "level": "Undergraduate",
+   "headcount": 1577
+ },
+ {
+   "date": 2017,
+   "college": "Nursing",
+   "department": "Nursing",
+   "level": "Graduate",
+   "headcount": 128
+ }
+]

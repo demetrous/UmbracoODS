@@ -1,0 +1,98 @@
+﻿ 2018-10-12 07:18:23,577 [P17416/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.10.4 application starting on IA-2085881
+ 2018-10-12 07:18:23,607 [P17416/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2018-10-12 07:18:23,622 [P17416/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 15ms)
+ 2018-10-12 07:18:23,673 [P17416/D2/T1] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2018-10-12 07:18:23,673 [P17416/D2/T1] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2018-10-12 07:18:23,677 [P17416/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-10-12 07:18:23,746 [P17416/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 69ms)
+ 2018-10-12 07:18:23,747 [P17416/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
+ 2018-10-12 07:18:23,750 [P17416/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 2ms)
+ 2018-10-12 07:18:23,785 [P17416/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-10-12 07:18:23,786 [P17416/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 1ms)
+ 2018-10-12 07:18:23,787 [P17416/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2018-10-12 07:18:23,787 [P17416/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 0ms)
+ 2018-10-12 07:18:23,787 [P17416/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-10-12 07:18:23,788 [P17416/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-10-12 07:18:23,788 [P17416/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2018-10-12 07:18:23,791 [P17416/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 3ms)
+ 2018-10-12 07:18:23,806 [P17416/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-10-12 07:18:23,806 [P17416/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-10-12 07:18:23,806 [P17416/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
+ 2018-10-12 07:18:23,807 [P17416/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 0ms)
+ 2018-10-12 07:18:23,807 [P17416/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-10-12 07:18:23,808 [P17416/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-10-12 07:18:23,808 [P17416/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
+ 2018-10-12 07:18:23,809 [P17416/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 1ms)
+ 2018-10-12 07:18:26,018 [P17416/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2018-10-12 07:18:26,278 [P17416/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2018-10-12 07:18:26,477 [P17416/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2018-10-12 07:18:26,478 [P17416/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 4
+ 2018-10-12 07:18:26,491 [P17416/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 3017ms)
+ 2018-10-12 07:18:26,499 [P17416/D2/T1] INFO  Umbraco.Web.ExamineStartup - Forcing index InternalMemberIndexSet to be unlocked since it was left in a locked state
+ 2018-10-12 07:18:26,501 [P17416/D2/T1] INFO  Umbraco.Web.ExamineStartup - Forcing index InternalIndexSet to be unlocked since it was left in a locked state
+ 2018-10-12 07:18:26,503 [P17416/D2/T1] INFO  Umbraco.Web.ExamineStartup - Forcing index ExternalIndexSet to be unlocked since it was left in a locked state
+ 2018-10-12 07:18:26,504 [P17416/D2/T1] INFO  Umbraco.Web.ExamineStartup - Forcing index MySearch to be unlocked since it was left in a locked state
+ 2018-10-12 07:18:26,976 [P17416/D2/T11] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - New ApplicationUrl detected: http://10.18.78.108:80/UmbracoODS/umbraco
+ 2018-10-12 07:18:26,978 [P17416/D2/T11] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://10.18.78.108:80/UmbracoODS/umbraco (UmbracoModule request)
+ 2018-10-12 07:18:27,459 [P17416/D2/T11] INFO  umbraco.content - Load Xml from file...
+ 2018-10-12 07:18:27,468 [P17416/D2/T11] INFO  umbraco.content - Loaded Xml from file.
+ 2018-10-12 07:18:29,160 [P17416/D2/T11] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-10-12 07:18:29,160 [P17416/D2/T11] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-10-12 07:18:29,161 [P17416/D2/T11] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IParameterEditor
+ 2018-10-12 07:18:29,162 [P17416/D2/T11] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IParameterEditor (took 1ms)
+ 2018-10-12 07:18:31,149 [P17416/D2/T11] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type UmbracoODS.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2018-10-12 07:19:27,513 [P17416/D2/T23] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-10-12 07:19:27,514 [P17416/D2/T23] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-10-12 07:19:27,514 [P17416/D2/T23] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2018-10-12 07:19:27,515 [P17416/D2/T23] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper (took 1ms)
+ 2018-10-12 07:19:27,557 [P17416/D2/T16] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-10-11 07:19:27
+ 2018-10-12 07:19:27,638 [P17416/D2/T28] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-10-12 07:19:27,638 [P17416/D2/T28] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-10-12 07:19:27,639 [P17416/D2/T28] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.ICacheRefresher
+ 2018-10-12 07:19:27,639 [P17416/D2/T28] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.ICacheRefresher (took 0ms)
+ 2018-10-12 07:19:32,288 [P17416/D2/T26] INFO  umbraco.content - Save Xml to file...
+ 2018-10-12 07:19:32,298 [P17416/D2/T26] INFO  umbraco.content - Saved Xml to file.
+ 2018-10-12 07:21:01,804 [P17416/D2/T33] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type UmbracoODS.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2018-10-12 07:24:08,683 [P17416/D2/T80] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-10-12 07:24:08,684 [P17416/D2/T80] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-10-12 07:24:08,684 [P17416/D2/T80] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Deploy.IServiceConnector
+ 2018-10-12 07:24:08,686 [P17416/D2/T80] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Deploy.IServiceConnector (took 1ms)
+ 2018-10-12 11:19:28,191 [P17416/D2/T319] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-10-11 11:19:28
+ 2018-10-12 12:08:09,963 [P17416/D2/T74] INFO  umbraco.content - Save Xml to file...
+ 2018-10-12 12:08:09,970 [P17416/D2/T74] INFO  umbraco.content - Saved Xml to file.
+ 2018-10-12 12:09:13,386 [P17416/D2/T85] ERROR Umbraco.Core.UmbracoApplicationBase - Unhandled exception in AppDomain (terminating)
+System.IO.FileNotFoundException: Could not find file 'C:\Work\OneDrive\Development\ODSMainWebsite\UmbracoODS\UmbracoODS\App_Data\TEMP\ExamineIndexes\Internal\Index\_1o.fnm'.
+File name: 'C:\Work\OneDrive\Development\ODSMainWebsite\UmbracoODS\UmbracoODS\App_Data\TEMP\ExamineIndexes\Internal\Index\_1o.fnm'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at Lucene.Net.Store.SimpleFSDirectory.OpenInput(String name, Int32 bufferSize)
+   at Lucene.Net.Index.FieldInfos..ctor(Directory d, String name)
+   at Lucene.Net.Index.SegmentReader.CoreReaders..ctor(SegmentReader origInstance, Directory dir, SegmentInfo si, Int32 readBufferSize, Int32 termsIndexDivisor)
+   at Lucene.Net.Index.SegmentReader.Get(Boolean readOnly, Directory dir, SegmentInfo si, Int32 readBufferSize, Boolean doOpenStores, Int32 termInfosIndexDivisor)
+   at Lucene.Net.Index.IndexWriter.ReaderPool.Get(SegmentInfo info, Boolean doOpenStores, Int32 readBufferSize, Int32 termsIndexDivisor)
+   at Lucene.Net.Index.IndexWriter.ReaderPool.Get(SegmentInfo info, Boolean doOpenStores)
+   at Lucene.Net.Index.DocumentsWriter.ApplyDeletes(SegmentInfos infos)
+   at Lucene.Net.Index.IndexWriter.ApplyDeletes()
+   at Lucene.Net.Index.IndexWriter.DoFlushInternal(Boolean flushDocStores, Boolean flushDeletes)
+   at Lucene.Net.Index.IndexWriter.DoFlush(Boolean flushDocStores, Boolean flushDeletes)
+   at Lucene.Net.Index.IndexWriter.PrepareCommit(IDictionary`2 commitUserData, Boolean internal_Renamed)
+   at Lucene.Net.Index.IndexWriter.Commit(IDictionary`2 commitUserData)
+   at Examine.LuceneEngine.Providers.LuceneIndexer.IndexCommiter.TimerRelease() in C:\projects\examine-qvx04\src\Examine\LuceneEngine\Providers\LuceneIndexer.cs:line 1710
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.TimerQueueTimer.CallCallback()
+   at System.Threading.TimerQueueTimer.Fire()
+   at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+ 2018-10-12 12:09:15,328 [P17416/D2/T515] INFO  umbraco.content - Save Xml to file...
+ 2018-10-12 12:09:15,333 [P17416/D2/T515] INFO  umbraco.content - Saved Xml to file.
+ 2018-10-12 12:09:33,500 [P17416/D2/T89] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2018-10-12 12:09:33,500 [P17416/D2/T89] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2018-10-12 12:09:33,500 [P17416/D2/T583] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2018-10-12 12:09:46,602 [P17416/D2/T37] ERROR UmbracoExamine.DataServices.UmbracoLogService - Provider=InternalIndexer, NodeId=-1
+System.Exception: App is shutting down so index batch operation is ignored,, IndexSet: InternalIndexSet
+ 2018-10-12 12:09:46,618 [P17416/D2/T37] ERROR UmbracoExamine.DataServices.UmbracoLogService - Provider=InternalIndexer, NodeId=-1
+System.Exception: App is shutting down so index batch operation is ignored,, IndexSet: InternalIndexSet
+ 2018-10-12 12:09:50,618 [P17416/D2/T60] INFO  umbraco.content - Save Xml to file...
+ 2018-10-12 12:09:50,618 [P17416/D2/T60] INFO  umbraco.content - Saved Xml to file.
